@@ -1,0 +1,47 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# WP934MD/2GD
+#
+DEF WP934MD/2GD D 0 40 Y N 2 L N
+F0 "D" -240 190 50 H V L BNN
+F1 "WP934MD/2GD" -240 -230 50 H V L BNN
+F2 "LED_WP934MD/2GD" 0 0 50 H I L BNN
+F3 "KingBright" 0 0 50 H I L BNN
+F4 "V.9B" 0 0 50 H I L BNN
+F5 "Manufacturer Recommendation" 0 0 50 H I L BNN
+DRAW
+P 2 1 0 10 -100 60 -100 0 N
+P 2 1 0 10 -100 0 -100 -60 N
+P 2 1 0 10 -100 -60 0 0 N
+P 2 1 0 10 0 0 -100 60 N
+P 2 1 0 10 0 60 0 -60 N
+P 2 1 0 6 -100 0 -200 0 N
+P 2 1 0 10 -30 80 40 160 N
+P 2 1 0 10 -80 90 -10 170 N
+P 2 1 0 10 -10 170 -40 170 N
+P 2 1 0 10 -10 170 -10 140 N
+P 2 1 0 10 40 160 10 160 N
+P 2 1 0 10 40 160 40 130 N
+X C1 1 200 0 200 L 40 40 1 0 P 
+X A1 2 -300 0 100 R 40 40 1 0 P 
+P 2 2 0 10 -100 60 -100 0 N
+P 2 2 0 10 -100 0 -100 -60 N
+P 2 2 0 10 -100 -60 0 0 N
+P 2 2 0 10 0 0 -100 60 N
+P 2 2 0 10 0 60 0 -60 N
+P 2 2 0 6 -100 0 -200 0 N
+P 2 2 0 10 -30 80 40 160 N
+P 2 2 0 10 -80 90 -10 170 N
+P 2 2 0 10 -10 170 -40 170 N
+P 2 2 0 10 -10 170 -10 140 N
+P 2 2 0 10 40 160 10 160 N
+P 2 2 0 10 40 160 40 130 N
+X C2 3 200 0 200 L 40 40 2 0 P 
+X A2 4 -300 0 100 R 40 40 2 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

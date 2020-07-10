@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name WP934MD_2GD)(type Legacy)(uri ${KIPRJMOD}/local/WP934MD_2GD.lib)(options "")(descr ""))
+  (lib (name 67068-8000)(type Legacy)(uri ${KIPRJMOD}/local/67068-8000.lib)(options "")(descr ""))
+  (lib (name hd6309sbc_Library)(type Legacy)(uri ${KIPRJMOD}/hd6309sbc_Library.lib)(options "")(descr ""))
+)

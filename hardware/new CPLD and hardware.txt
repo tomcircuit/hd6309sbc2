@@ -1,0 +1,160 @@
+HD6309 SBC Revision 2
+---------------------
+
+HD63C09E PLCC44
+W27C512 64Kx8 FLASH  DIP28
+K6T1008 128Kx8 SRAM (replace 2x 32Kx8 SRAM)  SOT32
+CP2105 USB Bridge (replace FT230XS bridge)  QFN24
+DS3231M (replace RTC7301 and DS3232M RTC retrofit)  SO8
+add 24C64 EEPROM (on I2C chain)   SO8
+6x LED (CHAtog, CHA/CHBtog)  PTH dual LED
+WS2812B RGB LED   4-pin 5x5mm
+CONF1 & 2 jumpers   2.54mm 1x2 header
+write to VERSION SFR causes system reset
+add 5V switching regulator  TPS560430  SOT23-6
+replace PJRC SD card adapter with built-in SD card socket
+replace USB B socket with USB MICRO B socket
+replace MAX7000 with MAX10  (10M08SCC144)
+remove X2 oscillator
+remove CIO and SCC
+5V domain for CPU, RAM, ROM
+3.3V domain for MAX10, I2C, SD card 
+AP1117-3.3 LDO for 3.3V rail
+74LVC245 for 5V->3.3V level shifter
+
+
+
+SN74LVC245APW (mouser 595-SN74LVC245APWR)
+0.65mm pitch TSSOP-20 package
+
+TPS560430 is a nice synchronous buck  (mouser 595-TPS560430YFDBVR)
+10uH 1A RMS 1.8A sat current (2.1 MHz)  (mouser 810-VLS3012HBX-100M)
+10uF/10V ceramic cap  (mouser 810-C2012X7R1A106KAE)
+2.2uF/50V input cap (mouser 963-UMK212BB7225MG-T)
+0.1uF/50V bootstrap cap (mouser 581-08055C104KAT4A)
+R-divider
+
+CP2105 USB-UART Bridge (mouser 634-CP2105-F01-GMR)
+  The TXD toggle lights when a character is received from USB
+  Test with CP2108 shows that RTS and CTS are able to be controlled by NoICE
+  Note: RTS and DTR invert - from NoICE "RTS 1" drives the output LOW, and "RTS 0" drives the output HIGH.
+DS3231M I2C Realtime Clock  (mouser 700-DS3231MZ/V+)
+SD Card holder (mouser 798-DM3D-SF)
+
+ROMA15 is HIGH at RESET (0x8000-0xFFFF ROM physical addr)
+ROMA14 follows CONF at RESET (0x8000-0xBFFF or 0xC000-0xFFFF ROM physical addr)
+RAMA13,14,15 follow A13,14,15 at RESET (no mapping)
+RAMA16 is LOW at RESET (0x00000 - 0x0FFFF RAM physical addr)
+
+MAX10 CPLD to support:
+
+Clock generation (E,Q)
+    with some ability to try to overclock the CPU?
+    
+Paged memory mapping of 256K RAM, 64K ROM
+    8K x 32 pages of SRAM (p0-p31)
+    8K x 8 pages of ROM (p32-p39)
+    7b x 8 register file (6 bits page select, 1 bit write protect)    
+    each 8K region of CPU space is mapped to p0-p39
+        default: 
+        R0=P8, R1=P9, R2,3,4,5=P10,11,12,13
+        R6=P36/38, R7=P37/39 (depending on CONF1 jumper)
+        
+IO register  (SYSIO)
+    4b LED3-6 control
+    2b conf1, conf2
+    1b pushbutton (debounced)
+    
+IRQ control / status  
+    8b IRQ flag register (INTF)
+        U1 TXRE request
+        U1 RXF request
+        U2 TXRE request
+        U2 RXF request
+
+    8b IRQ mask register (INTM)
+        U1 TXRE mask
+        U1 RXF mask
+        U2 TXRE mask
+        U2 RXF mask
+        pushbutton mask
+        
+Two UARTs (one console, one NoICE)
+    56,115,230,460kbps bitrates (with a VCP, does this really need to be the weird values?)
+    each UART has 6b status/control register  (UxSCR)
+    (2 bits baud select, 1 bit TX empty, 1 bit RX full, RTS status)
+    each UART has 8b data register  (UxDATA)
+    (send transmit data on write; received data on read)    
+    
+I2C master for RTC and EEPROM
+    8b status/control register  (IICSCR)
+    2 bit command field
+    IDLE, MASTER, BYTE, and STOP commands
+    2 bit SCL and SDA drive
+    1 bit SDA level
+    1 bit ACK send
+    1 bit ACK receive
+    1 bit I2C busy
+    8b data register  (IICDATA)
+    (send transmit data on write; received data on read)    
+    
+SPI master for SD Card
+    8b status/control register   (SPISCR)
+    1b clock select (fast/slow)
+    1b SD switch input
+    1b SD select output
+    1b SPI busy
+    1b WS control (to slow down E clock so that 6309 block move instruction can be used)
+    8b data register  (SPIDATA)
+    (send transmit data on write; received data on read)    
+    
+WS2812B interface
+    R,G,B registers  (NEOR, NEOG, NEOB)
+    
+reset control  (RESCON)
+    RTS1 reset   (00=RTS1 ignored; 01=RESET when RTS1 goes L, 10=when RTS1 goes H, 11=change of RTS1 state)
+    RTS2 reset   (00=RTS2 ignored; 01=RESET when RTS1 goes L, 10=when RTS1 goes H, 11=change of RTS1 state)
+    software reset  (1=RESET CPU)
+    watchdog reset  (1=enable wdog; write to CPLD ID register to service watchdog)
+    RTC select (0=perform RESET on RTC reset; 1=perform NMI on RTC reset)
+    USER NMI enable (0=ignore USER button; 1=perform NMI on USER button)
+       
+START:
+         I2C_ReleaseBoth                            ; release SDA and SCL
+         I2C_BitDelay                               ; allow SDA to float high
+         I2C_SinkSDA                                ; begin I2C START by bringing SDA low first
+         I2C_BitDelay                               ; half-bit delay
+         I2C_SinkSCL                                ; complete I2C START by bringing SCL low
+         I2C_BitDelay                               ; half-bit delay         
+
+WRITE: 
+"GO Master" 
+    Start   ; I2C START is bringing SDA low first, then bit delay, then bring SCL low
+    SendByte  ; byte is 8 bits from DATA_SEND, updating DATA_RCV, followed by sending ACK_SEND bit / updating ACK_RCV bit
+"Send Byte"  ; byte is 8 bits from DATA_SEND, updating DATA_RCV, followed by sending ACK_SEND bit / updating ACK_RCV bit
+"Send Byte"   ; byte is 8 bits from DATA_SEND, updating DATA_RCV, followed by sending ACK_SEND bit / updating ACK_RCV bit
+"Send Stop" ; SCL high followed by SDA high is STOP condition
+
+READ:
+"GO Master" 
+    Start   ; I2C START is bringing SDA low first, then bit delay, then bring SCL low
+    SendByte  ; byte is 8 bits from DATA_SEND, updating DATA_RCV, followed by sending ACK_SEND bit / updating ACK_RCV bit
+"Send Byte" ; byte is 8 bits from DATA_SEND, updating DATA_RCV, followed by sending ACK_SEND bit / updating ACK_RCV bit
+"GO Master" 
+    Start   ; I2C START is bringing SDA low first, then bit delay, then bring SCL low
+    SendByte  ; byte is 8 bits from DATA_SEND, updating DATA_RCV, followed by sending ACK_SEND bit / updating ACK_RCV bit
+"Rcv Byte"  ; byte is 8 bits from DATA_SEND, updating DATA_RCV, followed by sending ACK_SEND bit / updating ACK_RCV bit
+"Send Stop"
+
+"COMMAND" bits
+00 = IDLE (no action when DATA_TX is written)
+01 = BYTE (send DATA_SEND while updating DATA_RCV, followed by sending ACK_SEND / updating ACK_RCV)
+10 = GO_MASTER (send START then fall into BYTE)
+11 = STOP (send STOP condition, leaving SCL=SDA=1)
+
+About the MAX 10 CPLD family
+All IO pins have selectable pullups
+All IO pins have optional open-drain output mode
+All IO pins are INPUT until the device is configures
+
+990824
