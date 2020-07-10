@@ -40,8 +40,4 @@ Tom LeMense
 tomcircuit@gmail.com
 @TomLeMense
 
-tomcircuit@gmail.com
-@TomLeMense
-
-
 		
