@@ -71,6 +71,8 @@ IRQ control / status
         U1 RXF request
         U2 TXRE request
         U2 RXF request
+		pushbutton request
+		
 
     8b IRQ mask register (INTM)
         U1 TXRE mask
@@ -109,7 +111,7 @@ SPI master for SD Card
     (send transmit data on write; received data on read)    
     
 WS2812B interface
-    R,G,B registers  (NEOR, NEOG, NEOB)
+    R,G,B registers  (PIXR, PIXG, PIXB)
     
 reset control  (RESCON)
     RTS1 reset   (00=RTS1 ignored; 01=RESET when RTS1 goes L, 10=when RTS1 goes H, 11=change of RTS1 state)
@@ -118,6 +120,23 @@ reset control  (RESCON)
     watchdog reset  (1=enable wdog; write to CPLD ID register to service watchdog)
     RTC select (0=perform RESET on RTC reset; 1=perform NMI on RTC reset)
     USER NMI enable (0=ignore USER button; 1=perform NMI on USER button)
+	
+
+$E004 - INTF
+$E005 - INTM
+
+$E010 - U2SCR
+$E011 - U2DATA
+$E012 - U1SCR
+$E013 - U2DATA
+
+$E020 - IICSCR
+$E021 - IICDATA	
+	
+	
+	
+	
+	
        
 START:
          I2C_ReleaseBoth                            ; release SDA and SCL

@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name LED_WP934MD)(type KiCad)(uri "D:/Projects/6309 SBC II/hardware/hd6309sbc_v2c/local/LED_WP934MD")(options "")(descr ""))
+  (lib (name USB_67068)(type KiCad)(uri ${KIPRJMOD}/local/USB_67068)(options "")(descr ""))
+  (lib (name "CUI PJ102")(type KiCad)(uri ${KIPRJMOD}/local/CUI_DEVICES_PJ-102AH)(options "")(descr ""))
+  (lib (name hd6309sbc)(type KiCad)(uri "D:/Projects/6309 SBC II/hardware/hd6309sbc.pretty")(options "")(descr ""))
+)

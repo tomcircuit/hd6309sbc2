@@ -1,0 +1,59 @@
+
+CP21xx Customization Utility v1.2.2 Release Notes
+Copyright (C) 2015 Silicon Laboratories, Inc.
+
+KNOWN ISSUES AND LIMITATIONS
+----------------------------
+
+    1) Only CP210x, CP211x, and CP213x devices are supported by this
+       application.
+	
+    2) This application does not support automatic refresh of devices.
+
+    3) CP210x is only supported on Linux and Windows
+	
+    4) CP2130 is only supported on Windows
+	
+    5) Programming the serial number will display an incorrect failure
+       due to improper reset functionality. This will be addressed in a
+       future release.
+	
+    6) Changing the mode from GPIO to modem on a CP2105 will automatically
+       change pin settings that don't reflect on the validation. This
+       doesn't affect programming specific settings to the device.
+
+Release Dates
+-------------
+
+    CP21xx Customization Utility v1.2.2 - December 18 2015
+    CP21xx Customization Utility v1.2.1 - November 7, 2014
+    CP21xx Customization Utility v1.2.0 - Feb 28, 2014
+
+REVISION HISTORY
+-----------------
+Version 1.2.2
+    Updated CP2114 programming interface.
+    Updated to use latest manufacturing DLL.
+
+Version 1.2.1
+    JRE error that occurred when opening the CP21xxCustomizationUtility
+    has been fixed.
+
+Version 1.2.0
+    Updated to include descriptions in the hex and bit fields
+    Fixed bug in CP2130 Port Config write
+    Fixed bug in CP2103/4/5 Port Config writes
+    Fixed bug in lock values for CP2130/CP2110/CP2114
+    Fixed behavior where GPIO/Modem Mode were written seperately and
+    incorrectly (combined)
+
+Version 1.1.0
+    Added support for CP2130
+
+Version 1.0.1
+    Fixed bugs seen when programming CP2105
+    Fixed crash when opening on OSX
+
+Version 1.0.0
+    Initial Release
+

@@ -1,0 +1,241 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "led_1",
+					"strict" : false
+				},
+				{
+					"name" : "led_2",
+					"strict" : false
+				},
+				{
+					"name" : "uart_tx",
+					"strict" : false
+				},
+				{
+					"name" : "dig_2",
+					"strict" : false
+				},
+				{
+					"name" : "dig_3",
+					"strict" : false
+				},
+				{
+					"name" : "seg_full[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_full[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_full[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_full[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_full[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_full[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_full[6]",
+					"strict" : false
+				},
+				{
+					"name" : "t_rstreq",
+					"strict" : false
+				},
+				{
+					"name" : "t_eclk",
+					"strict" : false
+				},
+				{
+					"name" : "t_qclk",
+					"strict" : false
+				},
+				{
+					"name" : "t_maddr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "t_dben_n",
+					"strict" : false
+				},
+				{
+					"name" : "t_dbdir",
+					"strict" : false
+				},
+				{
+					"name" : "t_sci_tx",
+					"strict" : false
+				},
+				{
+					"name" : "t_eci_tx",
+					"strict" : false
+				},
+				{
+					"name" : "t_led_4",
+					"strict" : false
+				},
+				{
+					"name" : "t_led_busy",
+					"strict" : false
+				},
+				{
+					"name" : "t_addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "t_addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "t_addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "t_addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "t_addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "t_addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "t_addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "t_addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "t_addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "t_addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "t_addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "t_addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "t_addr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "t_addr[13]",
+					"strict" : false
+				},
+				{
+					"name" : "t_addr[14]",
+					"strict" : false
+				},
+				{
+					"name" : "t_addr[15]",
+					"strict" : false
+				},
+				{
+					"name" : "t_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "t_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "t_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "t_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "t_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "t_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "t_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "t_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "key_1",
+					"strict" : false
+				},
+				{
+					"name" : "sys_rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "t_lvrst_n",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx",
+					"strict" : false
+				},
+				{
+					"name" : "t_sci_rx",
+					"strict" : false
+				},
+				{
+					"name" : "t_eci_rx",
+					"strict" : false
+				},
+				{
+					"name" : "sys_clk",
+					"strict" : false
+				},
+				{
+					"name" : "t_rw_n",
+					"strict" : false
+				},
+				{
+					"name" : "t_btn",
+					"strict" : false
+				},
+				{
+					"name" : "t_conf_1",
+					"strict" : false
+				},
+				{
+					"name" : "t_conf_2",
+					"strict" : false
+				},
+				{
+					"name" : "t_eci_rts",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

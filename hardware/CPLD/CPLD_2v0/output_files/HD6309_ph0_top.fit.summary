@@ -1,0 +1,12 @@
+I/O Assignment Analysis Status : Successful - Sun Apr 25 15:57:00 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : HD6309_ph0_top
+Top-level Entity Name : HD6309_ph0_top
+Family : MAX 10
+Device : 10M08SCU169A7G
+Timing Models : Final
+Total pins : 91 / 130 ( 70 % )
+Total virtual pins : 0
+Total PLLs : 0 / 1 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0

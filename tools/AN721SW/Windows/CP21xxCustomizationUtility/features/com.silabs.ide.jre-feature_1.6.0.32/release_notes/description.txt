@@ -1,0 +1,1 @@
+This feature provides the Java Runtime Environment for Simplicity Studio

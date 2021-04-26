@@ -1,0 +1,12 @@
+FilterPartNumByte {  { 05 }  } 
+FilterVidPid {  { 10C4 }  { EA70 }  } 
+VidPid {  { 10C4 }  { EA70 }  } 
+ProductStringUnicode {  { 43 00 50 00 32 00 31 00 30 00 35 00 20 00 44 00 75 00 61 00 6C 00 20 00 55 00 53 00 42 00 20 00 74 00 6F 00 20 00 55 00 41 00 52 00 54 00 20 00 42 00 72 00 69 00 64 00 67 00 65 00  }  } 
+PowerMode {  { 00 }  } 
+MaxPower {  { FA }  } 
+DeviceVersion {  { 0100 }  } 
+FlushBufferConfig {  { 0033 }  } 
+DeviceMode {  { FF }  { FF }  } 
+DualPortConfig {  { 5151 FEFE FEFE 13 13 10 }  } 
+InterfaceStringUnicode1 {  { 53 00 74 00 61 00 6E 00 64 00 61 00 72 00 64 00 20 00 43 00 6F 00 6D 00 20 00 50 00 6F 00 72 00 74 00  }  } 
+InterfaceStringUnicode0 {  { 45 00 6E 00 68 00 61 00 6E 00 63 00 65 00 64 00 20 00 43 00 6F 00 6D 00 20 00 50 00 6F 00 72 00 74 00  }  } 

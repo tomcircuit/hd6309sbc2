@@ -1,0 +1,5427 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr C 22000 17000
+encoding utf-8
+Sheet 1 1
+Title "HD6309 Singleboard Computer II - QMTECH TEST"
+Date "2021-04-19"
+Rev "2.6"
+Comp "https://hackaday.io/project/173401-hd6309-singleboard-computer-ii"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L hd6309sbc_v2c-rescue:HD63C09ECP-hd6309sbc_Library U1
+U 1 1 5EC2C493
+P 3350 3200
+F 0 "U1" H 3650 4650 50  0000 C CNN
+F 1 "HD63C09ECP" H 3700 4550 50  0000 C CNN
+F 2 "Package_LCC:PLCC-44" H 3350 1600 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/motorola/MC68B09S.pdf" H 3250 4625 50  0001 C CNN
+	1    3350 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4400 3300 4500
+Wire Wire Line
+	3400 4400 3400 4500
+$Comp
+L power:GND #PWR016
+U 1 1 5ED3BE57
+P 3300 4500
+F 0 "#PWR016" H 3300 4250 50  0001 C CNN
+F 1 "GND" H 3305 4327 50  0000 C CNN
+F 2 "" H 3300 4500 50  0001 C CNN
+F 3 "" H 3300 4500 50  0001 C CNN
+	1    3300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5ED3C253
+P 3400 4500
+F 0 "#PWR017" H 3400 4250 50  0001 C CNN
+F 1 "GND" H 3405 4327 50  0000 C CNN
+F 2 "" H 3400 4500 50  0001 C CNN
+F 3 "" H 3400 4500 50  0001 C CNN
+	1    3400 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2000 2350 2000
+Wire Wire Line
+	2850 3000 2350 3000
+Wire Wire Line
+	2850 3100 2350 3100
+Wire Wire Line
+	2850 3200 2350 3200
+Wire Wire Line
+	2850 3300 2350 3300
+Wire Wire Line
+	2850 3400 2350 3400
+Wire Wire Line
+	2850 3500 2350 3500
+Wire Wire Line
+	2850 3600 2350 3600
+Wire Wire Line
+	2850 3700 2350 3700
+Wire Wire Line
+	4350 2000 3850 2000
+Wire Wire Line
+	4350 2200 3850 2200
+Wire Wire Line
+	4350 2300 3850 2300
+Wire Wire Line
+	4350 2700 3850 2700
+Wire Wire Line
+	4350 2800 3850 2800
+Wire Wire Line
+	4350 2900 3850 2900
+Wire Wire Line
+	4350 3000 3850 3000
+Wire Wire Line
+	4350 3100 3850 3100
+Wire Wire Line
+	4350 3200 3850 3200
+Wire Wire Line
+	4350 3300 3850 3300
+Wire Wire Line
+	4350 3400 3850 3400
+Wire Wire Line
+	4350 3500 3850 3500
+Wire Wire Line
+	4350 3600 3850 3600
+Wire Wire Line
+	4350 3700 3850 3700
+Wire Wire Line
+	4350 3800 3850 3800
+Wire Wire Line
+	4350 3900 3850 3900
+Wire Wire Line
+	4350 4000 3850 4000
+Wire Wire Line
+	4350 4100 3850 4100
+Wire Wire Line
+	4350 4200 3850 4200
+Text Label 2350 2100 0    50   ~ 0
+ECLK
+Text Label 2350 2200 0    50   ~ 0
+QCLK
+Text Label 2350 2400 0    50   ~ 0
+RESET_HV
+Text Label 2350 2500 0    50   ~ 0
+NMI
+Text Label 2350 2600 0    50   ~ 0
+IRQ
+Text Label 2350 2700 0    50   ~ 0
+FIRQ
+Text Label 2350 3000 0    50   ~ 0
+D0_HV
+Text Label 2350 3100 0    50   ~ 0
+D1_HV
+Text Label 2350 3200 0    50   ~ 0
+D2_HV
+Text Label 2350 3300 0    50   ~ 0
+D3_HV
+Text Label 2350 3400 0    50   ~ 0
+D4_HV
+Text Label 2350 3500 0    50   ~ 0
+D5_HV
+Text Label 2350 3600 0    50   ~ 0
+D6_HV
+Text Label 2350 3700 0    50   ~ 0
+D7_HV
+Text Label 4350 2000 2    50   ~ 0
+RW_HV
+Text Label 4350 2200 2    50   ~ 0
+BS_HV
+Text Label 4350 2300 2    50   ~ 0
+AVMA_HV
+Wire Wire Line
+	3350 1800 3350 1700
+$Comp
+L power:VCC #PWR03
+U 1 1 5ED90FFB
+P 3350 1700
+F 0 "#PWR03" H 3350 1550 50  0001 C CNN
+F 1 "VCC" H 3367 1873 50  0000 C CNN
+F 2 "" H 3350 1700 50  0001 C CNN
+F 3 "" H 3350 1700 50  0001 C CNN
+	1    3350 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 6900 10500 6900
+Wire Wire Line
+	11000 7000 10500 7000
+Wire Wire Line
+	11000 5100 10500 5100
+Text Label 11000 6900 2    50   ~ 0
+MA13
+Text Label 11000 7000 2    50   ~ 0
+MA14
+Text Label 11000 5100 2    50   ~ 0
+MA15
+Wire Wire Line
+	11000 5200 10500 5200
+Text Label 11000 5200 2    50   ~ 0
+MA16
+Wire Wire Line
+	9300 5400 8800 5400
+Wire Wire Line
+	9300 5300 8800 5300
+Wire Wire Line
+	9300 5200 8800 5200
+Wire Wire Line
+	9300 5100 8800 5100
+Wire Wire Line
+	9300 5800 8800 5800
+Wire Wire Line
+	9300 5700 8800 5700
+Wire Wire Line
+	9300 5600 8800 5600
+Wire Wire Line
+	9300 5500 8800 5500
+Text Label 8800 5400 0    50   ~ 0
+D0
+Text Label 8800 5300 0    50   ~ 0
+D1
+Text Label 8800 5200 0    50   ~ 0
+D2
+Text Label 8800 5100 0    50   ~ 0
+D3
+Text Label 8800 5800 0    50   ~ 0
+D4
+Text Label 8800 5700 0    50   ~ 0
+D5
+Text Label 8800 5600 0    50   ~ 0
+D6
+Text Label 8800 5500 0    50   ~ 0
+D7
+Wire Wire Line
+	10500 7300 11000 7300
+Wire Wire Line
+	10500 7400 11000 7400
+Wire Wire Line
+	10500 7500 11000 7500
+Text Label 11000 7300 2    50   ~ 0
+RAM_CS
+Text Label 11000 7400 2    50   ~ 0
+RAM_OE
+Text Label 11000 7500 2    50   ~ 0
+RAM_WE
+Wire Wire Line
+	9900 7700 9900 7750
+$Comp
+L power:GND #PWR010
+U 1 1 5EDE8CA5
+P 9900 7800
+F 0 "#PWR010" H 9900 7550 50  0001 C CNN
+F 1 "GND" H 9905 7627 50  0000 C CNN
+F 2 "" H 9900 7800 50  0001 C CNN
+F 3 "" H 9900 7800 50  0001 C CNN
+	1    9900 7800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 7700 9100 7800
+$Comp
+L power:GND #PWR09
+U 1 1 5F92A4F7
+P 9100 7800
+F 0 "#PWR09" H 9100 7550 50  0001 C CNN
+F 1 "GND" H 9105 7627 50  0000 C CNN
+F 2 "" H 9100 7800 50  0001 C CNN
+F 3 "" H 9100 7800 50  0001 C CNN
+	1    9100 7800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5F92A4FD
+P 9100 7600
+F 0 "C2" H 9192 7646 50  0000 L CNN
+F 1 "0.1uF" H 9192 7555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9100 7600 50  0001 C CNN
+F 3 "~" H 9100 7600 50  0001 C CNN
+	1    9100 7600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4200 2200 4100
+$Comp
+L power:VCC #PWR011
+U 1 1 5F94166D
+P 2200 4100
+F 0 "#PWR011" H 2200 3950 50  0001 C CNN
+F 1 "VCC" H 2217 4273 50  0000 C CNN
+F 2 "" H 2200 4100 50  0001 C CNN
+F 3 "" H 2200 4100 50  0001 C CNN
+	1    2200 4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4400 2200 4500
+$Comp
+L power:GND #PWR014
+U 1 1 5F941674
+P 2200 4500
+F 0 "#PWR014" H 2200 4250 50  0001 C CNN
+F 1 "GND" H 2205 4327 50  0000 C CNN
+F 2 "" H 2200 4500 50  0001 C CNN
+F 3 "" H 2200 4500 50  0001 C CNN
+	1    2200 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5F94167A
+P 2200 4300
+F 0 "C4" H 2292 4346 50  0000 L CNN
+F 1 "22uF" H 2292 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2200 4300 50  0001 C CNN
+F 3 "~" H 2200 4300 50  0001 C CNN
+	1    2200 4300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FAD656C
+P 2100 2800
+AR Path="/5EC51AA8/5FAD656C" Ref="TP?"  Part="1" 
+AR Path="/5FAD656C" Ref="TP2"  Part="1" 
+F 0 "TP2" H 2158 2918 50  0000 L CNN
+F 1 "FIRQ" H 2158 2827 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 2300 2800 50  0001 C CNN
+F 3 "~" H 2300 2800 50  0001 C CNN
+	1    2100 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EC87B95
+P 20000 14600
+F 0 "H1" H 20100 14646 50  0000 L CNN
+F 1 "MountingHole" H 20100 14555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965" H 20000 14600 50  0001 C CNN
+F 3 "~" H 20000 14600 50  0001 C CNN
+	1    20000 14600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5EC87E59
+P 20000 14850
+F 0 "H3" H 20100 14896 50  0000 L CNN
+F 1 "MountingHole" H 20100 14805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965" H 20000 14850 50  0001 C CNN
+F 3 "~" H 20000 14850 50  0001 C CNN
+	1    20000 14850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5EC87F35
+P 20850 14850
+F 0 "H4" H 20950 14896 50  0000 L CNN
+F 1 "MountingHole" H 20950 14805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965" H 20850 14850 50  0001 C CNN
+F 3 "~" H 20850 14850 50  0001 C CNN
+	1    20850 14850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EC8802E
+P 20850 14600
+F 0 "H2" H 20950 14646 50  0000 L CNN
+F 1 "MountingHole" H 20950 14555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965" H 20850 14600 50  0001 C CNN
+F 3 "~" H 20850 14600 50  0001 C CNN
+	1    20850 14600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EFA5C0C
+P 6950 1500
+AR Path="/5F90CB22/5EFA5C0C" Ref="#PWR?"  Part="1" 
+AR Path="/5EFA5C0C" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 6950 1350 50  0001 C CNN
+F 1 "+3.3V" H 6965 1673 50  0000 C CNN
+F 2 "" H 6950 1500 50  0001 C CNN
+F 3 "" H 6950 1500 50  0001 C CNN
+	1    6950 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2750 7450 2750
+Wire Wire Line
+	6950 1500 6950 1550
+$Comp
+L power:GND #PWR?
+U 1 1 5EFA5C2D
+P 6950 3200
+AR Path="/5F90CB22/5EFA5C2D" Ref="#PWR?"  Part="1" 
+AR Path="/5EFA5C2D" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 6950 2950 50  0001 C CNN
+F 1 "GND" H 6955 3027 50  0000 C CNN
+F 2 "" H 6950 3200 50  0001 C CNN
+F 3 "" H 6950 3200 50  0001 C CNN
+	1    6950 3200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3200 6950 3150
+Wire Wire Line
+	7450 2850 7950 2850
+Text Label 7950 2850 2    50   ~ 0
+DBEN
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F009EB1
+P 6950 3700
+AR Path="/5F90CB22/5F009EB1" Ref="#PWR?"  Part="1" 
+AR Path="/5F009EB1" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 6950 3550 50  0001 C CNN
+F 1 "+3.3V" H 6965 3873 50  0000 C CNN
+F 2 "" H 6950 3700 50  0001 C CNN
+F 3 "" H 6950 3700 50  0001 C CNN
+	1    6950 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 6350 7950 6350
+Wire Wire Line
+	7450 6250 7950 6250
+Wire Wire Line
+	7450 4750 7950 4750
+Wire Wire Line
+	7450 4650 7950 4650
+Wire Wire Line
+	7450 4550 7950 4550
+Wire Wire Line
+	7450 4450 7950 4450
+Wire Wire Line
+	7450 4350 7950 4350
+Wire Wire Line
+	7450 4250 7950 4250
+Wire Wire Line
+	6950 3700 6950 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5F009ED2
+P 6950 5400
+AR Path="/5F90CB22/5F009ED2" Ref="#PWR?"  Part="1" 
+AR Path="/5F009ED2" Ref="#PWR028"  Part="1" 
+F 0 "#PWR028" H 6950 5150 50  0001 C CNN
+F 1 "GND" H 6955 5227 50  0000 C CNN
+F 2 "" H 6950 5400 50  0001 C CNN
+F 3 "" H 6950 5400 50  0001 C CNN
+	1    6950 5400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 5400 6950 5350
+Text Label 7950 6350 2    50   ~ 0
+A7
+Text Label 7950 6250 2    50   ~ 0
+A6
+Text Label 7950 4750 2    50   ~ 0
+A5
+Text Label 7950 4650 2    50   ~ 0
+A4
+Text Label 7950 4550 2    50   ~ 0
+A3
+Text Label 7950 4450 2    50   ~ 0
+A2
+Text Label 7950 4350 2    50   ~ 0
+A1
+Text Label 7950 4250 2    50   ~ 0
+A0
+Text Label 7950 2750 2    50   ~ 0
+DBDIR
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F18E5FD
+P 6950 5900
+AR Path="/5F90CB22/5F18E5FD" Ref="#PWR?"  Part="1" 
+AR Path="/5F18E5FD" Ref="#PWR033"  Part="1" 
+F 0 "#PWR033" H 6950 5750 50  0001 C CNN
+F 1 "+3.3V" H 6965 6073 50  0000 C CNN
+F 2 "" H 6950 5900 50  0001 C CNN
+F 3 "" H 6950 5900 50  0001 C CNN
+	1    6950 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 8750 7950 8750
+Wire Wire Line
+	7450 8650 7950 8650
+Wire Wire Line
+	7450 6950 7950 6950
+Wire Wire Line
+	7450 6850 7950 6850
+Wire Wire Line
+	7450 6750 7950 6750
+Wire Wire Line
+	7450 6650 7950 6650
+Wire Wire Line
+	7450 6550 7950 6550
+Wire Wire Line
+	7450 6450 7950 6450
+Wire Wire Line
+	6950 5900 6950 5950
+$Comp
+L power:GND #PWR?
+U 1 1 5F18E60E
+P 6950 7600
+AR Path="/5F90CB22/5F18E60E" Ref="#PWR?"  Part="1" 
+AR Path="/5F18E60E" Ref="#PWR043"  Part="1" 
+F 0 "#PWR043" H 6950 7350 50  0001 C CNN
+F 1 "GND" H 6955 7427 50  0000 C CNN
+F 2 "" H 6950 7600 50  0001 C CNN
+F 3 "" H 6950 7600 50  0001 C CNN
+	1    6950 7600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 7600 6950 7550
+Text Label 7950 8750 2    50   ~ 0
+A15
+Text Label 7950 8650 2    50   ~ 0
+A14
+Text Label 7950 6950 2    50   ~ 0
+A13
+Text Label 7950 6850 2    50   ~ 0
+A12
+Text Label 7950 6750 2    50   ~ 0
+A11
+Text Label 7950 6650 2    50   ~ 0
+A10
+Text Label 7950 6550 2    50   ~ 0
+A9
+Text Label 7950 6450 2    50   ~ 0
+A8
+$Comp
+L Connector:Barrel_Jack_Switch J3
+U 1 1 5F2D3786
+P 1400 15250
+AR Path="/5F2D3786" Ref="J3"  Part="1" 
+AR Path="/5EC51AA8/5F2D3786" Ref="J?"  Part="1" 
+F 0 "J3" H 1457 15567 50  0000 C CNN
+F 1 "DC 6-16V" H 1457 15476 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 1450 15210 50  0001 C CNN
+F 3 "~" H 1450 15210 50  0001 C CNN
+	1    1400 15250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 15150 2100 15150
+Wire Wire Line
+	2100 15150 2100 15350
+Wire Wire Line
+	2100 15350 2200 15350
+$Comp
+L power:GND #PWR099
+U 1 1 5F2D378F
+P 2600 15850
+AR Path="/5F2D378F" Ref="#PWR099"  Part="1" 
+AR Path="/5EC51AA8/5F2D378F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR099" H 2600 15600 50  0001 C CNN
+F 1 "GND" H 2605 15677 50  0000 C CNN
+F 2 "" H 2600 15850 50  0001 C CNN
+F 3 "" H 2600 15850 50  0001 C CNN
+	1    2600 15850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 15850 2600 15550
+$Comp
+L Device:R R6
+U 1 1 5F2D3796
+P 3150 15600
+AR Path="/5F2D3796" Ref="R6"  Part="1" 
+AR Path="/5EC51AA8/5F2D3796" Ref="R?"  Part="1" 
+F 0 "R6" H 3220 15646 50  0000 L CNN
+F 1 "10K" H 3220 15555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3080 15600 50  0001 C CNN
+F 3 "~" H 3150 15600 50  0001 C CNN
+	1    3150 15600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0100
+U 1 1 5F2D379C
+P 3150 15850
+AR Path="/5F2D379C" Ref="#PWR0100"  Part="1" 
+AR Path="/5EC51AA8/5F2D379C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0100" H 3150 15600 50  0001 C CNN
+F 1 "GND" H 3155 15677 50  0000 C CNN
+F 2 "" H 3150 15850 50  0001 C CNN
+F 3 "" H 3150 15850 50  0001 C CNN
+	1    3150 15850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 15850 3150 15750
+Wire Wire Line
+	3150 15350 3000 15350
+Wire Wire Line
+	3150 15450 3150 15350
+$Comp
+L Device:C_Small C8
+U 1 1 5F2D37A5
+P 2100 15600
+AR Path="/5F2D37A5" Ref="C8"  Part="1" 
+AR Path="/5EC51AA8/5F2D37A5" Ref="C?"  Part="1" 
+F 0 "C8" H 2192 15646 50  0000 L CNN
+F 1 "10uF" H 2192 15555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder" H 2100 15600 50  0001 C CNN
+F 3 "~" H 2100 15600 50  0001 C CNN
+F 4 "GRM32DR61E106KA12L" H 2100 15600 50  0001 C CNN "MPN"
+	1    2100 15600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR098
+U 1 1 5F2D37AB
+P 2100 15850
+AR Path="/5F2D37AB" Ref="#PWR098"  Part="1" 
+AR Path="/5EC51AA8/5F2D37AB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR098" H 2100 15600 50  0001 C CNN
+F 1 "GND" H 2105 15677 50  0000 C CNN
+F 2 "" H 2100 15850 50  0001 C CNN
+F 3 "" H 2100 15850 50  0001 C CNN
+	1    2100 15850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 15850 2100 15700
+Wire Wire Line
+	4050 15150 3900 15150
+$Comp
+L Device:L_Core_Ferrite L1
+U 1 1 5F2D37B5
+P 3750 15150
+AR Path="/5F2D37B5" Ref="L1"  Part="1" 
+AR Path="/5EC51AA8/5F2D37B5" Ref="L?"  Part="1" 
+F 0 "L1" V 3975 15150 50  0000 C CNN
+F 1 "3.3uH" V 3884 15150 50  0000 C CNN
+F 2 "Inductor_SMD:L_Wuerth_HCI-7040" H 3750 15150 50  0001 C CNN
+F 3 "" H 3750 15150 50  0001 C CNN
+F 4 "" H 3750 15150 50  0001 C CNN "MPN"
+	1    3750 15150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3000 15250 3150 15250
+Connection ~ 3450 15150
+Wire Wire Line
+	3450 15150 3600 15150
+Wire Wire Line
+	3000 15150 3450 15150
+Wire Wire Line
+	3150 14950 3200 14950
+Wire Wire Line
+	3150 15250 3150 14950
+Wire Wire Line
+	3450 14950 3400 14950
+Wire Wire Line
+	3450 15150 3450 14950
+$Comp
+L Device:C_Small C6
+U 1 1 5F2D37C3
+P 3300 14950
+AR Path="/5F2D37C3" Ref="C6"  Part="1" 
+AR Path="/5EC51AA8/5F2D37C3" Ref="C?"  Part="1" 
+F 0 "C6" H 3392 14996 50  0000 L CNN
+F 1 "0.1uF" H 3392 14905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3300 14950 50  0001 C CNN
+F 3 "~" H 3300 14950 50  0001 C CNN
+	1    3300 14950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 5F2D37C9
+P 4050 15600
+AR Path="/5F2D37C9" Ref="C9"  Part="1" 
+AR Path="/5EC51AA8/5F2D37C9" Ref="C?"  Part="1" 
+F 0 "C9" H 4142 15646 50  0000 L CNN
+F 1 "22uF" H 4142 15555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4050 15600 50  0001 C CNN
+F 3 "~" H 4050 15600 50  0001 C CNN
+	1    4050 15600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F2D37CF
+P 4050 15850
+AR Path="/5F2D37CF" Ref="#PWR0101"  Part="1" 
+AR Path="/5EC51AA8/5F2D37CF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0101" H 4050 15600 50  0001 C CNN
+F 1 "GND" H 4055 15677 50  0000 C CNN
+F 2 "" H 4050 15850 50  0001 C CNN
+F 3 "" H 4050 15850 50  0001 C CNN
+	1    4050 15850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 15850 4050 15700
+Wire Wire Line
+	1700 15350 1800 15350
+$Comp
+L power:GND #PWR094
+U 1 1 5F2D37D8
+P 1800 15600
+AR Path="/5F2D37D8" Ref="#PWR094"  Part="1" 
+AR Path="/5EC51AA8/5F2D37D8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR094" H 1800 15350 50  0001 C CNN
+F 1 "GND" H 1805 15427 50  0000 C CNN
+F 2 "" H 1800 15600 50  0001 C CNN
+F 3 "" H 1800 15600 50  0001 C CNN
+	1    1800 15600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 15500 2100 15350
+Connection ~ 2100 15350
+Connection ~ 2100 15150
+$Comp
+L Device:R R10
+U 1 1 5F2D37E7
+P 2600 8500
+AR Path="/5F2D37E7" Ref="R10"  Part="1" 
+AR Path="/5EC51AA8/5F2D37E7" Ref="R?"  Part="1" 
+F 0 "R10" H 2670 8546 50  0000 L CNN
+F 1 "4.7K" H 2670 8455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2530 8500 50  0001 C CNN
+F 3 "~" H 2600 8500 50  0001 C CNN
+	1    2600 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 9450 2750 9450
+$Comp
+L Device:C_Small C13
+U 1 1 5F2D37EE
+P 2350 10250
+AR Path="/5F2D37EE" Ref="C13"  Part="1" 
+AR Path="/5EC51AA8/5F2D37EE" Ref="C?"  Part="1" 
+F 0 "C13" H 2442 10296 50  0000 L CNN
+F 1 "4.7uF" H 2442 10205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2350 10250 50  0001 C CNN
+F 3 "~" H 2350 10250 50  0001 C CNN
+	1    2350 10250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 10050 2350 10050
+Wire Wire Line
+	2350 10050 2350 10150
+Wire Wire Line
+	2350 10350 2350 10550
+$Comp
+L power:GND #PWR045
+U 1 1 5F2D37F7
+P 2350 10550
+AR Path="/5F2D37F7" Ref="#PWR045"  Part="1" 
+AR Path="/5EC51AA8/5F2D37F7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR045" H 2350 10300 50  0001 C CNN
+F 1 "GND" H 2355 10377 50  0000 C CNN
+F 2 "" H 2350 10550 50  0001 C CNN
+F 3 "" H 2350 10550 50  0001 C CNN
+	1    2350 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR046
+U 1 1 5F2D37FD
+P 3250 10550
+AR Path="/5F2D37FD" Ref="#PWR046"  Part="1" 
+AR Path="/5EC51AA8/5F2D37FD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR046" H 3250 10300 50  0001 C CNN
+F 1 "GND" H 3255 10377 50  0000 C CNN
+F 2 "" H 3250 10550 50  0001 C CNN
+F 3 "" H 3250 10550 50  0001 C CNN
+	1    3250 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR047
+U 1 1 5F2D3803
+P 3350 10550
+AR Path="/5F2D3803" Ref="#PWR047"  Part="1" 
+AR Path="/5EC51AA8/5F2D3803" Ref="#PWR?"  Part="1" 
+F 0 "#PWR047" H 3350 10300 50  0001 C CNN
+F 1 "GND" H 3355 10377 50  0000 C CNN
+F 2 "" H 3350 10550 50  0001 C CNN
+F 3 "" H 3350 10550 50  0001 C CNN
+	1    3350 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 10550 3250 10450
+Wire Wire Line
+	3350 10450 3350 10550
+Wire Wire Line
+	1550 9350 2750 9350
+Wire Wire Line
+	2350 9900 2350 9250
+Wire Wire Line
+	2350 9250 2750 9250
+Wire Wire Line
+	2600 8650 2600 8750
+Wire Wire Line
+	2600 8750 2750 8750
+Wire Wire Line
+	2600 8350 2600 8250
+Wire Wire Line
+	2600 8250 3250 8250
+Wire Wire Line
+	3250 8250 3250 8450
+Wire Wire Line
+	3250 8250 3350 8250
+Connection ~ 3250 8250
+$Comp
+L Device:C_Small C12
+U 1 1 5F2D3815
+P 2200 8500
+AR Path="/5F2D3815" Ref="C12"  Part="1" 
+AR Path="/5EC51AA8/5F2D3815" Ref="C?"  Part="1" 
+F 0 "C12" H 2292 8546 50  0000 L CNN
+F 1 "4.7uF" H 2292 8455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2200 8500 50  0001 C CNN
+F 3 "~" H 2200 8500 50  0001 C CNN
+	1    2200 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 5F2D381B
+P 1750 9650
+AR Path="/5F2D381B" Ref="C11"  Part="1" 
+AR Path="/5EC51AA8/5F2D381B" Ref="C?"  Part="1" 
+F 0 "C11" H 1842 9696 50  0000 L CNN
+F 1 "0.1uF" H 1842 9605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1750 9650 50  0001 C CNN
+F 3 "~" H 1750 9650 50  0001 C CNN
+	1    1750 9650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 8950 2750 8950
+Wire Wire Line
+	1750 9750 1750 9800
+Wire Wire Line
+	2200 8600 2200 8700
+$Comp
+L power:GND #PWR031
+U 1 1 5F2D3824
+P 1750 9800
+AR Path="/5F2D3824" Ref="#PWR031"  Part="1" 
+AR Path="/5EC51AA8/5F2D3824" Ref="#PWR?"  Part="1" 
+F 0 "#PWR031" H 1750 9550 50  0001 C CNN
+F 1 "GND" H 1755 9627 50  0000 C CNN
+F 2 "" H 1750 9800 50  0001 C CNN
+F 3 "" H 1750 9800 50  0001 C CNN
+	1    1750 9800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR032
+U 1 1 5F2D382A
+P 2200 8700
+AR Path="/5F2D382A" Ref="#PWR032"  Part="1" 
+AR Path="/5EC51AA8/5F2D382A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR032" H 2200 8450 50  0001 C CNN
+F 1 "GND" H 2205 8527 50  0000 C CNN
+F 2 "" H 2200 8700 50  0001 C CNN
+F 3 "" H 2200 8700 50  0001 C CNN
+	1    2200 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 8250 2200 8250
+Connection ~ 2600 8250
+Wire Wire Line
+	2200 8400 2200 8250
+Connection ~ 2200 8250
+Wire Wire Line
+	2200 8250 2600 8250
+Text Label 2500 8950 0    50   ~ 0
+VCC
+Text Label 2950 8250 0    50   ~ 0
+VCP
+Wire Wire Line
+	4450 8750 3950 8750
+Wire Wire Line
+	4450 8850 3950 8850
+Text Label 4450 8750 2    50   ~ 0
+TXD1
+Text Label 4450 8850 2    50   ~ 0
+RXD1
+Text Label 4450 9550 2    50   ~ 0
+TXD2
+Text Label 4450 9650 2    50   ~ 0
+RXD2
+Wire Wire Line
+	3950 9150 4450 9150
+Text Label 4450 9150 2    50   ~ 0
+LED1
+NoConn ~ 3950 9350
+Connection ~ 2000 9900
+Wire Wire Line
+	2000 9900 2350 9900
+$Comp
+L power:GND #PWR044
+U 1 1 5F2D3845
+P 2000 10550
+AR Path="/5F2D3845" Ref="#PWR044"  Part="1" 
+AR Path="/5EC51AA8/5F2D3845" Ref="#PWR?"  Part="1" 
+F 0 "#PWR044" H 2000 10300 50  0001 C CNN
+F 1 "GND" H 2005 10377 50  0000 C CNN
+F 2 "" H 2000 10550 50  0001 C CNN
+F 3 "" H 2000 10550 50  0001 C CNN
+	1    2000 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 10550 2000 10400
+Wire Wire Line
+	2000 10100 2000 9900
+$Comp
+L Device:R R13
+U 1 1 5F2D384D
+P 2000 10250
+AR Path="/5F2D384D" Ref="R13"  Part="1" 
+AR Path="/5EC51AA8/5F2D384D" Ref="R?"  Part="1" 
+F 0 "R13" H 2070 10296 50  0000 L CNN
+F 1 "47K" H 2070 10205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1930 10250 50  0001 C CNN
+F 3 "~" H 2000 10250 50  0001 C CNN
+	1    2000 10250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 9800 2000 9900
+Wire Wire Line
+	2000 9150 2000 9500
+$Comp
+L Device:R R12
+U 1 1 5F2D3855
+P 2000 9650
+AR Path="/5F2D3855" Ref="R12"  Part="1" 
+AR Path="/5EC51AA8/5F2D3855" Ref="R?"  Part="1" 
+F 0 "R12" H 2070 9696 50  0000 L CNN
+F 1 "22K" H 2070 9605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1930 9650 50  0001 C CNN
+F 3 "~" H 2000 9650 50  0001 C CNN
+	1    2000 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR036
+U 1 1 5F2D385B
+P 1150 11050
+AR Path="/5F2D385B" Ref="#PWR036"  Part="1" 
+AR Path="/5EC51AA8/5F2D385B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR036" H 1150 10800 50  0001 C CNN
+F 1 "GND" H 1155 10877 50  0000 C CNN
+F 2 "" H 1150 11050 50  0001 C CNN
+F 3 "" H 1150 11050 50  0001 C CNN
+	1    1150 11050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR037
+U 1 1 5F2D3861
+P 1250 9850
+AR Path="/5F2D3861" Ref="#PWR037"  Part="1" 
+AR Path="/5EC51AA8/5F2D3861" Ref="#PWR?"  Part="1" 
+F 0 "#PWR037" H 1250 9600 50  0001 C CNN
+F 1 "GND" H 1255 9677 50  0000 C CNN
+F 2 "" H 1250 9850 50  0001 C CNN
+F 3 "" H 1250 9850 50  0001 C CNN
+	1    1250 9850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 9750 1250 9850
+Text Label 2000 9150 2    50   ~ 0
+VUSB
+Wire Wire Line
+	1550 9150 1750 9150
+Text Label 4700 15150 2    50   ~ 0
+VREG
+$Comp
+L power:GND #PWR0104
+U 1 1 5F2D3872
+P 6150 15850
+AR Path="/5F2D3872" Ref="#PWR0104"  Part="1" 
+AR Path="/5EC51AA8/5F2D3872" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0104" H 6150 15600 50  0001 C CNN
+F 1 "GND" H 6155 15677 50  0000 C CNN
+F 2 "" H 6150 15850 50  0001 C CNN
+F 3 "" H 6150 15850 50  0001 C CNN
+	1    6150 15850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 15850 6150 15550
+Wire Wire Line
+	5650 15250 5850 15250
+Connection ~ 5650 15250
+$Comp
+L power:VCC #PWR092
+U 1 1 5F2D387D
+P 5650 15100
+AR Path="/5F2D387D" Ref="#PWR092"  Part="1" 
+AR Path="/5EC51AA8/5F2D387D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR092" H 5650 14950 50  0001 C CNN
+F 1 "VCC" H 5667 15273 50  0000 C CNN
+F 2 "" H 5650 15100 50  0001 C CNN
+F 3 "" H 5650 15100 50  0001 C CNN
+	1    5650 15100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 5F2D3883
+P 6700 15500
+AR Path="/5F2D3883" Ref="C7"  Part="1" 
+AR Path="/5EC51AA8/5F2D3883" Ref="C?"  Part="1" 
+F 0 "C7" H 6792 15546 50  0000 L CNN
+F 1 "1uF" H 6792 15455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6700 15500 50  0001 C CNN
+F 3 "~" H 6700 15500 50  0001 C CNN
+	1    6700 15500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5F2D3889
+P 6700 15850
+AR Path="/5F2D3889" Ref="#PWR0105"  Part="1" 
+AR Path="/5EC51AA8/5F2D3889" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0105" H 6700 15600 50  0001 C CNN
+F 1 "GND" H 6705 15677 50  0000 C CNN
+F 2 "" H 6700 15850 50  0001 C CNN
+F 3 "" H 6700 15850 50  0001 C CNN
+	1    6700 15850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 15850 6700 15600
+$Comp
+L power:+3.3V #PWR093
+U 1 1 5F2D3891
+P 6700 15000
+AR Path="/5F2D3891" Ref="#PWR093"  Part="1" 
+AR Path="/5EC51AA8/5F2D3891" Ref="#PWR?"  Part="1" 
+F 0 "#PWR093" H 6700 14850 50  0001 C CNN
+F 1 "+3.3V" H 6715 15173 50  0000 C CNN
+F 2 "" H 6700 15000 50  0001 C CNN
+F 3 "" H 6700 15000 50  0001 C CNN
+	1    6700 15000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6700 15250
+Wire Wire Line
+	6450 15250 6700 15250
+Connection ~ 4050 15150
+Wire Wire Line
+	1700 15150 2100 15150
+NoConn ~ 1700 15250
+$Comp
+L Jumper:Jumper_3_Bridged12 JP?
+U 1 1 5F2D38B2
+P 4950 15550
+AR Path="/5EC51AA8/5F2D38B2" Ref="JP?"  Part="1" 
+AR Path="/5F2D38B2" Ref="JP3"  Part="1" 
+F 0 "JP3" V 4996 15617 50  0000 L CNN
+F 1 "PWR_SEL" V 4905 15617 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4950 15550 50  0001 C CNN
+F 3 "~" H 4950 15550 50  0001 C CNN
+	1    4950 15550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 15150 4950 15300
+Wire Wire Line
+	4050 15150 4950 15150
+Wire Wire Line
+	4950 15800 4950 15950
+Wire Wire Line
+	4950 15950 4500 15950
+Text Label 4500 15950 0    50   ~ 0
+VUSB
+Wire Wire Line
+	5100 15550 5650 15550
+Wire Wire Line
+	5650 15100 5650 15250
+Text Notes 1950 14550 0    79   ~ 0
+6-16V EXTERNAL SUPPLY INPUT\n
+Text Notes 5650 14550 0    79   ~ 0
+3.3V REGULATOR
+Text Notes 2100 8050 0    79   ~ 0
+DUAL HIGH-SPEED USB TO UART BRIDGE
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F2D38E8
+P 1800 8150
+AR Path="/5EC51AA8/5F2D38E8" Ref="TP?"  Part="1" 
+AR Path="/5F2D38E8" Ref="TP3"  Part="1" 
+F 0 "TP3" H 1858 8268 50  0000 L CNN
+F 1 "VCP" H 1858 8177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2000 8150 50  0001 C CNN
+F 3 "~" H 2000 8150 50  0001 C CNN
+	1    1800 8150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2750 9950
+NoConn ~ 3950 10050
+NoConn ~ 3950 9850
+Wire Wire Line
+	3350 8250 3350 8450
+Wire Wire Line
+	1750 9550 1750 9150
+Wire Wire Line
+	1800 8150 1800 8250
+$Comp
+L Device:C_Small C10
+U 1 1 5F2D38F6
+P 5650 15700
+AR Path="/5F2D38F6" Ref="C10"  Part="1" 
+AR Path="/5EC51AA8/5F2D38F6" Ref="C?"  Part="1" 
+F 0 "C10" H 5742 15746 50  0000 L CNN
+F 1 "10uF" H 5742 15655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5650 15700 50  0001 C CNN
+F 3 "~" H 5650 15700 50  0001 C CNN
+	1    5650 15700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5F2D38FC
+P 5650 15850
+AR Path="/5F2D38FC" Ref="#PWR0103"  Part="1" 
+AR Path="/5EC51AA8/5F2D38FC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0103" H 5650 15600 50  0001 C CNN
+F 1 "GND" H 5655 15677 50  0000 C CNN
+F 2 "" H 5650 15850 50  0001 C CNN
+F 3 "" H 5650 15850 50  0001 C CNN
+	1    5650 15850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 15850 5650 15800
+Wire Wire Line
+	5650 15550 5650 15600
+Connection ~ 5650 15550
+Text Label 4450 9950 2    50   ~ 0
+LED3
+NoConn ~ 3950 9050
+Text Label 4450 9750 2    50   ~ 0
+RTS2
+$Comp
+L power:GND #PWR?
+U 1 1 5F2D3982
+P 10800 13800
+AR Path="/5EC52D50/5F2D3982" Ref="#PWR?"  Part="1" 
+AR Path="/5F2D3982" Ref="#PWR0108"  Part="1" 
+AR Path="/5EC51AA8/5F2D3982" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0108" H 10800 13550 50  0001 C CNN
+F 1 "GND" H 10805 13627 50  0000 C CNN
+F 2 "" H 10800 13800 50  0001 C CNN
+F 3 "" H 10800 13800 50  0001 C CNN
+	1    10800 13800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 13300 10800 13200
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F2D39D6
+P 1500 1800
+AR Path="/5EC51AA8/5F2D39D6" Ref="TP?"  Part="1" 
+AR Path="/5F2D39D6" Ref="TP1"  Part="1" 
+F 0 "TP1" H 1650 1950 50  0000 C TNN
+F 1 "RESET" H 1550 1850 50  0000 L TNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 1700 1800 50  0001 C CNN
+F 3 "~" H 1700 1800 50  0001 C CNN
+	1    1500 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5FF8BECA
+P 8950 13400
+AR Path="/5EC52D50/5FF8BECA" Ref="BT?"  Part="1" 
+AR Path="/5FF8BECA" Ref="BT1"  Part="1" 
+F 0 "BT1" H 9068 13496 50  0000 L CNN
+F 1 "CR2032" H 9068 13405 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 8950 13460 50  0001 C CNN
+F 3 "https://www.keyelco.com/product-pdf.cfm?p=726" V 8950 13460 50  0001 C CNN
+F 4 "Keystone 1060" H 9250 13300 50  0000 C CNN "MPN"
+	1    8950 13400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF8BED0
+P 8950 13500
+AR Path="/5EC52D50/5FF8BED0" Ref="#PWR?"  Part="1" 
+AR Path="/5FF8BED0" Ref="#PWR080"  Part="1" 
+F 0 "#PWR080" H 8950 13250 50  0001 C CNN
+F 1 "GND" H 8955 13327 50  0000 C CNN
+F 2 "" H 8950 13500 50  0001 C CNN
+F 3 "" H 8950 13500 50  0001 C CNN
+	1    8950 13500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 13400 9850 13500
+$Comp
+L power:GND #PWR?
+U 1 1 5FF8BEDB
+P 9850 13500
+AR Path="/5EC52D50/5FF8BEDB" Ref="#PWR?"  Part="1" 
+AR Path="/5FF8BEDB" Ref="#PWR081"  Part="1" 
+F 0 "#PWR081" H 9850 13250 50  0001 C CNN
+F 1 "GND" H 9855 13327 50  0000 C CNN
+F 2 "" H 9850 13500 50  0001 C CNN
+F 3 "" H 9850 13500 50  0001 C CNN
+	1    9850 13500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 12600 9850 12300
+$Comp
+L Device:C_Small C?
+U 1 1 5FF8BEE2
+P 8500 13350
+AR Path="/5EC52D50/5FF8BEE2" Ref="C?"  Part="1" 
+AR Path="/5FF8BEE2" Ref="C30"  Part="1" 
+F 0 "C30" H 8592 13396 50  0000 L CNN
+F 1 "4.7uF" H 8592 13305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8500 13350 50  0001 C CNN
+F 3 "~" H 8500 13350 50  0001 C CNN
+	1    8500 13350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 13450 8500 13500
+$Comp
+L power:GND #PWR?
+U 1 1 5FF8BEE9
+P 8500 13500
+AR Path="/5EC52D50/5FF8BEE9" Ref="#PWR?"  Part="1" 
+AR Path="/5FF8BEE9" Ref="#PWR079"  Part="1" 
+F 0 "#PWR079" H 8500 13250 50  0001 C CNN
+F 1 "GND" H 8505 13327 50  0000 C CNN
+F 2 "" H 8500 13500 50  0001 C CNN
+F 3 "" H 8500 13500 50  0001 C CNN
+	1    8500 13500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 13250 8500 13100
+Wire Wire Line
+	8500 13100 8950 13100
+Wire Wire Line
+	8950 13100 8950 13200
+$Comp
+L Device:R R?
+U 1 1 5FF8BF02
+P 5650 12550
+AR Path="/5EC52D50/5FF8BF02" Ref="R?"  Part="1" 
+AR Path="/5FF8BF02" Ref="R18"  Part="1" 
+F 0 "R18" H 5720 12596 50  0000 L CNN
+F 1 "4.7K" H 5720 12505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5580 12550 50  0001 C CNN
+F 3 "~" H 5650 12550 50  0001 C CNN
+	1    5650 12550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 12400 5650 12300
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FF8BF0A
+P 5650 12300
+AR Path="/5EC52D50/5FF8BF0A" Ref="#PWR?"  Part="1" 
+AR Path="/5FF8BF0A" Ref="#PWR055"  Part="1" 
+F 0 "#PWR055" H 5650 12150 50  0001 C CNN
+F 1 "+3.3V" H 5665 12473 50  0000 C CNN
+F 2 "" H 5650 12300 50  0001 C CNN
+F 3 "" H 5650 12300 50  0001 C CNN
+	1    5650 12300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF8BF10
+P 5350 12550
+AR Path="/5EC52D50/5FF8BF10" Ref="R?"  Part="1" 
+AR Path="/5FF8BF10" Ref="R17"  Part="1" 
+F 0 "R17" H 5420 12596 50  0000 L CNN
+F 1 "4.7K" H 5420 12505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5280 12550 50  0001 C CNN
+F 3 "~" H 5350 12550 50  0001 C CNN
+	1    5350 12550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 12400 5350 12300
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FF8BF18
+P 5350 12300
+AR Path="/5EC52D50/5FF8BF18" Ref="#PWR?"  Part="1" 
+AR Path="/5FF8BF18" Ref="#PWR054"  Part="1" 
+F 0 "#PWR054" H 5350 12150 50  0001 C CNN
+F 1 "+3.3V" H 5365 12473 50  0000 C CNN
+F 2 "" H 5350 12300 50  0001 C CNN
+F 3 "" H 5350 12300 50  0001 C CNN
+	1    5350 12300
+	1    0    0    -1  
+$EndComp
+Text Notes 8600 11700 0    79   ~ 0
+RTC ADDR: 0xD0 WRITE, 0xD1 READ
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FF8BF80
+P 9850 12300
+AR Path="/5EC52D50/5FF8BF80" Ref="#PWR?"  Part="1" 
+AR Path="/5FF8BF80" Ref="#PWR059"  Part="1" 
+F 0 "#PWR059" H 9850 12150 50  0001 C CNN
+F 1 "+3.3V" H 9865 12473 50  0000 C CNN
+F 2 "" H 9850 12300 50  0001 C CNN
+F 3 "" H 9850 12300 50  0001 C CNN
+	1    9850 12300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 12500 9750 12600
+$Comp
+L Connector_Generic:Conn_01x04 J7
+U 1 1 5FF8BFAF
+P 6000 13000
+AR Path="/5FF8BFAF" Ref="J7"  Part="1" 
+AR Path="/5EC52D50/5FF8BFAF" Ref="J?"  Part="1" 
+F 0 "J7" H 6150 13050 50  0000 C CNN
+F 1 "I2C" H 6150 12950 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6000 13000 50  0001 C CNN
+F 3 "~" H 6000 13000 50  0001 C CNN
+	1    6000 13000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 13000 5350 13000
+Wire Wire Line
+	5800 13100 5650 13100
+Wire Wire Line
+	5800 13200 5100 13200
+$Comp
+L Memory_EEPROM:24LC256 U14
+U 1 1 5FF8BEFA
+P 7000 12900
+AR Path="/5FF8BEFA" Ref="U14"  Part="1" 
+AR Path="/5EC52D50/5FF8BEFA" Ref="U?"  Part="1" 
+F 0 "U14" H 6700 13250 50  0000 C CNN
+F 1 "24LC256" H 6700 13150 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7000 12900 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21203m.pdf" H 7000 12900 50  0001 C CNN
+	1    7000 12900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 13200 7000 13300
+$Comp
+L power:GND #PWR?
+U 1 1 5FF8BF1F
+P 7000 13300
+AR Path="/5EC52D50/5FF8BF1F" Ref="#PWR?"  Part="1" 
+AR Path="/5FF8BF1F" Ref="#PWR072"  Part="1" 
+F 0 "#PWR072" H 7000 13050 50  0001 C CNN
+F 1 "GND" H 7005 13127 50  0000 C CNN
+F 2 "" H 7000 13300 50  0001 C CNN
+F 3 "" H 7000 13300 50  0001 C CNN
+	1    7000 13300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 12300 7000 12600
+$Comp
+L power:GND #PWR?
+U 1 1 5FF8BF27
+P 7500 13300
+AR Path="/5EC52D50/5FF8BF27" Ref="#PWR?"  Part="1" 
+AR Path="/5FF8BF27" Ref="#PWR073"  Part="1" 
+F 0 "#PWR073" H 7500 13050 50  0001 C CNN
+F 1 "GND" H 7505 13127 50  0000 C CNN
+F 2 "" H 7500 13300 50  0001 C CNN
+F 3 "" H 7500 13300 50  0001 C CNN
+	1    7500 13300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 12900 7500 12900
+Wire Wire Line
+	7500 12900 7500 13000
+Wire Wire Line
+	7400 13000 7500 13000
+Connection ~ 7500 13000
+Wire Wire Line
+	7500 13000 7500 13300
+$Comp
+L power:GND #PWR?
+U 1 1 5FF8BF32
+P 6500 13300
+AR Path="/5EC52D50/5FF8BF32" Ref="#PWR?"  Part="1" 
+AR Path="/5FF8BF32" Ref="#PWR071"  Part="1" 
+F 0 "#PWR071" H 6500 13050 50  0001 C CNN
+F 1 "GND" H 6505 13127 50  0000 C CNN
+F 2 "" H 6500 13300 50  0001 C CNN
+F 3 "" H 6500 13300 50  0001 C CNN
+	1    6500 13300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 13000 6500 13300
+Wire Wire Line
+	6600 13000 6500 13000
+Text Label 4600 12000 0    50   ~ 0
+SCL
+Text Label 4600 11900 0    50   ~ 0
+SDA
+Text Notes 5550 11700 0    79   ~ 0
+EEPROM ADDR: 0xA2 WRITE, 0xA3 READ
+Wire Wire Line
+	7400 12800 7500 12800
+Wire Wire Line
+	7500 12300 7500 12800
+Wire Wire Line
+	6400 12800 6600 12800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FF8BF8C
+P 7000 12300
+AR Path="/5EC52D50/5FF8BF8C" Ref="#PWR?"  Part="1" 
+AR Path="/5FF8BF8C" Ref="#PWR056"  Part="1" 
+F 0 "#PWR056" H 7000 12150 50  0001 C CNN
+F 1 "+3.3V" H 7015 12473 50  0000 C CNN
+F 2 "" H 7000 12300 50  0001 C CNN
+F 3 "" H 7000 12300 50  0001 C CNN
+	1    7000 12300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FF8BF92
+P 7500 12300
+AR Path="/5EC52D50/5FF8BF92" Ref="#PWR?"  Part="1" 
+AR Path="/5FF8BF92" Ref="#PWR057"  Part="1" 
+F 0 "#PWR057" H 7500 12150 50  0001 C CNN
+F 1 "+3.3V" H 7515 12473 50  0000 C CNN
+F 2 "" H 7500 12300 50  0001 C CNN
+F 3 "" H 7500 12300 50  0001 C CNN
+	1    7500 12300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 12800 6400 11900
+Wire Wire Line
+	6500 12900 6500 12000
+Wire Wire Line
+	6500 12900 6600 12900
+Wire Wire Line
+	5100 13200 5100 13300
+$Comp
+L power:GND #PWR?
+U 1 1 60CB8FA2
+P 5100 13300
+AR Path="/5EC52D50/60CB8FA2" Ref="#PWR?"  Part="1" 
+AR Path="/60CB8FA2" Ref="#PWR070"  Part="1" 
+F 0 "#PWR070" H 5100 13050 50  0001 C CNN
+F 1 "GND" H 5105 13127 50  0000 C CNN
+F 2 "" H 5100 13300 50  0001 C CNN
+F 3 "" H 5100 13300 50  0001 C CNN
+	1    5100 13300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 12900 5100 12800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60D90637
+P 5100 12800
+AR Path="/5EC52D50/60D90637" Ref="#PWR?"  Part="1" 
+AR Path="/60D90637" Ref="#PWR067"  Part="1" 
+F 0 "#PWR067" H 5100 12650 50  0001 C CNN
+F 1 "+3.3V" H 5115 12973 50  0000 C CNN
+F 2 "" H 5100 12800 50  0001 C CNN
+F 3 "" H 5100 12800 50  0001 C CNN
+	1    5100 12800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 12000 4850 12000
+Wire Wire Line
+	4600 11900 4950 11900
+Wire Wire Line
+	9050 11900 9050 12900
+Wire Wire Line
+	9050 12900 9350 12900
+Wire Wire Line
+	9150 12000 9150 12800
+Wire Wire Line
+	9150 12800 9350 12800
+Wire Wire Line
+	5100 12900 5800 12900
+Wire Wire Line
+	5350 12700 5350 13000
+Connection ~ 5350 13000
+Wire Wire Line
+	5350 13000 4950 13000
+Wire Wire Line
+	5650 12700 5650 13100
+Connection ~ 5650 13100
+Wire Wire Line
+	5650 13100 4850 13100
+Connection ~ 8950 13100
+Wire Wire Line
+	8950 12500 8950 13100
+Text Label 11150 13000 2    50   ~ 0
+FIRQ
+$Comp
+L Connector:Micro_SD_Card_Det J6
+U 1 1 620533AF
+P 2050 12850
+AR Path="/620533AF" Ref="J6"  Part="1" 
+AR Path="/5EC52D50/620533AF" Ref="J?"  Part="1" 
+F 0 "J6" H 2000 13667 50  0000 C CNN
+F 1 "Micro_SD_Card_Det" H 2000 13576 50  0000 C CNN
+F 2 "Connector_Card:microSD_HC_Hirose_DM3D-SF" H 4100 13550 50  0001 C CNN
+F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 2050 12950 50  0001 C CNN
+	1    2050 12850
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 2950 13150
+NoConn ~ 2950 12450
+Wire Wire Line
+	2950 12550 3150 12550
+Text Label 3350 12450 2    50   ~ 0
+SDCS
+Wire Wire Line
+	2950 12950 3050 12950
+Text Label 3350 12650 2    50   ~ 0
+MOSI
+Text Label 3350 13050 2    50   ~ 0
+MISO
+Text Label 3350 12850 2    50   ~ 0
+SCLK
+$Comp
+L power:GND #PWR077
+U 1 1 620533C3
+P 3050 13500
+AR Path="/620533C3" Ref="#PWR077"  Part="1" 
+AR Path="/5EC52D50/620533C3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR077" H 3050 13250 50  0001 C CNN
+F 1 "GND" H 3055 13327 50  0000 C CNN
+F 2 "" H 3050 13500 50  0001 C CNN
+F 3 "" H 3050 13500 50  0001 C CNN
+	1    3050 13500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 13350 1150 13500
+$Comp
+L power:GND #PWR076
+U 1 1 620533CA
+P 1150 13500
+AR Path="/620533CA" Ref="#PWR076"  Part="1" 
+AR Path="/5EC52D50/620533CA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR076" H 1150 13250 50  0001 C CNN
+F 1 "GND" H 1155 13327 50  0000 C CNN
+F 2 "" H 1150 13500 50  0001 C CNN
+F 3 "" H 1150 13500 50  0001 C CNN
+	1    1150 13500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 13350 1150 13350
+$Comp
+L power:+3.3V #PWR062
+U 1 1 620533D1
+P 3050 12350
+AR Path="/620533D1" Ref="#PWR062"  Part="1" 
+AR Path="/5EC52D50/620533D1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR062" H 3050 12200 50  0001 C CNN
+F 1 "+3.3V" H 3065 12523 50  0000 C CNN
+F 2 "" H 3050 12350 50  0001 C CNN
+F 3 "" H 3050 12350 50  0001 C CNN
+	1    3050 12350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 12350 3050 12750
+Wire Wire Line
+	3050 12750 2950 12750
+Wire Wire Line
+	3150 12450 3150 12550
+Text Notes 3700 11750 2    79   ~ 0
+SPI-MODE SD CARD INTERFACE
+$Comp
+L Device:C_Small C?
+U 1 1 620ABE73
+P 8500 12500
+AR Path="/5EC52D50/620ABE73" Ref="C?"  Part="1" 
+AR Path="/620ABE73" Ref="C35"  Part="1" 
+F 0 "C35" H 8592 12546 50  0000 L CNN
+F 1 "0.1uF" H 8592 12455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8500 12500 50  0001 C CNN
+F 3 "~" H 8500 12500 50  0001 C CNN
+	1    8500 12500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 620ABE79
+P 8500 12700
+AR Path="/5EC52D50/620ABE79" Ref="#PWR?"  Part="1" 
+AR Path="/620ABE79" Ref="#PWR065"  Part="1" 
+F 0 "#PWR065" H 8500 12450 50  0001 C CNN
+F 1 "GND" H 8505 12527 50  0000 C CNN
+F 2 "" H 8500 12700 50  0001 C CNN
+F 3 "" H 8500 12700 50  0001 C CNN
+	1    8500 12700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 620ABE93
+P 8500 12300
+AR Path="/5EC52D50/620ABE93" Ref="#PWR?"  Part="1" 
+AR Path="/620ABE93" Ref="#PWR058"  Part="1" 
+F 0 "#PWR058" H 8500 12150 50  0001 C CNN
+F 1 "+3.3V" H 8515 12473 50  0000 C CNN
+F 2 "" H 8500 12300 50  0001 C CNN
+F 3 "" H 8500 12300 50  0001 C CNN
+	1    8500 12300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 620ABE99
+P 3600 13300
+AR Path="/5EC52D50/620ABE99" Ref="C?"  Part="1" 
+AR Path="/620ABE99" Ref="C32"  Part="1" 
+F 0 "C32" H 3692 13346 50  0000 L CNN
+F 1 "10uF" H 3692 13255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3600 13300 50  0001 C CNN
+F 3 "~" H 3600 13300 50  0001 C CNN
+	1    3600 13300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 12650 2950 12650
+Wire Wire Line
+	3350 12850 2950 12850
+Wire Wire Line
+	3500 13050 2950 13050
+$Comp
+L power:GND #PWR078
+U 1 1 62254ECD
+P 3600 13500
+AR Path="/62254ECD" Ref="#PWR078"  Part="1" 
+AR Path="/5EC52D50/62254ECD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR078" H 3600 13250 50  0001 C CNN
+F 1 "GND" H 3605 13327 50  0000 C CNN
+F 2 "" H 3600 13500 50  0001 C CNN
+F 3 "" H 3600 13500 50  0001 C CNN
+	1    3600 13500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 13500 3600 13400
+Wire Wire Line
+	3600 13200 3600 12750
+Wire Wire Line
+	3600 12750 3050 12750
+Connection ~ 3050 12750
+Text Notes 5900 2600 1    79   ~ 0
+5V TTL NODES
+Wire Wire Line
+	3350 12450 3150 12450
+Wire Wire Line
+	8500 12300 8500 12400
+Wire Wire Line
+	8500 12600 8500 12700
+$Comp
+L Device:C_Small C?
+U 1 1 631D1F91
+P 7750 13100
+AR Path="/5EC52D50/631D1F91" Ref="C?"  Part="1" 
+AR Path="/631D1F91" Ref="C34"  Part="1" 
+F 0 "C34" H 7842 13146 50  0000 L CNN
+F 1 "0.1uF" H 7842 13055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7750 13100 50  0001 C CNN
+F 3 "~" H 7750 13100 50  0001 C CNN
+	1    7750 13100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 631D269A
+P 7750 13300
+AR Path="/5EC52D50/631D269A" Ref="#PWR?"  Part="1" 
+AR Path="/631D269A" Ref="#PWR074"  Part="1" 
+F 0 "#PWR074" H 7750 13050 50  0001 C CNN
+F 1 "GND" H 7755 13127 50  0000 C CNN
+F 2 "" H 7750 13300 50  0001 C CNN
+F 3 "" H 7750 13300 50  0001 C CNN
+	1    7750 13300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 13200 7750 13300
+Wire Wire Line
+	7750 12900 7750 13000
+$Comp
+L power:+3.3V #PWR?
+U 1 1 632B5391
+P 7750 12900
+AR Path="/5EC52D50/632B5391" Ref="#PWR?"  Part="1" 
+AR Path="/632B5391" Ref="#PWR068"  Part="1" 
+F 0 "#PWR068" H 7750 12750 50  0001 C CNN
+F 1 "+3.3V" H 7765 13073 50  0000 C CNN
+F 2 "" H 7750 12900 50  0001 C CNN
+F 3 "" H 7750 12900 50  0001 C CNN
+	1    7750 12900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Dual_CACA D?
+U 1 1 60710E76
+P 13000 12550
+AR Path="/5EC52D50/60710E76" Ref="D?"  Part="1" 
+AR Path="/60710E76" Ref="D1"  Part="1" 
+AR Path="/5EC51AA8/60710E76" Ref="D?"  Part="1" 
+F 0 "D1" H 13000 12975 50  0000 C CNN
+F 1 "WP934" H 13000 12884 50  0000 C CNN
+F 2 "LED_WP934MD:2GD" H 13030 12550 50  0001 C CNN
+F 3 "~" H 13030 12550 50  0001 C CNN
+	1    13000 12550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60710E68
+P 13400 12250
+AR Path="/5EC52D50/60710E68" Ref="#PWR?"  Part="1" 
+AR Path="/60710E68" Ref="#PWR052"  Part="1" 
+F 0 "#PWR052" H 13400 12100 50  0001 C CNN
+F 1 "+3.3V" H 13415 12423 50  0000 C CNN
+F 2 "" H 13400 12250 50  0001 C CNN
+F 3 "" H 13400 12250 50  0001 C CNN
+	1    13400 12250
+	-1   0    0    -1  
+$EndComp
+Text Notes 13250 11700 0    79   ~ 0
+INDICATOR LEDS
+Text Label 12000 12450 0    50   ~ 0
+LED2
+Text Label 12000 12650 0    50   ~ 0
+LED1
+Connection ~ 13400 12450
+Wire Wire Line
+	13400 12650 13300 12650
+Wire Wire Line
+	13400 12250 13400 12450
+Wire Wire Line
+	13400 12450 13300 12450
+Wire Wire Line
+	12300 12450 12000 12450
+Wire Wire Line
+	12000 12650 12300 12650
+Wire Wire Line
+	12600 12650 12700 12650
+Wire Wire Line
+	12600 12450 12700 12450
+$Comp
+L Device:R R?
+U 1 1 60710E1B
+P 12450 12650
+AR Path="/5EC52D50/60710E1B" Ref="R?"  Part="1" 
+AR Path="/60710E1B" Ref="R20"  Part="1" 
+F 0 "R20" V 12550 12600 50  0000 L CNN
+F 1 "330" V 12650 12650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 12380 12650 50  0001 C CNN
+F 3 "~" H 12450 12650 50  0001 C CNN
+	1    12450 12650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60710E15
+P 12450 12450
+AR Path="/5EC52D50/60710E15" Ref="R?"  Part="1" 
+AR Path="/60710E15" Ref="R19"  Part="1" 
+F 0 "R19" V 12250 12450 50  0000 C CNN
+F 1 "330" V 12350 12450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 12380 12450 50  0001 C CNN
+F 3 "~" H 12450 12450 50  0001 C CNN
+	1    12450 12450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 9950 4450 9950
+Wire Wire Line
+	16350 13650 17000 13650
+Text Label 16350 13650 0    50   ~ 0
+PBTN
+$Comp
+L power:GND #PWR?
+U 1 1 60710E4F
+P 17550 13800
+AR Path="/5EC52D50/60710E4F" Ref="#PWR?"  Part="1" 
+AR Path="/60710E4F" Ref="#PWR097"  Part="1" 
+F 0 "#PWR097" H 17550 13550 50  0001 C CNN
+F 1 "GND" H 17555 13627 50  0000 C CNN
+F 2 "" H 17550 13800 50  0001 C CNN
+F 3 "" H 17550 13800 50  0001 C CNN
+	1    17550 13800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 13100 4850 12000
+Connection ~ 4850 12000
+Wire Wire Line
+	4850 12000 4600 12000
+Wire Wire Line
+	4950 13000 4950 11900
+Connection ~ 4950 11900
+Wire Wire Line
+	4950 11900 6400 11900
+Wire Wire Line
+	6500 12000 9150 12000
+Connection ~ 6500 12000
+Wire Wire Line
+	9050 11900 6400 11900
+Connection ~ 6400 11900
+Wire Wire Line
+	6700 15250 6700 15400
+Text Notes 19000 11700 0    79   ~ 0
+RGB LEDS
+Text Notes 7250 16300 0    50   ~ 0
+RESRQ should be driven\nby CPLD, typically as NOT\nRESET_LV.  Pullup ensures\nthat RESET is asserted during\nCPLD configuration.
+$Comp
+L Graphic:SYM_Arrow45_Normal #SYM1
+U 1 1 660EADB9
+P 8050 15800
+F 0 "#SYM1" H 8200 15850 50  0001 C CNN
+F 1 "SYM_Arrow45_Normal" H 8050 15700 50  0001 C CNN
+F 2 "" H 8050 15800 50  0001 C CNN
+F 3 "~" H 8050 15800 50  0001 C CNN
+	1    8050 15800
+	0    -1   -1   0   
+$EndComp
+Text Notes 2300 1300 0    79   ~ 0
+HD63C09E CENTRAL PROCESSING UNIT
+Text Notes 9400 4350 0    79   ~ 0
+1024KB STATIC RAM
+Text Notes 5900 4800 1    79   ~ 0
+5V TTL NODES
+Text Notes 5900 7000 1    79   ~ 0
+5V TTL NODES
+Text Notes 6350 1150 0    79   ~ 0
+BUS LEVEL TRANSLATORS
+$Comp
+L hd6309sbc_v2c-rescue:74LVC245A-hd6309sbc_Library U?
+U 1 1 5F18E5F7
+P 6950 6750
+AR Path="/5F90CB22/5F18E5F7" Ref="U?"  Part="1" 
+AR Path="/5F18E5F7" Ref="U11"  Part="1" 
+F 0 "U11" H 7200 7500 50  0000 C CNN
+F 1 "74LVC245A" H 7250 7400 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 6950 6750 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc245a.pdf" H 6950 6750 50  0001 C CNN
+	1    6950 6750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L hd6309sbc_v2c-rescue:74LVC245A-hd6309sbc_Library U?
+U 1 1 5F009EAB
+P 6950 4550
+AR Path="/5F90CB22/5F009EAB" Ref="U?"  Part="1" 
+AR Path="/5F009EAB" Ref="U4"  Part="1" 
+F 0 "U4" H 7200 5300 50  0000 C CNN
+F 1 "74LVC245A" H 7250 5200 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 6950 4550 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc245a.pdf" H 6950 4550 50  0001 C CNN
+	1    6950 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L hd6309sbc_v2c-rescue:74LVC245A-hd6309sbc_Library U?
+U 1 1 5EFA5C06
+P 6950 2350
+AR Path="/5F90CB22/5EFA5C06" Ref="U?"  Part="1" 
+AR Path="/5EFA5C06" Ref="U10"  Part="1" 
+F 0 "U10" H 7200 3100 50  0000 C CNN
+F 1 "74LVC245A" H 7250 3000 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 6950 2350 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc245a.pdf" H 6950 2350 50  0001 C CNN
+	1    6950 2350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L hd6309sbc_v2c-rescue:CP2105-hd6309sbc_Library U8
+U 1 1 5F2D37E1
+P 3350 9350
+AR Path="/5F2D37E1" Ref="U8"  Part="1" 
+AR Path="/5EC51AA8/5F2D37E1" Ref="U?"  Part="1" 
+F 0 "U8" H 3700 10300 50  0000 C CNN
+F 1 "CP2105" H 3700 10200 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 2100 9350 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/CP2105.pdf" H 3400 8200 50  0001 C CNN
+	1    3350 9350
+	1    0    0    -1  
+$EndComp
+Text Label 4450 9250 2    50   ~ 0
+LED2
+Wire Wire Line
+	3850 2100 4350 2100
+Text Label 4350 2100 2    50   ~ 0
+BA_HV
+Text Label 2350 2000 0    50   ~ 0
+HALT
+$Comp
+L Device:C_Small C?
+U 1 1 67733DB3
+P 6250 3000
+AR Path="/5EC52D50/67733DB3" Ref="C?"  Part="1" 
+AR Path="/67733DB3" Ref="C3"  Part="1" 
+F 0 "C3" H 6342 3046 50  0000 L CNN
+F 1 "0.1uF" H 6342 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6250 3000 50  0001 C CNN
+F 3 "~" H 6250 3000 50  0001 C CNN
+	1    6250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 67733DB9
+P 6250 3150
+AR Path="/5EC52D50/67733DB9" Ref="#PWR?"  Part="1" 
+AR Path="/67733DB9" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 6250 2900 50  0001 C CNN
+F 1 "GND" H 6255 2977 50  0000 C CNN
+F 2 "" H 6250 3150 50  0001 C CNN
+F 3 "" H 6250 3150 50  0001 C CNN
+	1    6250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 67733DBF
+P 6250 2850
+AR Path="/5EC52D50/67733DBF" Ref="#PWR?"  Part="1" 
+AR Path="/67733DBF" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 6250 2700 50  0001 C CNN
+F 1 "+3.3V" H 6265 3023 50  0000 C CNN
+F 2 "" H 6250 2850 50  0001 C CNN
+F 3 "" H 6250 2850 50  0001 C CNN
+	1    6250 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2850 6250 2900
+Wire Wire Line
+	6250 3100 6250 3150
+$Comp
+L Device:C_Small C?
+U 1 1 67859AE9
+P 6250 5250
+AR Path="/5EC52D50/67859AE9" Ref="C?"  Part="1" 
+AR Path="/67859AE9" Ref="C14"  Part="1" 
+F 0 "C14" H 6342 5296 50  0000 L CNN
+F 1 "0.1uF" H 6342 5205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6250 5250 50  0001 C CNN
+F 3 "~" H 6250 5250 50  0001 C CNN
+	1    6250 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 67859AEF
+P 6250 5400
+AR Path="/5EC52D50/67859AEF" Ref="#PWR?"  Part="1" 
+AR Path="/67859AEF" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 6250 5150 50  0001 C CNN
+F 1 "GND" H 6255 5227 50  0000 C CNN
+F 2 "" H 6250 5400 50  0001 C CNN
+F 3 "" H 6250 5400 50  0001 C CNN
+	1    6250 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 67859AF5
+P 6250 5100
+AR Path="/5EC52D50/67859AF5" Ref="#PWR?"  Part="1" 
+AR Path="/67859AF5" Ref="#PWR026"  Part="1" 
+F 0 "#PWR026" H 6250 4950 50  0001 C CNN
+F 1 "+3.3V" H 6265 5273 50  0000 C CNN
+F 2 "" H 6250 5100 50  0001 C CNN
+F 3 "" H 6250 5100 50  0001 C CNN
+	1    6250 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5100 6250 5150
+Wire Wire Line
+	6250 5350 6250 5400
+$Comp
+L Device:C_Small C?
+U 1 1 678BBFC8
+P 6250 7450
+AR Path="/5EC52D50/678BBFC8" Ref="C?"  Part="1" 
+AR Path="/678BBFC8" Ref="C15"  Part="1" 
+F 0 "C15" H 6342 7496 50  0000 L CNN
+F 1 "0.1uF" H 6342 7405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6250 7450 50  0001 C CNN
+F 3 "~" H 6250 7450 50  0001 C CNN
+	1    6250 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 678BBFCE
+P 6250 7600
+AR Path="/5EC52D50/678BBFCE" Ref="#PWR?"  Part="1" 
+AR Path="/678BBFCE" Ref="#PWR042"  Part="1" 
+F 0 "#PWR042" H 6250 7350 50  0001 C CNN
+F 1 "GND" H 6255 7427 50  0000 C CNN
+F 2 "" H 6250 7600 50  0001 C CNN
+F 3 "" H 6250 7600 50  0001 C CNN
+	1    6250 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 678BBFD4
+P 6250 7300
+AR Path="/5EC52D50/678BBFD4" Ref="#PWR?"  Part="1" 
+AR Path="/678BBFD4" Ref="#PWR041"  Part="1" 
+F 0 "#PWR041" H 6250 7150 50  0001 C CNN
+F 1 "+3.3V" H 6265 7473 50  0000 C CNN
+F 2 "" H 6250 7300 50  0001 C CNN
+F 3 "" H 6250 7300 50  0001 C CNN
+	1    6250 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 7300 6250 7350
+Wire Wire Line
+	6250 7550 6250 7600
+Text Label 4350 4200 2    50   ~ 0
+A15_HV
+Text Label 4350 4100 2    50   ~ 0
+A14_HV
+Text Label 4350 4000 2    50   ~ 0
+A13_HV
+Text Label 4350 3900 2    50   ~ 0
+A12_HV
+Text Label 4350 3800 2    50   ~ 0
+A11_HV
+Text Label 4350 3700 2    50   ~ 0
+A10_HV
+Text Label 4350 3600 2    50   ~ 0
+A9_HV
+Text Label 4350 3500 2    50   ~ 0
+A8_HV
+Text Label 4350 3400 2    50   ~ 0
+A7_HV
+Text Label 4350 3300 2    50   ~ 0
+A6_HV
+Text Label 4350 3200 2    50   ~ 0
+A5_HV
+Text Label 4350 3100 2    50   ~ 0
+A4_HV
+Text Label 4350 3000 2    50   ~ 0
+A3_HV
+Text Label 4350 2900 2    50   ~ 0
+A2_HV
+Text Label 4350 2800 2    50   ~ 0
+A1_HV
+Text Label 4350 2700 2    50   ~ 0
+A0_HV
+Wire Wire Line
+	1800 15350 1800 15600
+Wire Wire Line
+	11000 5600 10500 5600
+Wire Wire Line
+	11000 5700 10500 5700
+Wire Wire Line
+	11000 5800 10500 5800
+Wire Wire Line
+	11000 5900 10500 5900
+Wire Wire Line
+	11000 6000 10500 6000
+Wire Wire Line
+	11000 6100 10500 6100
+Wire Wire Line
+	11000 6200 10500 6200
+Wire Wire Line
+	11000 6300 10500 6300
+Wire Wire Line
+	11000 6400 10500 6400
+Wire Wire Line
+	11000 6500 10500 6500
+Wire Wire Line
+	11000 6600 10500 6600
+Wire Wire Line
+	11000 6700 10500 6700
+Wire Wire Line
+	11000 6800 10500 6800
+Text Label 11000 6800 2    50   ~ 0
+MA12
+Text Label 11000 6700 2    50   ~ 0
+MA11
+Text Label 11000 6600 2    50   ~ 0
+A10
+Text Label 11000 6500 2    50   ~ 0
+A9
+Text Label 11000 6400 2    50   ~ 0
+A8
+Text Label 11000 6300 2    50   ~ 0
+A7
+Text Label 11000 6200 2    50   ~ 0
+A6
+Text Label 11000 6100 2    50   ~ 0
+A5
+Text Label 11000 6000 2    50   ~ 0
+A4
+Text Label 11000 5900 2    50   ~ 0
+A3
+Text Label 11000 5800 2    50   ~ 0
+A2
+Text Label 11000 5700 2    50   ~ 0
+A1
+Text Label 11000 5600 2    50   ~ 0
+A0
+Wire Wire Line
+	10350 13000 10800 13000
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FD3D916
+P 6950 8100
+AR Path="/5F90CB22/5FD3D916" Ref="#PWR?"  Part="1" 
+AR Path="/5FD3D916" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 6950 7950 50  0001 C CNN
+F 1 "+3.3V" H 6965 8273 50  0000 C CNN
+F 2 "" H 6950 8100 50  0001 C CNN
+F 3 "" H 6950 8100 50  0001 C CNN
+	1    6950 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 8100 6950 8150
+$Comp
+L power:GND #PWR?
+U 1 1 5FD3D927
+P 6950 9800
+AR Path="/5F90CB22/5FD3D927" Ref="#PWR?"  Part="1" 
+AR Path="/5FD3D927" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 6950 9550 50  0001 C CNN
+F 1 "GND" H 6955 9627 50  0000 C CNN
+F 2 "" H 6950 9800 50  0001 C CNN
+F 3 "" H 6950 9800 50  0001 C CNN
+	1    6950 9800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 9800 6950 9750
+Text Label 7950 4150 2    50   ~ 0
+BA
+Text Notes 5900 9200 1    79   ~ 0
+5V TTL NODES
+$Comp
+L hd6309sbc_v2c-rescue:74LVC245A-hd6309sbc_Library U?
+U 1 1 5FD3D949
+P 6950 8950
+AR Path="/5F90CB22/5FD3D949" Ref="U?"  Part="1" 
+AR Path="/5FD3D949" Ref="U9"  Part="1" 
+F 0 "U9" H 7200 9700 50  0000 C CNN
+F 1 "74LVC245A" H 7250 9600 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 6950 8950 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc245a.pdf" H 6950 8950 50  0001 C CNN
+	1    6950 8950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FD3D94F
+P 5950 9650
+AR Path="/5EC52D50/5FD3D94F" Ref="C?"  Part="1" 
+AR Path="/5FD3D94F" Ref="C5"  Part="1" 
+F 0 "C5" H 6042 9696 50  0000 L CNN
+F 1 "0.1uF" H 6042 9605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5950 9650 50  0001 C CNN
+F 3 "~" H 5950 9650 50  0001 C CNN
+	1    5950 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FD3D955
+P 5950 9800
+AR Path="/5EC52D50/5FD3D955" Ref="#PWR?"  Part="1" 
+AR Path="/5FD3D955" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 5950 9550 50  0001 C CNN
+F 1 "GND" H 5955 9627 50  0000 C CNN
+F 2 "" H 5950 9800 50  0001 C CNN
+F 3 "" H 5950 9800 50  0001 C CNN
+	1    5950 9800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FD3D95B
+P 5950 9500
+AR Path="/5EC52D50/5FD3D95B" Ref="#PWR?"  Part="1" 
+AR Path="/5FD3D95B" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 5950 9350 50  0001 C CNN
+F 1 "+3.3V" H 5965 9673 50  0000 C CNN
+F 2 "" H 5950 9500 50  0001 C CNN
+F 3 "" H 5950 9500 50  0001 C CNN
+	1    5950 9500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 9500 5950 9550
+Wire Wire Line
+	5950 9750 5950 9800
+$Comp
+L Device:R R?
+U 1 1 6013003B
+P 10500 12400
+AR Path="/5EC52D50/6013003B" Ref="R?"  Part="1" 
+AR Path="/6013003B" Ref="R1"  Part="1" 
+AR Path="/5EC51AA8/6013003B" Ref="R?"  Part="1" 
+F 0 "R1" H 10570 12446 50  0000 L CNN
+F 1 "4.7K" H 10570 12355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10430 12400 50  0001 C CNN
+F 3 "~" H 10500 12400 50  0001 C CNN
+	1    10500 12400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 12550 10500 12800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60130042
+P 10500 12100
+AR Path="/5EC52D50/60130042" Ref="#PWR?"  Part="1" 
+AR Path="/60130042" Ref="#PWR029"  Part="1" 
+AR Path="/5EC51AA8/60130042" Ref="#PWR?"  Part="1" 
+F 0 "#PWR029" H 10500 11950 50  0001 C CNN
+F 1 "+3.3V" H 10515 12273 50  0000 C CNN
+F 2 "" H 10500 12100 50  0001 C CNN
+F 3 "" H 10500 12100 50  0001 C CNN
+	1    10500 12100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 12100 10500 12250
+Wire Wire Line
+	10350 12800 10500 12800
+Connection ~ 10500 12800
+Wire Wire Line
+	10350 13200 10800 13200
+Text Label 11200 13200 2    50   ~ 0
+RESET_LV
+Text Label 11150 12800 2    50   ~ 0
+CLK32
+$Comp
+L power:VCC #PWR039
+U 1 1 60AB5579
+P 8650 14900
+AR Path="/60AB5579" Ref="#PWR039"  Part="1" 
+AR Path="/5EC51AA8/60AB5579" Ref="#PWR?"  Part="1" 
+F 0 "#PWR039" H 8650 14750 50  0001 C CNN
+F 1 "VCC" H 8667 15073 50  0000 C CNN
+F 2 "" H 8650 14900 50  0001 C CNN
+F 3 "" H 8650 14900 50  0001 C CNN
+	1    8650 14900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 14900 8650 14950
+$Comp
+L Device:R R?
+U 1 1 60A50CFB
+P 8650 15100
+AR Path="/5EC52D50/60A50CFB" Ref="R?"  Part="1" 
+AR Path="/60A50CFB" Ref="R3"  Part="1" 
+AR Path="/5EC51AA8/60A50CFB" Ref="R?"  Part="1" 
+F 0 "R3" H 8720 15146 50  0000 L CNN
+F 1 "4.7K" H 8720 15055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8580 15100 50  0001 C CNN
+F 3 "~" H 8650 15100 50  0001 C CNN
+	1    8650 15100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 15800 8650 15850
+$Comp
+L power:GND #PWR?
+U 1 1 60A50CF4
+P 8650 15850
+AR Path="/5EC52D50/60A50CF4" Ref="#PWR?"  Part="1" 
+AR Path="/60A50CF4" Ref="#PWR040"  Part="1" 
+AR Path="/5EC51AA8/60A50CF4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR040" H 8650 15600 50  0001 C CNN
+F 1 "GND" H 8655 15677 50  0000 C CNN
+F 2 "" H 8650 15850 50  0001 C CNN
+F 3 "" H 8650 15850 50  0001 C CNN
+	1    8650 15850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q?
+U 1 1 60A50CEE
+P 8550 15600
+AR Path="/5EC52D50/60A50CEE" Ref="Q?"  Part="1" 
+AR Path="/60A50CEE" Ref="Q1"  Part="1" 
+AR Path="/5EC51AA8/60A50CEE" Ref="Q?"  Part="1" 
+F 0 "Q1" H 8450 15800 50  0000 L CNN
+F 1 "BSS138" H 8250 15700 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8750 15525 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 8550 15600 50  0001 L CNN
+	1    8550 15600
+	1    0    0    -1  
+$EndComp
+Text Notes 8850 15500 0    50   ~ 0
+CPU RESET VIH is 4VDC\n
+Wire Wire Line
+	8650 15350 9150 15350
+Text Label 9150 15350 2    50   ~ 0
+RESET_HV
+Wire Wire Line
+	8650 15250 8650 15350
+Wire Wire Line
+	8650 15350 8650 15400
+Connection ~ 8650 15350
+Wire Wire Line
+	8150 15600 8350 15600
+$Comp
+L hd6309sbc_v2c-rescue:DS3231MZ-hd6309sbc_Library U?
+U 1 1 5FF8BEC3
+P 9850 13000
+AR Path="/5EC52D50/5FF8BEC3" Ref="U?"  Part="1" 
+AR Path="/5FF8BEC3" Ref="U12"  Part="1" 
+F 0 "U12" H 10200 13450 50  0000 C CNN
+F 1 "DS3231MZ" H 10200 13350 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 9850 12500 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS3231M.pdf" H 9850 12400 50  0001 C CNN
+	1    9850 13000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60FFF44E
+P 8150 15200
+AR Path="/5EC52D50/60FFF44E" Ref="R?"  Part="1" 
+AR Path="/60FFF44E" Ref="R4"  Part="1" 
+AR Path="/5EC51AA8/60FFF44E" Ref="R?"  Part="1" 
+F 0 "R4" H 8220 15246 50  0000 L CNN
+F 1 "10K" H 8220 15155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8080 15200 50  0001 C CNN
+F 3 "~" H 8150 15200 50  0001 C CNN
+	1    8150 15200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 15350 8150 15600
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60FFF455
+P 8150 14900
+AR Path="/5EC52D50/60FFF455" Ref="#PWR?"  Part="1" 
+AR Path="/60FFF455" Ref="#PWR038"  Part="1" 
+AR Path="/5EC51AA8/60FFF455" Ref="#PWR?"  Part="1" 
+F 0 "#PWR038" H 8150 14750 50  0001 C CNN
+F 1 "+3.3V" H 8165 15073 50  0000 C CNN
+F 2 "" H 8150 14900 50  0001 C CNN
+F 3 "" H 8150 14900 50  0001 C CNN
+	1    8150 14900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 14900 8150 15050
+Connection ~ 8150 15600
+Text Label 7750 15600 0    50   ~ 0
+RESRQ
+Connection ~ 10800 13200
+Wire Wire Line
+	10800 13200 11250 13200
+Text Notes 7850 14550 0    79   ~ 0
+RESET GENERATION
+Wire Wire Line
+	2100 2700 2850 2700
+Wire Wire Line
+	2100 2700 2100 2800
+$Comp
+L Device:R R?
+U 1 1 616A4902
+P 10800 12400
+AR Path="/5EC52D50/616A4902" Ref="R?"  Part="1" 
+AR Path="/616A4902" Ref="R2"  Part="1" 
+AR Path="/5EC51AA8/616A4902" Ref="R?"  Part="1" 
+F 0 "R2" H 10870 12446 50  0000 L CNN
+F 1 "4.7K" H 10870 12355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10730 12400 50  0001 C CNN
+F 3 "~" H 10800 12400 50  0001 C CNN
+	1    10800 12400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 12550 10800 13000
+$Comp
+L power:+3.3V #PWR?
+U 1 1 616A4909
+P 10800 12100
+AR Path="/5EC52D50/616A4909" Ref="#PWR?"  Part="1" 
+AR Path="/616A4909" Ref="#PWR030"  Part="1" 
+AR Path="/5EC51AA8/616A4909" Ref="#PWR?"  Part="1" 
+F 0 "#PWR030" H 10800 11950 50  0001 C CNN
+F 1 "+3.3V" H 10815 12273 50  0000 C CNN
+F 2 "" H 10800 12100 50  0001 C CNN
+F 3 "" H 10800 12100 50  0001 C CNN
+	1    10800 12100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 12100 10800 12250
+Connection ~ 10800 13000
+Wire Wire Line
+	10800 13000 11150 13000
+$Comp
+L Regulator_Linear:AMS1117-3.3 U7
+U 1 1 5EE393CA
+P 6150 15250
+F 0 "U7" H 6150 15492 50  0000 C CNN
+F 1 "AMS1117-3.3" H 6150 15401 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 6150 15450 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 6250 15000 50  0001 C CNN
+	1    6150 15250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 15250 5650 15400
+Wire Wire Line
+	10500 12800 11250 12800
+Connection ~ 1750 9150
+Wire Wire Line
+	1750 9150 2000 9150
+Wire Wire Line
+	19450 6150 19950 6150
+Wire Wire Line
+	19950 5950 19450 5950
+Text Label 19950 5950 2    50   ~ 0
+DBDIR
+Text Label 19950 6150 2    50   ~ 0
+DBEN
+Wire Wire Line
+	19450 5250 19950 5250
+Text Label 19950 5250 2    50   ~ 0
+RW
+Wire Wire Line
+	14500 4350 15000 4350
+Wire Wire Line
+	15000 4250 14500 4250
+Text Label 15000 4350 2    50   ~ 0
+SCL
+Text Label 15000 4250 2    50   ~ 0
+SDA
+Wire Wire Line
+	14000 5950 13500 5950
+Wire Wire Line
+	13500 6050 14000 6050
+Wire Wire Line
+	14500 5750 15000 5750
+Text Label 13500 5950 0    50   ~ 0
+IRQ
+Text Label 13500 6050 0    50   ~ 0
+NMI
+Text Label 15000 5750 2    50   ~ 0
+RESET_LV
+Text Label 18450 4350 0    50   ~ 0
+SDCS
+Text Label 18450 4250 0    50   ~ 0
+MOSI
+Text Label 18450 4050 0    50   ~ 0
+MISO
+Text Label 18450 4150 0    50   ~ 0
+SCLK
+Wire Wire Line
+	18950 4150 18450 4150
+Wire Wire Line
+	18450 4250 18950 4250
+Wire Wire Line
+	18950 4050 18450 4050
+Wire Wire Line
+	18450 4350 18950 4350
+Wire Wire Line
+	19950 4150 19450 4150
+Wire Wire Line
+	19450 4650 19950 4650
+Wire Wire Line
+	19950 4850 19450 4850
+Text Label 19950 4650 2    50   ~ 0
+RAM_CS
+Text Label 19950 4850 2    50   ~ 0
+RAM_WE
+Wire Wire Line
+	18950 6150 18450 6150
+Text Label 18450 6150 0    50   ~ 0
+ECLK
+Wire Wire Line
+	18950 6050 18450 6050
+Text Label 18450 6050 0    50   ~ 0
+QCLK
+Text Label 19950 4150 2    50   ~ 0
+RAM_OE
+Wire Wire Line
+	18450 4450 18950 4450
+Wire Wire Line
+	19950 4350 19450 4350
+Text Label 18450 4450 0    50   ~ 0
+MA17
+Text Label 19950 4350 2    50   ~ 0
+MA18
+NoConn ~ 7450 8550
+NoConn ~ 7450 8450
+$Comp
+L power:GND #PWR?
+U 1 1 5FFA1733
+P 7550 9800
+AR Path="/5F90CB22/5FFA1733" Ref="#PWR?"  Part="1" 
+AR Path="/5FFA1733" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 7550 9550 50  0001 C CNN
+F 1 "GND" H 7555 9627 50  0000 C CNN
+F 2 "" H 7550 9800 50  0001 C CNN
+F 3 "" H 7550 9800 50  0001 C CNN
+	1    7550 9800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 9450 7550 9800
+Connection ~ 7550 9450
+Wire Wire Line
+	7550 9450 7450 9450
+Wire Wire Line
+	7550 9350 7550 9450
+Wire Wire Line
+	7450 9350 7550 9350
+Text Label 18450 4550 0    50   ~ 0
+T1
+Text Label 18450 4650 0    50   ~ 0
+T2
+Text Label 18450 4750 0    50   ~ 0
+T3
+Text Label 18450 4850 0    50   ~ 0
+T4
+Wire Wire Line
+	18450 4750 18950 4750
+Wire Wire Line
+	18950 4850 18450 4850
+Wire Wire Line
+	18450 4550 18950 4550
+Wire Wire Line
+	18950 4650 18450 4650
+Text Label 13500 6150 0    50   ~ 0
+HALT
+Wire Wire Line
+	13500 6150 14000 6150
+Wire Wire Line
+	14000 4050 13500 4050
+Text Label 15000 4050 2    50   ~ 0
+PBTN
+Wire Wire Line
+	2850 4200 2700 4200
+Wire Wire Line
+	2700 4200 2700 4500
+$Comp
+L power:GND #PWR0115
+U 1 1 693294D7
+P 2700 4500
+F 0 "#PWR0115" H 2700 4250 50  0001 C CNN
+F 1 "GND" H 2705 4327 50  0000 C CNN
+F 2 "" H 2700 4500 50  0001 C CNN
+F 3 "" H 2700 4500 50  0001 C CNN
+	1    2700 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 7500 9100 7400
+Text Label 19950 6050 2    50   ~ 0
+RESRQ
+Wire Wire Line
+	19450 6050 19950 6050
+$Comp
+L Connector:TestPoint TP?
+U 1 1 69EE94CF
+P 1800 2800
+AR Path="/5EC51AA8/69EE94CF" Ref="TP?"  Part="1" 
+AR Path="/69EE94CF" Ref="TP14"  Part="1" 
+F 0 "TP14" H 1858 2918 50  0000 L CNN
+F 1 "IRQ" H 1858 2827 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 2000 2800 50  0001 C CNN
+F 3 "~" H 2000 2800 50  0001 C CNN
+	1    1800 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 69EE9ABC
+P 1500 2800
+AR Path="/5EC51AA8/69EE9ABC" Ref="TP?"  Part="1" 
+AR Path="/69EE9ABC" Ref="TP11"  Part="1" 
+F 0 "TP11" H 1650 2950 50  0000 C TNN
+F 1 "NMI" H 1600 2850 50  0000 L TNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 1700 2800 50  0001 C CNN
+F 3 "~" H 1700 2800 50  0001 C CNN
+	1    1500 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1800 2600 1800 2800
+Wire Wire Line
+	1800 2600 2850 2600
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6A03F38A
+P 2100 1800
+AR Path="/5EC51AA8/6A03F38A" Ref="TP?"  Part="1" 
+AR Path="/6A03F38A" Ref="TP12"  Part="1" 
+F 0 "TP12" H 2250 1950 50  0000 C TNN
+F 1 "E" H 2200 1850 50  0000 L TNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 2300 1800 50  0001 C CNN
+F 3 "~" H 2300 1800 50  0001 C CNN
+	1    2100 1800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1800 2100 2100
+Wire Wire Line
+	2100 2100 2850 2100
+Wire Wire Line
+	1500 1800 1500 2400
+Wire Wire Line
+	1500 2400 2850 2400
+Wire Wire Line
+	1500 2800 1500 2500
+Wire Wire Line
+	1500 2500 2850 2500
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 6AA25453
+P 14100 14650
+F 0 "J9" H 14180 14642 50  0000 L CNN
+F 1 "GND" H 14180 14551 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 14100 14650 50  0001 C CNN
+F 3 "~" H 14100 14650 50  0001 C CNN
+	1    14100 14650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6AA25459
+P 13800 14900
+AR Path="/5EC52D50/6AA25459" Ref="#PWR?"  Part="1" 
+AR Path="/5F90CB22/6AA25459" Ref="#PWR?"  Part="1" 
+AR Path="/6AA25459" Ref="#PWR082"  Part="1" 
+F 0 "#PWR082" H 13800 14650 50  0001 C CNN
+F 1 "GND" H 13805 14727 50  0000 C CNN
+F 2 "" H 13800 14900 50  0001 C CNN
+F 3 "" H 13800 14900 50  0001 C CNN
+	1    13800 14900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 14650 13800 14650
+Wire Wire Line
+	13800 14650 13800 14750
+Wire Wire Line
+	13900 14750 13800 14750
+Connection ~ 13800 14750
+Wire Wire Line
+	13800 14750 13800 14900
+$Comp
+L Device:R R?
+U 1 1 5FCEEF3A
+P 3500 12550
+AR Path="/5EC52D50/5FCEEF3A" Ref="R?"  Part="1" 
+AR Path="/5FCEEF3A" Ref="R26"  Part="1" 
+F 0 "R26" H 3570 12596 50  0000 L CNN
+F 1 "4.7K" H 3570 12505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3430 12550 50  0001 C CNN
+F 3 "~" H 3500 12550 50  0001 C CNN
+	1    3500 12550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 12400 3500 12350
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FCEEF41
+P 3500 12350
+AR Path="/5EC52D50/5FCEEF41" Ref="#PWR?"  Part="1" 
+AR Path="/5FCEEF41" Ref="#PWR083"  Part="1" 
+F 0 "#PWR083" H 3500 12200 50  0001 C CNN
+F 1 "+3.3V" H 3515 12523 50  0000 C CNN
+F 2 "" H 3500 12350 50  0001 C CNN
+F 3 "" H 3500 12350 50  0001 C CNN
+	1    3500 12350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 12700 3500 13050
+Text Label 18450 5250 0    50   ~ 0
+AVMA
+Wire Wire Line
+	18950 5250 18450 5250
+Text Notes 7650 9400 0    50   ~ 0
+B to A
+Text Notes 8000 2800 0    50   ~ 0
+L : B to A\nH : A to B
+$Comp
+L power:GND #PWR?
+U 1 1 5F8CFEA8
+P 7550 7600
+AR Path="/5F90CB22/5F8CFEA8" Ref="#PWR?"  Part="1" 
+AR Path="/5F8CFEA8" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 7550 7350 50  0001 C CNN
+F 1 "GND" H 7555 7427 50  0000 C CNN
+F 2 "" H 7550 7600 50  0001 C CNN
+F 3 "" H 7550 7600 50  0001 C CNN
+	1    7550 7600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F976E7B
+P 7550 5400
+AR Path="/5F90CB22/5F976E7B" Ref="#PWR?"  Part="1" 
+AR Path="/5F976E7B" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H 7550 5150 50  0001 C CNN
+F 1 "GND" H 7555 5227 50  0000 C CNN
+F 2 "" H 7550 5400 50  0001 C CNN
+F 3 "" H 7550 5400 50  0001 C CNN
+	1    7550 5400
+	-1   0    0    -1  
+$EndComp
+Text Label 7950 9150 2    50   ~ 0
+RW
+Text Label 7950 9050 2    50   ~ 0
+AVMA
+Text Label 7950 4050 2    50   ~ 0
+BS
+Wire Wire Line
+	7450 9150 7950 9150
+Wire Wire Line
+	7450 4150 7950 4150
+Wire Wire Line
+	7450 4050 7950 4050
+Wire Wire Line
+	7950 9050 7450 9050
+Wire Wire Line
+	6350 8450 6450 8450
+Wire Wire Line
+	6450 8550 6350 8550
+Connection ~ 6350 8550
+Wire Wire Line
+	6350 8550 6350 8450
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EF52757
+P 5450 15050
+AR Path="/5EC51AA8/5EF52757" Ref="TP?"  Part="1" 
+AR Path="/5EF52757" Ref="TP15"  Part="1" 
+F 0 "TP15" H 5508 15168 50  0000 L CNN
+F 1 "5V" H 5508 15077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5650 15050 50  0001 C CNN
+F 3 "~" H 5650 15050 50  0001 C CNN
+	1    5450 15050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 15050 5450 15400
+Wire Wire Line
+	5450 15400 5650 15400
+Connection ~ 5650 15400
+Wire Wire Line
+	5650 15400 5650 15550
+$Comp
+L Device:C_Small C28
+U 1 1 5F1B1B03
+P 1150 10250
+AR Path="/5F1B1B03" Ref="C28"  Part="1" 
+AR Path="/5EC51AA8/5F1B1B03" Ref="C?"  Part="1" 
+F 0 "C28" H 1242 10296 50  0000 L CNN
+F 1 "0.1uF" H 1242 10205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1150 10250 50  0001 C CNN
+F 3 "~" H 1150 10250 50  0001 C CNN
+	1    1150 10250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R28
+U 1 1 5F1B1F2C
+P 1150 10700
+AR Path="/5F1B1F2C" Ref="R28"  Part="1" 
+AR Path="/5EC51AA8/5F1B1F2C" Ref="R?"  Part="1" 
+F 0 "R28" H 1220 10746 50  0000 L CNN
+F 1 "47" H 1220 10655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1080 10700 50  0001 C CNN
+F 3 "~" H 1150 10700 50  0001 C CNN
+	1    1150 10700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 9750 1150 10150
+Wire Wire Line
+	1150 10350 1150 10550
+Wire Wire Line
+	1150 10850 1150 11050
+$Comp
+L Connector:USB_B_Micro J4
+U 1 1 5F464875
+P 1250 9350
+F 0 "J4" H 1307 9817 50  0000 C CNN
+F 1 "USB_B_Micro" H 1307 9726 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521" H 1400 9300 50  0001 C CNN
+F 3 "~" H 1400 9300 50  0001 C CNN
+	1    1250 9350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1550 9550
+Wire Wire Line
+	6700 15000 6700 15250
+$Comp
+L Diode:BAV99 D3
+U 1 1 5F0C389C
+P 19050 12650
+F 0 "D3" H 19050 12866 50  0000 C CNN
+F 1 "BAV99" H 19050 12775 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 19050 12150 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 19050 12650 50  0001 C CNN
+	1    19050 12650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D4
+U 1 1 5F0CC214
+P 19050 13300
+F 0 "D4" H 19150 13650 50  0000 L CNN
+F 1 "WS2812B" H 19150 13550 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 19100 13000 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 19150 12925 50  0001 L TNN
+	1    19050 13300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0122
+U 1 1 5F0CEFE0
+P 18600 12500
+AR Path="/5F0CEFE0" Ref="#PWR0122"  Part="1" 
+AR Path="/5EC51AA8/5F0CEFE0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0122" H 18600 12350 50  0001 C CNN
+F 1 "VCC" H 18617 12673 50  0000 C CNN
+F 2 "" H 18600 12500 50  0001 C CNN
+F 3 "" H 18600 12500 50  0001 C CNN
+	1    18600 12500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	18600 12500 18600 12650
+Wire Wire Line
+	18600 12650 18750 12650
+Wire Wire Line
+	19050 12850 19050 12900
+$Comp
+L power:GND #PWR?
+U 1 1 5F2D465A
+P 19050 13750
+AR Path="/5EC52D50/5F2D465A" Ref="#PWR?"  Part="1" 
+AR Path="/5F90CB22/5F2D465A" Ref="#PWR?"  Part="1" 
+AR Path="/5F2D465A" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 19050 13500 50  0001 C CNN
+F 1 "GND" H 19055 13577 50  0000 C CNN
+F 2 "" H 19050 13750 50  0001 C CNN
+F 3 "" H 19050 13750 50  0001 C CNN
+	1    19050 13750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19050 13600 19050 13750
+Wire Wire Line
+	17900 13300 18200 13300
+Text Label 17900 13300 0    50   ~ 0
+WSD
+Wire Wire Line
+	14500 4750 15000 4750
+Text Label 15000 4750 2    50   ~ 0
+WSD
+Wire Wire Line
+	8950 12500 9400 12500
+$Comp
+L Switch:SW_Push SW2
+U 1 1 600AAD4C
+P 17200 13650
+F 0 "SW2" H 17200 13935 50  0000 C CNN
+F 1 "USER" H 17200 13844 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx58-2LFS" H 17200 13850 50  0001 C CNN
+F 3 "~" H 17200 13850 50  0001 C CNN
+	1    17200 13650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17400 13650 17550 13650
+$Comp
+L Switch:SW_Push SW1
+U 1 1 600AB7EB
+P 10800 13500
+F 0 "SW1" V 10846 13452 50  0000 R CNN
+F 1 "RESET" V 10755 13452 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx58-2LFS" H 10800 13700 50  0001 C CNN
+F 3 "~" H 10800 13700 50  0001 C CNN
+	1    10800 13500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10800 13700 10800 13800
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F0E3F37
+P 9400 12350
+AR Path="/5EC51AA8/5F0E3F37" Ref="TP?"  Part="1" 
+AR Path="/5F0E3F37" Ref="TP4"  Part="1" 
+F 0 "TP4" H 9458 12468 50  0000 L CNN
+F 1 "VBAT" H 9458 12377 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9600 12350 50  0001 C CNN
+F 3 "~" H 9600 12350 50  0001 C CNN
+	1    9400 12350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 12350 9400 12500
+Connection ~ 9400 12500
+Wire Wire Line
+	9400 12500 9750 12500
+$Bitmap
+Pos 17750 15500
+Scale 1.000000
+Data
+89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 01 11 00 00 00 73 08 02 00 00 00 30 BD A1 
+3C 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 00 09 70 48 59 73 00 00 0E 74 00 00 0E 74 
+01 6B 24 B3 D6 00 00 20 00 49 44 41 54 78 9C EC BD 57 8C 64 59 7A 26 76 8F B9 FE DE F0 26 4D A4 
+B7 95 E5 7D 55 57 FB EE E9 F1 1C 72 87 1A 82 A4 48 49 2B 50 80 04 F0 41 02 F8 20 E9 45 6F 02 04 
+01 FB B0 80 16 5A E8 61 01 AE D6 88 04 89 11 C7 70 4C CF 4C 4F FB EE EA AE 2E 6F D3 FB F0 E6 7A 
+73 8E 1E 6E 56 56 56 44 66 C6 8D C8 AC 21 16 CA 0F 8D 46 77 E4 B5 11 E7 3F FF 7F FE F3 FD DF 0F 
+28 A5 CC 11 8E 70 84 D0 80 FF D4 0F 70 84 23 FC 27 86 23 9B 39 C2 11 3A C3 91 CD 1C E1 08 9D E1 
+C8 66 8E 70 84 CE 70 64 33 47 38 42 67 38 B2 99 23 1C A1 33 1C D9 CC 11 8E D0 19 8E 6C E6 08 47 
+E8 0C 47 36 73 84 23 74 86 23 9B 39 C2 11 3A C3 91 CD 1C E1 08 9D E1 C8 66 8E 70 84 CE 70 64 33 
+47 38 42 67 38 B2 99 23 1C A1 33 1C D9 CC 11 8E D0 19 F0 3F F5 03 FC 4E 41 09 A1 94 32 94 02 08 
+01 3C 9A 2F 8E D0 0D 5E BC CD 3C AD 69 7B 5A DA 46 19 06 6C 7F C8 00 00 18 86 01 E0 45 3F 43 60 
+2A AE 65 F9 B6 4D 29 65 79 1E 09 02 40 08 BC E8 5B 1F E1 9F 10 94 BE 88 A1 F5 02 6D 86 12 E2 59 
+96 59 29 1B A5 22 A5 8C E7 D8 4E A3 E1 18 3A C4 D8 D1 34 CF B2 20 C6 52 32 99 1C 1B 57 7B FA 58 
+49 3A 94 3B 32 3B EA 4E 21 84 C4 F7 AD 5A B5 B6 B2 52 59 98 AB 2C CC 57 96 17 8D 62 91 F8 BE 94 
+48 66 A6 67 FA CE 9D 4F 4D 4C 49 89 44 98 8B FB AE 43 7D 02 10 42 2C 7B F0 47 7D 41 A0 84 F8 9E 
+4B 5C 8F 15 C5 FF 3F 3B 52 CF B6 ED 46 DD B3 2C 56 10 C5 78 1C 20 74 88 17 07 87 58 DB 4C 09 31 
+4A C5 8D BB B7 1B EB EB B6 D6 70 34 CD D1 34 5B 6B D8 5A 83 A1 94 78 9E 67 DB C4 75 01 82 BE E3 
+10 CF 07 10 B2 A2 28 A7 D3 99 E9 99 FE 73 17 32 C7 66 58 49 DE FF 16 9E 65 2E 7E F4 41 69 6E 16 
+62 C4 2B 11 3E 12 61 45 C9 33 CD 46 7E D3 28 16 3C CB A2 84 D0 A7 2E 8D 15 24 42 3C BB DE 30 4A 
+05 A3 5C B6 6A 55 BB 51 77 4D 93 52 CA 0A 82 94 48 45 FA FB 13 23 63 A9 89 A9 D4 E4 64 6C 60 90 
+53 54 B8 C7 97 EB E8 DA C2 87 EF 6F DC BE 49 29 15 63 89 E4 D8 98 94 48 42 CC 12 CF F3 5D DB B7 
+1D D7 B6 3C DB F6 6D DB 77 1C 4A A9 9A ED 49 8E 8D 47 07 06 9B BE 1F C7 D0 19 4A 01 00 84 10 CF 
+B2 8C 72 89 93 15 86 52 CF B6 29 21 98 E7 85 68 8C 93 65 C4 71 FB 7F 09 5A 3E EF 3B 8E 5E 2C B8 
+A6 E9 3B B6 59 A9 58 B5 AA EF 7A 9E 6D B9 A6 41 7D C2 CA 92 A0 46 78 35 C2 C9 32 16 25 5E 51 EC 
+46 C3 AA 56 1C D3 00 00 8A B1 38 A7 C8 52 22 29 25 53 10 63 CF B6 30 2F 60 41 00 10 32 0C 80 08 
+02 08 01 80 0C 43 29 65 7C DB D6 F2 9B B5 B5 15 B3 5C 46 1C 97 3D 7E 32 D2 FB DC 1C 47 7D 9F F8 
+3E 00 00 1E 6C 36 21 BE 4F 83 EB 60 DC B5 7F 70 0D 7D EE BD 5F 17 1F 3F D2 0A 79 DF B6 B1 C0 2B 
+99 2C 64 59 00 20 2B C9 6A 36 2B C6 13 98 E3 F9 48 44 88 C5 85 88 0A 60 C7 E6 74 98 7E 46 CB 6F 
+AE 7C FE D9 C3 9F FF A4 B1 BE E6 68 9A 63 18 9E 65 11 CF 25 BE CF 30 4F 03 A4 16 20 96 2D 3E 7A 
+58 5B 59 36 AB D5 81 4B 57 38 59 DE 6B 82 A4 94 5A D5 EA C2 87 1F 2C 7E FC 01 40 88 97 15 3E 12 
+61 45 D1 B5 2C 3D 9F D7 4B 45 DF B6 29 25 CF DE 8D E7 29 A1 BE EB 04 23 72 E7 A5 7C C7 B1 EA F5 
+EA F2 62 FE FE BD 68 EE AB E4 F8 44 EF A9 33 BD A7 CF C4 06 06 31 2F B4 DE DA B3 EC 8D 3B B7 EE 
+FF F8 1F 7C C7 16 22 D1 F8 C8 A8 14 4F 40 8C 89 EF FB 8E ED 3B 8E 67 DB C1 3F C4 75 28 A1 91 BE 
+FE 91 97 5F 9D 4E A6 58 51 0C 7E 7E E2 79 46 B9 34 FB EB 5F FA 8E 0B 20 20 3E 71 0D 5D 2F E4 D9 
+2D 9B B1 28 A1 98 E7 94 74 46 CE 64 A3 FD B9 F8 F0 08 AF 46 76 FD 2A CC 4A 65 E1 C3 DF D6 96 97 
+B5 FC E6 96 CD 54 AB 56 AD 46 3C D7 73 6C DF 76 28 43 11 CB F1 AA CA 2B 2A 27 CB 58 10 39 45 71 
+1A 0D AB 56 75 4D 83 01 50 8C C5 38 59 16 13 89 C0 F2 3D CB 64 45 09 0B 22 44 90 61 18 C4 71 88 
+65 83 5B 53 4A 1D 4D 6B AC AF D7 D6 56 CC 4A 19 71 7C F1 D1 C3 D1 37 DE CA 1E 3B BE 6D 36 95 C5 
+85 EA D2 A2 6B 99 62 2C BE F5 88 80 01 00 42 8C 29 A5 D4 F7 29 21 10 21 3E 12 8D 0D 0C 60 51 DA 
+2B 1E 2E 3C B8 57 5B 5D 21 9E 27 44 A3 62 2C 2E 44 A2 BC 1A 61 65 09 B1 FB CD 20 CF 8D 10 42 EC 
+46 FD F1 2F 7F B6 71 FB 96 51 29 53 DF 07 08 09 91 08 44 98 81 80 13 65 39 93 11 63 71 CC F3 BC 
+1A 89 F6 E7 92 13 13 03 17 AF 84 BC F8 36 0E CD 66 5C 5D 5F BF 79 E3 FE 8F 7F B8 F8 D1 07 1D F9 
+2E DF 75 CB 0B F3 7A A9 D8 D8 D8 C0 3C D7 7B EA 0C A7 A8 BB 9B 0D A5 46 A5 52 5F 5F AD AE 2C 33 
+21 6E E1 9A E6 FE 07 10 DF 37 CA 25 A3 5C 5A BF F5 D5 FA CD 1B 93 9B DF 18 7D F5 CD F8 C8 28 27 
+37 BB 3B 00 21 F5 89 67 99 76 A3 61 D5 6A D5 E5 A5 FD AF 5C 9E 9B 85 10 0E BD F4 32 16 FA 82 21 
+E2 59 56 79 6E F6 F3 FF EB FF B4 35 0D 40 40 29 F5 6C DB 77 5D 10 AC F4 9E BE 0E AF AA 4A 26 9B 
+3D 7E 72 E2 ED AF 0F 5C BA C2 4A BB 8C 30 A3 52 99 FB ED 6F 56 AE 7F E6 59 D6 5E 0F E0 59 96 DD 
+A8 EF FF 90 CC D3 E5 24 A5 14 22 04 20 0C CC 1B B1 1C E2 D8 ED 09 D8 35 74 DF B6 C9 D3 49 A7 34 
+FB 58 4A A6 E2 83 43 81 CD 10 DF 5F FD F2 FA A3 9F FF A3 51 CC 2B 99 9E A7 D7 65 00 42 98 17 28 
+F1 7D D7 A5 9E 8F 78 2E DA 97 1B 7E F9 D5 F8 F0 88 18 4F B4 86 E2 94 D2 B9 F7 7E BD F0 E1 FB 76 
+A3 21 A7 D3 F1 C1 A1 68 6E 20 D2 D7 2F A7 33 BC A2 02 84 B0 20 20 96 85 08 01 84 30 CF 63 41 6C 
+0D 0A 88 EF 5B 8D 46 69 F6 89 5E 2A FA 8E C3 30 0C E3 BA DA 8E 6F A9 F8 E4 D1 D6 03 42 A8 64 B2 
+BD A7 CF FC 53 DA 4C E1 F1 83 27 BF FA C5 E2 27 1F 75 17 EC D9 8D C6 CA 97 9F EB A5 C2 5B FF F3 
+FF 92 9E 9E 61 45 71 D7 C3 7C C7 26 9E 17 C6 60 3A 45 69 F6 C9 17 7F FD 6F 8A 4F 1E 9F FB 93 FF 
+A2 EF DC F9 26 A3 E5 24 89 57 14 CC F3 76 A3 11 E6 6A 9E 63 5B 8D BA 55 AF 2B 3D BD C1 90 77 0D 
+A3 B6 B2 6C 35 EA 8E AE EF 3C B2 E9 4D EC 46 C3 6E 34 6A 2B 2B A5 27 8F A2 B9 5C 7C 68 A4 39 4E 
+A3 94 78 9E 6B 9A 87 F2 25 6C FF 58 C4 F7 99 20 1C 60 18 DF 71 18 7D 8F 13 00 10 63 71 25 93 E5 
+D5 48 F0 81 AB 69 C5 27 8F 36 EF DE B6 EA B5 C2 E3 47 FB DC 0B 00 F0 E8 97 3F 9B 78 EB 9D A9 6F 
+7E BB F7 F4 D9 A6 C7 20 9E 5B 5D 5A AC 2C 2E 58 B5 6A 79 7E 76 F9 B3 4F 82 DC 26 C2 2C 2B 49 42 
+34 96 9A 98 88 F4 F5 0B 91 18 A7 28 F1 91 D1 EC CC 71 21 12 6D BA 05 F1 5C A7 D1 08 42 F4 36 2F 
+4E 88 5E C8 CF BF FF DE FE 87 ED 8A 43 B0 99 E0 F6 0F 7E F2 A3 D5 2F AE B7 7D D6 7D E0 3B 4E 6D 
+79 F9 E6 7F F8 BF CF FE E9 9F 67 4F 9C DA D5 D5 20 96 3D DC F5 DC 4E B8 86 B1 7A FD 73 57 37 4E 
+FE E0 8F 06 2E 5C 11 A2 CF 7E 12 C8 71 9C A2 B2 92 C2 30 C5 30 97 82 18 63 51 64 25 F1 99 93 80 
+10 B2 2C C3 84 0A D3 83 B5 8A B6 B9 A9 F6 F4 36 D9 0C A5 84 78 6E 90 FD 0B F9 5E 87 05 00 00 64 
+B9 99 EF FE 7E 76 E6 F8 F6 53 99 D5 AA 51 2A 39 C6 5E 46 F6 0C 94 52 A3 54 7C F2 AB 5F 40 96 8D 
+0E 0C 4A F1 C4 B3 45 0B A5 9E 65 79 96 49 7D EF D9 F1 84 50 4A 83 AC 86 A3 6B 46 A9 00 59 0E 22 
+04 31 16 63 B1 33 7F FC 67 43 57 5F 56 B2 D9 9D B7 F0 6C 5B 2F 16 1D 5D A7 4F ED 7F 1F B0 92 14 
+1B 18 0A FF FA DB 38 A8 CD 50 4A 6D 4D 7B F0 D3 1F AD 7E 71 5D 2F 95 0E 32 F9 51 42 5C D3 58 BE 
+FE 59 72 7C 42 88 C6 62 43 C3 CD 47 00 06 F1 02 62 39 00 E1 41 8C 73 9F 07 30 6B D5 F5 DB 37 3D 
+C7 76 35 7D E0 F2 55 B5 A7 77 EB CE 00 F0 91 C8 4E 2B DA 1F AC 28 4A F1 84 18 8D 33 60 CB F2 01 
+84 88 E3 C2 99 4C 60 18 3E 25 A4 D9 0D 6D 4D C9 9E 77 48 7E A6 23 F0 6A A4 FF DC 85 C1 AB D7 94 
+9E DE ED 19 CD AC 55 1C 5D 23 9E B7 FF B9 01 7C D7 35 2B 15 B3 5C 22 AE BB F3 F3 E0 A5 7C CF A3 
+E4 F9 97 A2 34 30 9B 20 81 B4 F5 21 00 7A B1 70 FF C7 FF 2F 27 C9 23 AF BE 8E 85 67 EB 4F 57 D7 
+AB CB 4B 41 1A A6 ED C3 08 B1 F8 C0 C5 CB 61 1E BB 09 07 B5 19 47 D3 F2 F7 EE 3C F9 E5 CF AB 2B 
+4B C4 73 DB 9F B0 2F 28 A5 7A 21 BF F8 C9 47 91 BE 9C DA DB D7 92 3E 02 98 E7 59 9E 87 08 FB C4 
+39 E0 BD 76 7F 00 42 EC 46 7D F5 8B CF 39 59 91 52 69 39 9D D9 0E 9A 79 45 15 9E 06 24 6D C1 4A 
+92 18 8B 73 8A B2 BD 1A 81 18 B1 82 08 C2 19 0D 80 10 F1 3C 2B 8A BB 38 D5 20 36 B3 AC DF B1 9F 
+C1 82 10 1F 1A 9E F9 BD EF 25 46 46 9F 45 CE 94 BA A6 E1 BB 1D FC EE 00 41 C4 73 58 E0 9B 32 63 
+C1 06 1A 6D 9D 24 5A 41 A9 EF 38 C5 47 0F EB EB 6B E4 79 7F 62 35 EA A5 D9 27 C4 6F 6F C0 10 63 
+25 9D 19 B8 D4 F1 62 86 39 20 77 86 78 5E 7D 75 E5 D1 CF 7F 5A 7C FC C8 35 8C 83 5C 6A 1B 94 D2 
+CD 7B 77 56 6F 7C A1 E5 F3 4D 7F 02 0C 83 79 1E 0B 02 62 5F EC 56 2C A5 74 FD F6 57 95 85 F9 9D 
+8B 6C 4E 96 79 55 0D 79 05 C4 72 58 10 20 7E F6 9C 10 63 4E 96 43 A6 50 11 66 05 35 22 44 A3 AD 
+6F 4A 09 F5 3D D7 B3 7F A7 36 03 20 54 B3 3D 03 17 2F 8F BC F2 3A A7 28 CF FD 8D 74 F6 18 88 E5 
+38 59 E5 95 E6 D9 07 6C FF 2B 1C 20 46 88 63 77 7E 3F 94 F8 56 A5 52 7A F2 90 84 08 CC 38 59 8E 
+E6 06 32 33 C7 C3 DF F1 D9 AD BB 38 67 1B 56 AD B6 71 E7 D6 A3 9F FF D4 B5 DA 64 A8 3A 82 A3 69 
+9B F7 EE 2C 7D F2 61 EB 9F B0 20 20 5E 00 F8 85 D3 17 5C C3 30 6B D5 9D EB 75 4E 96 9B 87 CB DE 
+08 B2 CF 3B 03 48 84 31 27 CB 21 69 07 88 E7 E4 54 4A 8C C7 5B 77 3C B6 62 33 DB FA 5D C6 66 98 
+E7 FB CE 9E 3B FE 07 DF C7 82 08 C0 73 63 06 20 D8 11 97 02 73 3C 2B 08 BB F8 4F 84 3A BA 14 44 
+2C E6 78 88 9F 7D 3F C1 22 B0 3C 37 1B C6 66 D4 6C 6F 7A 6A 5A 4E A5 43 3F F8 8E 5B 77 71 4E 00 
+4A E9 E6 DD DB B3 BF 79 D7 D1 B4 43 5F 5D D4 56 96 57 AE 7F 66 56 CA CF BD 3F 00 98 E7 B1 28 20 
+FC C2 77 E2 7D C7 71 1A 0D D7 D0 B6 3F E1 64 99 57 C2 FA 19 CF 32 AD 6A D5 D6 1A DB DE 00 40 84 
+79 01 62 36 CC B0 60 45 29 36 38 84 38 A1 69 80 32 0C C3 50 4A 5C CF FB 1D E6 00 00 00 B9 F3 97 
+46 5E 79 43 ED ED DF E5 AF 10 75 B4 FF 08 30 6A 9D F2 00 00 88 65 B7 37 85 C2 00 71 2C 7C FE F8 
+DA CA 4A F1 F1 23 CF 71 DA CE 26 00 80 D4 C4 44 FF D9 F3 E1 1F 7B 27 BA B7 19 B3 54 DA B8 7B 7B 
+F3 EE 9D 30 66 DD 29 EC 46 BD 3C 3F BB 7E EB A6 67 3F B7 05 01 71 30 BB BC 70 3F 43 09 71 74 CD 
+D1 9E F9 19 56 EA C0 CF B8 96 65 D6 2A 56 AD B6 FD FB 05 DB DB AC 28 84 D9 78 E6 64 39 3E 32 0A 
+77 0B 41 89 E7 BD B8 84 FB 2E 00 20 92 CB 0D 5D 7B B9 F7 D4 19 CC F3 AD 7F 05 08 ED 62 D8 FB 5C 
+6F 57 76 2C 00 08 B3 10 B3 E1 77 E5 31 2F 3C E7 84 29 AD 2E 2D 14 1E 3D 08 33 7D 4B A9 74 72 7C 
+2A 3E 34 12 F6 A1 9F 47 F7 36 53 78 FC A0 F0 E0 9E 5E 0A 95 7B ED 14 C4 F3 B4 42 7E F1 A3 F7 1D 
+4D DB 39 38 00 84 88 63 7F 07 36 C3 30 8C 6B 18 3B 53 A8 AC 28 B6 A5 F6 6C 83 B8 AE A3 69 56 AD 
+FA 8C 97 00 00 40 88 95 A4 BD E8 39 3B C1 C9 4A 62 64 74 D7 D7 24 BE E7 BB CE 8B 48 1B B6 02 00 
+80 79 7E E8 CA B5 FE B3 17 9A B2 BA DB 80 08 03 D8 89 9F 01 A0 D5 C6 82 09 05 71 5C 40 44 08 83 
+60 8B 73 FB 7F 1D 5D 2F CF CF 95 E7 E7 C2 3C 41 7A 6A 3A 35 31 C1 47 C2 66 74 9A D0 A5 CD 10 DF 
+5B FF EA 46 69 6E F6 C5 CD 76 76 BD BE FC F9 A7 66 A5 DC 94 06 81 98 85 2F 3E 36 63 18 C6 B5 4C 
+D7 7C 96 D8 40 1C CF 0A 42 C8 38 84 52 EA BB AE 6B 18 3B F3 40 10 41 56 92 DB EE 2F 01 00 38 45 
+89 0F 0E 43 B4 C7 D4 00 E0 41 18 59 E1 81 38 2E D2 DB 37 F1 F6 D7 E3 43 C3 7B 85 94 10 E3 8E C8 
+A0 7B 55 61 00 08 59 5E 08 FF CB B2 92 B8 33 AD 5A 5B 5D 29 CF CD E9 C5 42 BB DB 03 CC F1 7D 67 
+CE 25 46 46 43 3F 72 33 BA B4 19 AB 5A 2D 2F CC B7 7F C4 03 C0 B3 ED DA CA 72 65 61 C1 D6 B4 9D 
+9F 43 84 C3 4C D5 07 87 EF 3A 5B FC 0B 86 61 18 06 B1 2C E2 F9 3D C7 71 0B 20 42 3B B7 0E 18 00 
+00 44 AC B8 0B E3 A3 F9 44 CC 0A 6A 44 C9 64 E1 6E 63 0B 0B A2 14 4F 48 F1 C4 EF 80 B6 2C 44 A2 
+A3 AF BF 95 9A 98 DC 27 28 45 EC E1 D8 0C C3 30 58 14 76 0D 47 77 05 27 2B 98 7B 16 2B 6E DC BE 
+59 9A 9F DD F9 7B ED 0A 88 90 DA D3 9B 9D 39 B1 BD F3 D6 05 BA FC DE 6B CB CB 7A 21 EF B5 23 74 
+B5 02 C0 0E 72 23 C4 F3 36 EF DE 32 4A A5 9D 1F 42 84 C2 7B F0 83 80 B8 EE CE DF 20 58 A7 72 92 
+18 66 82 47 2C CB 2B AA 18 8D 6D 8F 0F 10 B8 07 9E 6F 3B C2 78 55 91 12 09 88 76 5F 5B 23 96 4D 
+8E 4F 9C FD 93 3F 53 B3 3D AD C1 1B 80 10 B1 EC D6 5D 00 80 2C 2B 44 A2 B1 DC E0 C0 C5 2B B9 F3 
+17 23 7D BB 2C E2 F7 7E 05 2E D2 9F 3B F6 AD EF F2 2D 14 95 9D E8 68 11 C2 30 0C 40 68 AF 59 83 
+95 E4 F0 74 4C 4E 51 82 29 89 52 EA 1A C6 EA 8D 2F AA 4B 8B 6D CF C2 BC 30 FA DA EB D1 5C 0E 86 
+BE D1 2E 17 E9 EE B4 F2 E2 9C DD A8 77 BA FA E7 D5 48 72 6C CC D6 B4 C6 FA BA A3 6B 6D 8F A7 84 
+14 1F 3F B2 AA 95 9D 1F 02 84 C2 D2 67 00 D8 E2 20 76 15 FD 13 DF 6F CA DA 41 8C 11 CF 83 46 A3 
+6D 3C 8A 05 41 88 46 85 68 EC D9 B8 07 81 A3 61 DB 46 FF 98 17 58 59 61 F6 30 2D 00 A1 9C 4A 8F 
+BD F5 35 80 F1 EA 17 9F 97 E6 66 AD 5A 0D B1 58 4A A6 D5 6C 56 C9 64 C5 58 1C 60 EC 1A 86 EF 38 
+58 14 A5 44 52 4A 24 C4 58 6C E1 A3 0F 3A 5A 7C 2A 99 4C EF A9 33 F1 E1 11 C4 ED 17 2F 41 8C 21 
+82 0C 00 21 A3 74 08 F7 B6 99 E7 97 28 FB 83 97 95 20 27 E1 DB F6 FA CD 1B E5 F9 39 47 6B 43 05 
+84 18 4B 89 C4 D0 4B 2F CB A9 F4 41 6A 0D BB B4 99 EA E2 A2 6B 74 E6 64 00 00 4A 3A 3D F9 F5 6F 
+E5 1F DC 73 34 2D 94 CD 50 5A 5B 5B 35 6B 55 E2 79 DB 73 2A DC 7B A2 6A 02 2B 08 D9 99 13 52 32 
+A5 97 8A D5 C5 05 AB 56 ED 68 C7 9A FA 84 92 E7 26 85 80 32 18 E6 5C 4E 56 C4 64 B2 79 43 06 30 
+41 81 4A 9B FB 52 BA B3 A2 A1 15 58 10 E2 43 23 D3 DF 56 E3 43 C3 A5 27 4F CC 6A 05 B1 AC 9C C9 
+46 7A FB D4 9E 1E 31 16 07 08 79 96 E9 3B 2E E2 79 21 12 E5 24 C9 AA D5 16 3E 7C BF 89 1E BA 0F 
+20 42 F1 A1 E1 81 8B 97 9F 0B 2F F7 38 12 40 04 40 D8 42 2C 88 F1 5E 29 1C C4 77 90 11 E5 14 15 
+0B 02 25 C4 AA D7 66 DF FB 95 B6 B9 D1 76 06 E7 55 35 73 6C 26 35 31 D5 CA 5B EF 08 5D DA 4C 7D 
+7D D5 B5 F7 24 A2 EF 0A C8 B2 91 FE DC F8 9B 5F 73 0D 7D E3 E6 57 A1 CE A1 D4 AA 56 AC 6A D5 B3 
+2D 0E 6F 85 D4 30 B4 9F E1 D5 C8 C9 EF FF 60 E0 F2 D5 C2 C3 FB 8F 7E F6 D3 A5 4F 3F D2 8B C5 90 
+CC 28 86 61 08 21 C4 7F 6E EC 02 F8 74 F1 DD 6E 7C 08 D1 A8 9C 4A 37 25 43 19 4A C9 8E 92 B8 BD 
+E0 9A 86 DD 68 EC 5F 97 0B 20 54 D2 19 E5 8D B7 C7 DE 78 BB FD 8B 78 6E FE FE DD C2 C3 07 4D 51 
+EE 3E E0 55 35 39 31 D9 73 F2 54 DB 23 01 80 10 21 00 20 65 42 39 73 88 F1 5E CE 04 75 12 E6 09 
+D1 08 2B 8A 9E 65 D5 56 96 16 3F FE D0 AC 56 DB 3C 27 84 6A B6 77 E4 D5 D7 F9 48 A4 8B 3A B3 9D 
+E8 72 61 60 54 2A BE DB 19 E3 4B 4A 24 13 23 63 62 22 01 51 D8 9C 0F A5 D4 35 2D 47 6B EC E4 B0 
+40 1C 36 07 00 00 04 08 49 C9 D4 D0 95 6B AF FF D5 FF 34 70 E1 72 2B 7B 7C FF DB 37 D9 06 84 10 
+E2 50 B7 16 63 F1 D6 3D 66 4A 08 B1 1D A6 5D A0 E8 E8 BA 55 A9 10 72 48 BB 5E 94 FA 8E BB F0 D1 
+07 F5 B5 55 1A FA 9A F1 A1 91 F4 C4 94 14 6F 5F F5 0D 20 00 08 81 D0 2B 4C C4 71 70 8F 2A D4 8E 
+D6 BA 7C 24 8A 05 51 2F E6 97 3E F9 58 DB 58 6F 3B 1A 31 CF C7 06 07 07 2F BF 84 0F B0 92 09 D0 
+6D DE AC 5C 26 4E 67 8C 4C B5 A7 37 35 31 19 44 F5 E1 99 45 BE EB B8 B6 E5 EF 60 7F 42 8C 43 26 
+AF 5C D3 08 BE 4A C8 B2 9C AA 66 8E 1D 97 53 A9 0E 9E 18 B4 8A 7B 00 06 84 B2 19 4E 51 84 E7 D3 
+FF 34 60 57 EE 28 DE DA 0B C4 F7 1D C3 30 CB E5 F0 43 7C 1F 78 8E 53 5F 5B 59 FB EA 4B A3 1C D6 
+C9 00 00 B2 C7 4F A6 A7 67 F6 5A 53 ED 04 44 18 61 0C 43 CF DC 88 E3 F0 1E 36 63 94 43 D5 14 30 
+0C 03 20 14 D4 08 84 A8 3C 3F F7 E4 DD 9F 7B B6 DD D6 F3 C7 06 87 7A 4F 9D 95 92 A9 83 E7 1B BB 
+B5 99 7A AD 23 16 33 80 50 4E A7 E3 43 C3 0C 03 3A A2 15 51 42 88 E7 D3 1D 31 D2 3E 01 71 13 5C 
+D3 70 34 CD B7 AD E0 01 92 E3 E3 62 3C D9 C1 33 83 CE 98 54 3B 81 58 AE B9 46 9A 52 4A A8 E7 34 
+57 59 EF 02 4A 3D CB D4 0A F9 A6 C8 B0 3B 58 B5 DA F2 67 9F 34 36 D7 BD 76 79 D8 2D 00 20 C6 E3 
+A9 89 C9 68 7F A8 24 1B 40 10 E2 0E 8A 9A 30 C7 21 AE 85 4F 10 54 61 15 0B 6E 88 15 17 80 90 93 
+24 56 94 1A 1B 6B EB 37 BF AA 2C 2D B6 9D 86 20 C6 A9 89 A9 BE 33 E7 10 CB 1E 7C 5F AB 4B 9B 71 
+0D A3 A3 A4 19 E2 38 39 99 56 B2 3D 0C C3 04 C5 D9 E1 CF 05 0C D8 E9 97 10 CB 86 D4 6A F0 5D D7 
+AC 56 AD FA 56 3A 25 D2 D7 CF 47 C2 12 C6 98 7D 77 12 DA 62 D7 45 17 A5 D4 0F 63 33 41 ED 54 3E 
+7F F0 CD 7E E2 7B 7A 61 73 6B F5 1F 6E 8D 0E 00 48 8D 4F C6 06 07 B9 70 E4 3A 80 10 64 D9 90 21 
+2B 13 F8 19 BE C5 CF 50 1A 90 95 3C C7 DE ED A4 E7 EF 08 21 1F 89 52 4A 37 EF DD 5D F9 F2 73 CF 
+6A 4F 57 95 D3 99 F4 D4 B1 C4 68 F7 FB 98 3B D1 E5 98 F0 1D A7 B9 3C 68 5F 70 B2 2C 25 93 62 2C 
+C6 30 4C 50 34 16 F2 44 00 21 40 70 67 7E 16 B1 5C 78 8E A6 59 2E 99 95 AD 98 84 8F 44 77 61 4C 
+ED 73 6B 00 BA F7 E3 BB 9E 4B 88 6F 87 A2 BD F8 AE 63 56 2B 07 B7 19 47 D7 AB 8B 8B 1B B7 6F F9 
+76 FB B1 C8 30 0C 03 00 62 D9 DC C5 4B 4A 36 EC 96 1F 44 08 B1 1D EC 32 43 76 77 3F 13 24 13 C2 
+50 D7 20 42 62 2C 6E 14 0B EB 37 6F 14 1E DC 6F 7B 3C 00 A0 E7 F8 C9 F4 D4 74 78 8A ED FE E8 32 
+6F E6 BB EE FE F9 D0 26 08 91 A8 18 4F B0 A2 E4 BB 2E E2 B9 F0 E1 2F 80 70 4B DE E1 29 C2 FB 19 
+86 61 8C 72 D9 28 57 DA 1F B7 C7 AD BB B6 19 00 41 73 5C 17 94 1B 86 F3 33 C1 15 BA BB F5 4E 34 
+D6 D6 36 6E DF 34 6B D5 90 37 85 08 09 D1 58 EF A9 B3 E1 17 7E 10 E3 CE B8 95 1C B7 8B 12 15 00 
+81 30 4D DB D4 36 13 2C 66 62 F1 E5 CF 3E C9 3F 7C E0 B4 AB DA 02 00 20 41 C8 5D B8 94 1C 1D 3F 
+2C B6 51 97 36 43 89 DF 11 D3 4C 8C 27 84 68 94 01 80 01 0C 27 49 E1 D3 F0 00 00 E6 F9 74 0A E8 
+84 07 E0 9A C6 4E CE 58 47 38 90 3E ED AE DF 0D 21 21 CB 6E 01 42 88 17 0E AA F1 49 69 65 61 7E 
+E5 C6 17 E1 FD 15 2B 49 99 63 33 91 FE 7E 56 D8 5D C3 A4 15 00 22 C8 B2 E1 29 45 88 E3 F6 F2 F6 
+62 3C CE 8A ED A5 21 89 EF 9B E5 52 6D 79 C9 28 B7 AF A5 87 2C 9B 99 9C 4E 4F 4E 89 E1 94 1F C3 
+A0 4B 9B 01 08 31 84 84 37 1B 21 1A E5 64 85 79 4A 40 0C EF 28 82 5A F0 9D AB E1 60 13 2D E4 E9 
+C4 F3 C2 6F C8 34 61 1F 96 47 5B 50 A6 59 CC 8D 06 22 97 AE DB 36 D7 CC 6C 71 D3 0E CA A9 D3 8B 
+F9 E2 EC E3 EA E2 42 F8 53 04 35 32 74 F5 9A 18 8D 85 5F D3 43 84 10 C6 A0 93 F5 CC 5E 8A 87 38 
+DC 9E 26 F1 BC C6 FA 9A 6B 9A ED 77 3B 00 60 25 69 E4 95 D7 22 FD FD 87 A8 7E DA A5 CD B0 A2 44 
+89 E6 87 9F C0 44 69 6B 76 01 50 8C C5 F7 CA 36 B6 82 F8 BE 6B 18 CF 55 D1 80 96 B0 67 1F 50 BA 
+C7 9C DF 1E 10 C1 EE 07 6E CB DE 0E 43 88 EF 79 D4 F7 C3 ED 97 EF 42 98 EF 14 C5 27 8F 8B 8F 1F 
+D9 ED 18 25 DB 80 18 CB A9 F4 C0 C5 2B 61 26 FB 6D 6C 95 8B 85 0E 1C 10 CB EE 45 2A A3 84 30 21 
+02 FE 40 EA 24 CC BD 30 C7 A9 3D BD 83 57 5E 12 63 87 E6 64 98 AE 73 00 BB 96 DD EE 77 9B A7 64 
+64 00 80 9C 4A F3 91 68 48 BB A7 84 D8 F5 DA 4E A2 0D F5 49 07 8B E3 03 84 37 00 76 E0 D0 9A 40 
+5B 44 43 09 21 BE 1B 2A 30 63 18 06 00 06 C0 90 7A 1B BB 83 78 DE C6 ED DB E5 D9 27 E1 4F E1 D5 
+48 7C 68 38 31 36 BE BF F2 6D 33 00 40 3C 1F FE 94 7D 4A 39 3C DB F1 BD C3 AC 5F 14 A2 B1 DE 13 
+A7 E2 C3 C3 7B C9 E5 75 87 2E 6D 46 C9 F6 74 94 83 22 FE 96 02 2D 80 50 4A A6 7A 8E 9F 0C 2F 2D 
+65 56 2B 56 AD B6 FD BF 8E 69 B4 15 C8 DC C6 01 F3 C5 07 F0 33 4C 73 6C 16 2C 66 C2 3A BD 4E 7C 
+69 EB CD 09 69 AC AF 15 1E DC AF 6F AC 87 3F 2B 36 38 94 BB 74 79 2F 3E F5 3E E0 44 29 BC 6B 82 
+08 ED 95 98 F6 6C EB E0 D2 45 DB 00 10 46 FA FA C7 DF FA 1A 2B 86 95 2E 09 89 2E C7 53 2C 37 18 
+7E 99 C8 30 8C 67 D9 DB BC 7A 00 61 FF F9 0B 99 99 13 21 47 A4 67 3F 57 C7 A2 17 0A 46 68 7E 2E 
+62 B9 1D 91 40 67 41 1A 80 A1 09 D4 2D A0 2D B1 59 60 33 21 1F 81 52 DA 51 2A BF 09 C4 F3 56 BF 
+BC 5E 5B 5D F6 43 6C 77 04 C0 82 90 18 1E E9 39 DE 9E 60 D6 0A 4E 55 C3 2B F2 30 00 EC E5 40 3D 
+D3 24 9D 90 68 F7 87 10 8D 26 C7 C6 B2 C7 4F 1C 7A 55 6F 97 36 13 1F 19 E9 A8 FB 85 55 AB EE 0C 
+AC A3 B9 81 C4 F0 70 C8 E2 52 4E 96 76 FA 56 57 D7 DA 66 18 B7 81 45 71 FB 5C CF B2 3A CA 07 80 
+83 AD 67 5A C2 B0 0E 56 56 94 12 DF 0D 6B 60 AD 77 76 2D 73 F1 93 8F 1A 9B 1B E1 83 58 B5 B7 2F 
+39 3E D9 51 81 CD 36 38 59 09 12 3C 61 10 68 FF B5 7E 1E 34 4D 68 5B 34 16 1E F1 A1 91 DE D3 67 
+85 68 FC D0 8B F3 BA 34 C1 C4 C8 28 AF A8 E1 F5 2C F5 62 C1 28 15 7D C7 09 02 5F 5E 8D A4 8F CD 
+0C BF F4 72 20 14 62 55 2B AE 69 06 5A A3 88 E5 18 C0 10 CF F3 5D 97 A1 14 B2 AC 9A ED 95 76 6E 
+17 40 10 7E EF 82 DD 61 33 46 A9 D4 51 FD 02 3C 80 9F 69 CD 01 00 88 10 C7 87 8C 11 A8 EF 07 3D 
+3F BA B8 B3 6F DB F5 D5 95 CD 7B 77 AD 70 0B 65 86 61 00 00 99 A9 E9 CC F4 B1 EE BA 00 B1 82 10 
+3E 50 F7 6D DB 6F 61 C4 6F 95 82 9B A6 7F 48 B1 19 2B 8A 99 E9 63 BD 27 4F BF 88 6A D6 2E 6D 26 
+3E 38 24 C4 62 90 65 43 6E 30 EB A5 62 75 79 49 2F 16 82 99 0C F3 FC E0 C5 2B D1 FE 81 B5 9B 5F 
+9A E5 CA E6 DD DB 8D 8D 75 CF B1 7D C7 91 12 49 00 80 55 AF 19 C5 A2 6B 5B 52 22 99 18 1D 53 D2 
+CF 04 1C 78 45 0D 3F AB 05 7A 68 C1 7F 57 97 97 AD 7A 6D FF E3 77 E2 40 B9 66 4A 9B 66 13 C4 62 
+4E 51 21 C2 61 4A 4D 88 E7 D9 9A D6 D1 AE F1 36 CC 5A 75 F9 F3 4F CD 4A 29 AC 53 05 00 8B 62 EF 
+A9 B3 A9 C9 A9 2E 6E C7 30 0C 40 61 19 80 0C C3 78 B6 E5 B6 B6 33 A0 D4 B7 6D CF B6 0E 4B C3 28 
+D2 DB 97 9E 9A 8E 76 25 C7 DC 16 5D DA 8C 9C CE CA A9 0C 27 C9 66 38 9B 71 75 7D E3 F6 CD 85 0F 
+DF 3F F9 FD 1F 04 A6 8F 05 21 3E 3C 12 ED CF 51 4A 88 EB F9 9E EB 59 96 5D AF 49 A9 34 80 A0 B6 
+B2 BC 76 E3 CB 8D DB B7 B2 27 4E F6 9E 3E BB B3 1E 5D 88 C5 C2 2B 86 E0 1D 2C DA D2 EC E3 F0 DC 
+5E A6 A3 82 D0 16 B4 E6 CD 00 80 98 E3 38 59 B6 1A 75 DA 6E 34 FB AE 6B D7 6B 9D 4A 54 32 41 DB 
+AC 62 61 E1 83 DF 86 4F 93 40 08 7B 4E 9C 4E 4D 4C 3E EB 1E D3 21 20 46 10 87 9A 0B 18 86 71 0C 
+C3 6D 21 2F 53 42 3C DB F2 2C 2B 8C 36 79 5B 00 00 FA CF 5D 48 4D 4E 87 DF D2 E8 08 5D DA 0C 16 
+84 D8 C0 A0 94 4C 9A 95 72 98 E3 29 A5 E5 B9 B9 7B 3F FC 3B B3 5C CA 5D BC 14 1F 1A 11 A2 51 88 
+D9 AD 89 5C DC A2 96 48 C9 24 62 39 06 00 56 94 94 4C CF D0 D5 97 79 55 15 E3 89 9D 49 24 CC F1 
+E1 BF 0B C4 F1 88 E3 28 21 AE 69 56 97 16 ED 4E FC CC C1 F2 66 B4 79 EF 12 80 A0 89 4A 98 68 C1 
+77 5D AB 1E 96 F0 B2 13 76 A3 51 5D 5C 2C 3E 7E 18 72 31 0D 20 E4 64 65 FC CD B7 63 83 C3 5D 87 
+31 BB D3 61 F6 80 6B 18 AD E5 A2 94 52 CF B2 7C DB 26 07 CE 35 03 08 85 48 B4 EF EC F9 F8 E0 D0 
+0B 92 E6 E9 96 07 00 61 7C 78 58 C9 64 4B 4F 1E 87 3C C5 D6 1A 85 47 0F AC 7A 2D FF E0 5E 7C 68 
+24 9A 1B 50 7B 7A A5 74 1A 42 C4 2B 2A 1F 89 70 92 04 9F C6 51 AC 28 B1 A2 B4 AB 38 08 25 1D EC 
+CF 40 84 21 C6 BE EB 6A 9B EB 8D 8D B5 F0 C9 03 26 60 52 75 BB 79 DC EA 67 9E 6A C6 86 E2 68 12 
+D7 B5 6A F5 2E 62 33 6D 73 63 F3 DE 1D B3 5A 6D 4B 8F 0F C0 49 72 76 E6 78 DF 99 73 52 B2 FB 5D 
+3F CC 0B BB 36 87 DB 15 C4 73 77 49 28 53 E2 59 96 67 DB 07 AF B4 83 98 8D 0F 0F C7 06 87 F8 D0 
+82 F4 9D A2 FB 34 5C 7C 78 44 ED E9 ED A8 AD 85 6B 9A 81 70 9B 10 89 28 D9 9E 68 6E 30 9A CB 41 
+8C A5 78 42 4E 67 C4 58 3C A8 8D 11 63 71 29 95 12 22 D1 5D 67 3E CF B6 3C 3B 6C 76 05 40 00 00 
+F4 2C 33 FF E0 BE 51 6A 6E E1 B0 EF 99 00 73 3C DE 95 81 1B 06 AD 7B 9A AE 6B D7 EB 8E AE 85 09 
+3F 88 E7 3D 95 28 A1 E1 EB F3 28 21 95 A5 85 F5 DB 37 43 AE 64 00 00 62 22 31 FA DA 9B D1 5C 2E 
+FC A0 6F 05 16 84 2D E5 B7 10 B1 19 DC 8D 62 4B 09 75 4C D3 73 0E 41 EB 30 D0 31 7C A1 42 56 DD 
+DB 4C A4 2F A7 F6 F4 62 8E EF 42 E0 DC AA D7 AD 7A BD F8 F8 51 10 74 41 84 B0 20 B2 92 84 59 96 
+55 94 BE D3 67 87 AF BD DA 77 F6 BC 18 8B B5 BA 57 CF B2 C3 6F 3B 30 5B 0D 00 CB 0B 1F BE 6F 37 
+EA E1 33 51 10 21 2C 8A 2D 34 5B 1A 86 DC C1 30 0C A5 A4 C9 4B B8 96 A5 E5 37 43 72 34 89 EF B9 
+86 E1 BB 2E 25 34 7C 92 D0 35 CD CA C2 7C E1 E1 83 90 C7 23 8E 8B F6 F5 8F BD F1 F6 41 35 25 04 
+01 8B 02 08 97 4A 17 D4 88 10 89 35 7D 48 09 71 1A 8D 43 11 D4 F5 5D 27 FF F0 41 7D 6D 35 31 3A 
+76 58 E4 FF 26 74 6F 33 98 E7 D5 4C 56 ED ED 0D 25 F8 B9 07 82 01 E4 7B 1E D1 35 C7 D0 01 00 0C 
+00 D5 E5 A5 FC FD 7B 13 EF 7C E3 EC 1F FF 19 E4 B8 A6 1D 71 CF B6 BC 90 D5 20 0C C3 30 8C 5E C8 
+E7 EF DF 9D FD F5 2F 3B 0A CC 10 CB B2 82 D0 B4 70 22 BE EF BB ED 25 B4 19 66 97 5C 33 71 1D AB 
+5E 0B 19 6E 51 42 89 EB 12 D7 A5 94 86 0F C9 2B F3 B3 95 85 B9 F0 3C 6E B5 A7 B7 F7 D4 19 25 9B 
+3D 20 1F 14 F3 02 E6 43 C9 BE 31 0C 23 26 92 52 B2 B9 5A 96 F8 BE D5 A8 85 E9 1B D3 16 94 10 A7 
+5E 5F BB F1 65 6C 70 38 DB 55 AB 8C B6 E8 DE 66 00 84 4A 4F 6F 62 78 F4 20 36 B3 8D A7 2D 7B 18 
+86 61 88 E7 95 66 9F 80 77 7F 21 C5 13 63 6F BE DD 14 98 7A B6 15 A6 9A 2F C0 DA CD 1B B5 D5 95 
+E2 E3 47 8E A6 75 B4 DD 81 39 9E 13 A5 E7 AB A3 28 F1 BC 7D DA BE 3E 07 00 C2 C7 54 BB 81 12 12 
+F4 39 0B BD 0D 4A C8 E6 FD BB E5 B9 B9 B0 A5 32 18 27 47 C7 07 2E 5D 39 F8 36 39 64 59 CC F3 88 
+E3 48 BB 64 1D E2 78 21 12 69 DD 2A A0 84 D8 F5 C6 A1 24 CD 18 86 21 84 AC 7E 79 3D 73 6C 26 35 
+36 8E 3A 61 78 85 C4 81 C2 3E 25 93 89 0F 77 9F 6F D9 07 8E A1 97 66 9F 3C F8 E9 8F 6A 2B 2B 4D 
+5E C5 77 DC F0 CB 92 C2 C3 07 8B 1F 7F 58 7C FC A8 D3 FD 41 56 94 B6 95 1A B7 40 19 E2 BA AE 61 
+86 B9 10 44 CD 8A 44 00 A1 ED BE E7 6D 01 00 44 2C 17 24 70 C3 1C 4F 29 75 B4 46 F1 F1 A3 FA FA 
+6A 98 E3 19 86 91 92 C9 D4 E4 54 6A 62 32 E4 F1 FB 00 00 80 78 3E CC 7E 28 44 10 B2 5C 2B 09 9A 
+12 DF D6 3A 96 98 DC 07 D5 E5 C5 A0 73 FA 61 5D 70 27 0E 34 DC A5 64 2A 3E 34 22 EC 50 58 3D 44 
+38 5A 63 FD E6 8D B5 AF BE 6C 49 67 B7 D2 52 F6 84 51 2A EA 85 7C 17 CC 3F 3E 1A E5 D4 C8 CE 71 
+4F 7C DF 73 9C 30 12 27 4C B0 2C 7E 9E 4B 8B 39 4E 8C C5 42 32 20 11 CF C9 A9 34 16 C2 AE 65 A9 
+EF 57 97 96 AA 4B 8B 56 35 5C 32 1D 80 D4 D8 64 7A FA 98 10 42 8D 29 0C 10 CB 85 D9 68 0E 72 9E 
+AD 5F 1F 25 C4 D1 F5 43 B4 19 47 D7 37 1F DC DF B8 73 EB B0 7C D7 4E 1C 68 AC 0B 91 68 62 74 2C 
+73 6C A6 33 F6 78 38 50 4A 5D D3 9C FD CD BB D5 E5 A5 9D 46 D2 51 66 B3 6B C8 E9 34 AF AA 3B C7 
+B7 EF BA 9E 6D 87 8C B9 39 59 6E 0A 29 B1 20 28 99 2C 2F 2B ED 17 0F 00 08 D1 58 F6 F8 89 F0 8B 
+04 E2 79 6B B7 6E 34 36 36 42 72 4F 10 CB F6 9D 3B 9F 39 76 FC A0 A5 A0 4F 81 79 2E 0C 4D D3 77 
+1C DF 71 5A C7 31 A5 D4 B3 CC C3 6D 10 52 7A FC 68 E5 FA 67 B6 D6 E8 8E 4E B1 0F 0E 64 33 10 E3 
+C4 E8 F8 D9 3F F9 73 25 9D 79 11 3D 61 28 21 85 47 0F AB 4B 8B 3B A5 78 85 48 B4 03 16 6D B7 50 
+B3 3D 4D 59 97 60 8B 33 E4 20 E3 64 A5 A9 C9 33 40 98 8F C4 7A 4E 9D 6E BB 6F 80 59 36 36 30 38 
+F6 C6 DB E1 49 5C C4 F3 D6 BF BA B1 AD 16 B2 3F 00 84 89 91 D1 F4 E4 B4 92 CE 84 BC 7E 5B 04 5D 
+32 DB 1E 46 29 75 0D BD 55 C4 8C 12 DA D4 4A F1 E0 B0 75 AD 34 F7 64 E5 FA E7 9D 0A F1 B5 C5 41 
+63 2A 4E 51 32 33 C7 27 BF FE AD 48 6F DF 61 4D 5A DB A0 94 5A D5 6A 65 71 61 67 3F 5A 29 95 0A 
+A3 EF 78 40 C4 06 86 C4 F8 73 5C 12 88 11 16 F8 30 6B 4A 88 30 27 CB 4D B1 0A 00 80 57 D5 99 EF 
+FE 7E 6A 7C 62 9F 12 28 C4 72 7D 67 CE 4F BE F3 2D B5 B7 37 64 3A CB 77 1C AD B0 59 9E 9F B3 B5 
+10 E2 60 00 60 5E 18 7B FD AD F8 F0 48 D7 3B B6 AD 40 2C CB 85 AB EB B2 B5 86 5D AF B7 7C 4C 0F 
+BD 73 1B F5 FD FA EA EA 93 5F FD C2 AA D7 0E 37 42 3B B0 A6 20 42 62 2C 3E FE D6 3B E9 A9 63 21 
+15 B1 3A 02 F1 DC FA DA AA 5E 78 66 33 1C E1 AD F3 00 00 20 00 49 44 41 54 4A 3A D3 99 1C 66 87 
+00 00 20 96 8B E6 06 9A 1D 05 80 88 E3 39 49 6A 3B 35 B0 A2 C8 49 72 6B 21 2A E6 F9 DE 53 67 A7 
+BE F9 9D DC 85 CB 72 32 85 38 0E 62 36 90 05 0D 3A 0E 48 C9 D4 F0 B5 97 A7 BF F5 9D 81 4B 57 30 
+1F B6 3F 94 6B 99 D5 A5 45 B3 52 26 21 D4 80 B1 20 24 46 46 07 2E 5F 55 32 D9 43 9C E3 20 C6 21 
+BD A2 AD 35 EC 46 AB CD 30 41 F3 8F C3 7A 9E 00 56 AD BA 71 FB D6 E6 BD BB 76 08 41 FD F0 38 84 
+80 0A B1 6C 7A FA 58 FF F9 8B B5 D5 95 FC 83 7B 87 DE F9 CC 28 15 CD CA 33 BD 25 29 99 92 D3 19 
+CC F3 1D ED D2 84 07 C4 58 4E 67 94 6C B6 B9 F6 10 00 CC 71 9C AC 9A D5 EA FE EF C8 C9 32 DE AD 
+23 1A 80 50 88 C5 26 DE 7E 47 88 44 94 4C A6 B2 30 AF 17 0B 94 10 86 32 00 41 2C 8A B1 81 C1 89 
+B7 DE E9 3F 77 A1 A3 8E 42 BE ED E8 85 BC EF BA 6D 53 23 00 21 39 95 1E 79 F5 F5 E4 D8 38 D7 15 
+ED 7F 9F 2B 87 5C D3 3A 0D CD 6A 34 4B 14 00 00 70 CB 46 DC C1 E1 BB AE 96 DF 9C 7F FF 37 D1 FE 
+FE A0 74 E5 50 2E 7B 38 8B 10 84 F1 D0 D5 97 6A 4B 8B B5 95 25 D7 34 89 DF 99 92 D3 FE 70 74 6D 
+67 04 CC 29 8A 9C CE 48 C9 54 7D 2D 6C 5E B5 23 B0 A2 D8 77 E6 8C 14 8F 37 AF D0 00 40 1C CF AB 
+ED B3 43 48 10 E0 DE 1A A7 62 3C 31 F6 E6 DB 3D 27 4E AE DF BE B5 F8 D1 07 9E 6D 07 BD 9C 84 68 
+2C 31 32 26 25 93 9E 6D 39 BA CE 86 6E 8C 0E 20 40 2C 17 AC B5 F6 31 1B 00 00 AF 28 99 E9 99 13 
+BF FF 7D 21 12 3D DC 49 1D 40 18 32 D2 DB D5 CF 00 00 31 1F 8A BD DA 29 3C CB 9C 7B EF 57 83 97 
+AF AA BD FD 07 A4 3B 6C E3 D0 16 EE F1 C1 E1 93 7F F8 03 B5 B7 F7 E1 3F FE A4 34 F7 C4 3F BC 66 
+DC C4 F3 A8 EF 6D F7 96 08 9A 16 25 86 47 5F 84 CD 40 84 A4 54 FA D8 77 BE 27 26 9A F7 AA 01 00 
+88 E3 38 45 69 3B DA E0 FE FA F6 94 56 97 16 67 7F F5 CB 07 3F F9 87 C6 C6 46 C0 4A 0C A4 DF 03 
+ED 2F 39 99 1C BC FA F2 C5 7F FE 17 AC 14 CA 6C 78 35 D2 73 F2 74 6C 70 C8 D1 77 59 5E 03 00 00 
+00 84 10 56 94 06 AF 5C 3B F5 87 7F A4 64 7B 0E BD B9 E2 96 0C 55 08 D8 8D DD D6 33 10 60 49 7A 
+11 36 43 08 D1 8B C5 A5 4F 3F 56 7B FA C2 B4 06 09 83 43 B3 19 C8 B2 B1 C1 A1 09 49 4E 8E 4D 2C 
+5F FF 74 E9 93 8F 2A 0B 0B 5D EB F1 ED 04 80 90 79 3E D8 95 92 C9 C4 D8 D8 C2 47 EF 1F FC E2 4D 
+10 13 C9 DE 53 67 B2 33 27 76 15 85 40 1C C7 2B 6A 5B 62 15 F1 FD 7D F2 9B 94 90 E2 A3 87 0B 1F 
+7D 50 5D 5E 6A 6E 66 0F 00 00 C0 AA D5 22 FD 03 C4 7D 36 4D EC 0F C8 B2 6A 4F EF C5 7F FE 17 1B 
+77 6E D7 57 57 1C 43 67 18 C0 CA 12 C3 30 2C 2F F0 6A 04 0B 82 5E 2C A8 D9 9E 9E 93 A7 33 33 C7 
+5F 44 86 D3 33 CD A6 76 74 7B C1 35 0D B7 85 C4 14 C8 96 77 5F 15 BB 0F 28 25 9E B7 72 FD D3 D4 
+C4 54 72 6C BC BB 42 D4 26 1C E6 D7 87 05 31 DA 9F 53 D2 19 A5 A7 27 3E 34 52 9A 7D 62 14 0B BE 
+E7 51 E2 FB 8E E3 59 96 A3 6B 66 B5 6A 56 2B 9E 65 85 4F 2C B6 0A 34 8B F1 44 7C 68 04 F3 7C 48 
+CA 63 A8 87 E7 F9 68 7F AE FF DC 85 B1 37 BF 26 EE D1 E1 15 B1 2C 27 B7 F7 33 BE EB 6C 65 81 76 
+3D 12 00 29 95 EE 39 71 92 15 25 E2 B9 C4 F7 3D CB 72 B4 86 D5 68 B0 82 20 44 63 91 DE BE FE 73 
+17 10 CF 87 0D 9F 28 65 00 93 9E 9E 11 13 49 AB 56 25 AE 07 31 0E 06 07 E2 B8 20 1B 61 D5 6A 42 
+2C 26 25 12 E1 DB B5 77 00 4A AD 46 BD BE BE 16 E6 D8 A0 1E B3 E9 43 00 20 2B 4A BB F6 DC DD 07 
+88 65 19 00 C3 10 76 6B 2B 2B 1B B7 6F 66 8F 1D EF 39 75 BA A3 5B EC 8A C3 9E 72 00 40 3C 9F 9E 
+9C 4E 8E 8E 1B E5 B2 51 2A 7A B6 4D 7D CF 35 4D 5B 6B 98 E5 72 7D 7D B5 B2 30 BF 79 EF EE D6 F2 
+37 04 58 51 C4 CF 6B DC F0 8A 1A E9 EF E7 55 D5 AC 56 DB D6 3C B6 7B 5E 80 38 5E 4A 24 62 83 43 
+B9 F3 17 07 AF 5E EB 39 71 6A AF 20 21 E8 F0 DA F6 9A 9E 69 05 C6 BC EB 90 07 10 66 67 4E 88 B1 
+78 79 7E 16 30 0C 21 C4 D5 75 BD 54 68 6C 6C 00 08 39 49 8E 0D 0E A5 A7 67 00 0C C5 67 A6 84 18 
+E5 52 FE FE 5D 47 D7 00 80 88 E3 B0 20 B2 A2 C8 4A 72 90 BE 0B 12 12 D1 81 10 D7 EA 16 9E E3 98 
+E5 72 63 73 23 CC C1 C4 F7 5B 4B 15 00 84 6C E7 7E 46 4E 67 10 C7 55 16 E6 DB 3F A1 6D E7 EF DF 
+5B FD F2 7A FA D8 0C 3A 70 9B F8 C3 77 D3 01 20 C6 4A 26 A3 64 9A 77 CD 28 21 F5 F5 B5 0F FE C5 
+FF 36 F7 DB DF 84 AC BF E5 D5 08 FF 7C AF 6D 2C 08 72 22 25 25 92 76 40 20 EF 1C 41 4B 2D 80 10 
+2B 08 6A 4F DF E8 6B 6F 8C BD F1 76 62 74 6C FF 65 A2 EF 7A 61 C8 D1 8E A1 7B 96 49 29 61 98 5D 
+06 01 A5 94 FA 3E 80 50 4A 26 D5 9E 3E 4E 92 20 C2 94 F8 B6 A6 15 1F 3D DC B8 73 6B E3 CE 2D A3 
+5C E2 15 39 9A 1B 6C 1B 47 79 B6 9D BF 77 F7 BD FF FD 7F 0D FA FE 21 8E 63 45 91 57 14 B5 AF 3F 
+36 30 94 9A 98 CC 1C 9B 49 8C 8C 86 EF 2D D7 05 CC 6A 59 2B E4 5B 23 AE 3D D1 F2 20 00 02 AE C3 
+F5 0C 80 B0 E7 F8 49 21 16 AB AD 2C 87 19 03 B5 95 E5 8D BB B7 CD 6A 45 4E A6 0E 98 A0 7B 51 36 
+B3 17 00 84 6A 26 AB F6 F6 F1 AA 1A C6 66 00 00 4A 26 2B 25 9F DB 90 09 A6 A5 D8 D0 48 7D 6D AD 
+8B 8C 33 62 59 21 16 93 12 A9 C4 C8 48 FF D9 F3 B9 0B 97 E5 4C 86 13 A5 36 99 1F 4A ED 7A B5 B2 
+38 DF D6 3D FA AE 6B 37 34 A7 A1 35 ED 8A 06 70 B4 C6 9D BF FF 9B BB 3F FC 3B BB 5E 87 18 23 5E 
+60 45 11 40 E0 E8 BA A3 69 9E 6D 51 9F 48 A9 94 59 AD 5C FD 6F FF B2 2D 69 00 22 C4 0A A2 10 89 
+D6 D7 D7 7C C7 01 00 98 55 00 20 2C 2F 2E AC 7C FE 99 18 8F F7 9C 38 35 F3 BD 7F D6 77 E6 DC E1 
+6A 49 EE 44 63 7D BD B1 BE 16 32 6A 40 FC 2E 1A E7 4F 63 B3 0E FC 0C 2B 49 89 B1 F1 E8 C0 E0 DA 
+8D 2F CA F3 73 6D B9 6A AE 69 D6 57 57 F2 77 6E 0F BE F4 72 47 72 96 AD F8 5D DB 0C B3 45 1D 17 
+C2 A4 26 01 00 62 22 19 1F 1E 91 D3 CD BD 29 11 C7 A9 BD BD 90 0D F5 FC AC 20 C6 86 86 C4 68 5C 
+88 46 C5 44 52 CD 66 23 BD FD 42 3C 2E 46 63 52 2A 25 25 53 A1 22 2E C7 31 CA E5 FA DA 5A FB 15 
+14 A5 66 B5 62 94 8A 7B D8 8C 5E 5B 5D AD 2C 2E 04 5A 5E 41 5F 5B C0 00 E2 7B C4 F7 03 BA 80 9C 
+4A C7 87 46 C2 88 ED 43 8C E3 A3 A3 E7 FF FC BF 7A F4 8B 9F 95 9E 3C 32 2B 95 AD 1E D7 10 3A 5A 
+A3 BE BE 46 7C 9F 57 D5 F4 E4 D4 8B B3 19 B3 5C 0A 2F 4E C2 0A CD 91 36 F3 2C 36 EB C0 CF F0 8A 
+22 27 53 C9 D1 B1 FE 73 E7 AB CB 4B 6D 6D 86 52 62 54 CA 1B F7 EE E4 2E 5E 66 FE 93 B3 19 26 58 
+A2 70 6D 78 96 98 E3 E4 4C 76 F4 F5 37 7B 4E 9D 6E ED 1D 1B 94 40 87 C9 99 22 8E 8B 0E 0C 9C F9 
+E3 3F 0B 62 3C 21 1A 15 E3 49 31 16 0B 29 67 B1 0D AB 56 D5 36 37 B7 3A 2A B7 83 5E 2A 36 36 D7 
+93 E3 13 AD 7F C2 82 90 1C 1B 1F B8 78 D9 AA D7 89 EB 12 DF 07 80 41 BC C0 2B 0A F1 7C 4E 91 A3 
+B9 81 CC F4 4C F6 F8 C9 30 BB 84 00 42 29 91 1C 7C E9 65 5E 8D 54 57 96 ED 7A 8D F8 7E C0 9E AE 
+AF AF 99 A5 12 E2 F9 C3 A5 C9 B4 C2 D1 F5 F0 5D D4 B1 20 EE 92 93 04 00 71 ED B7 98 76 82 8F 44 
+79 55 55 7B 7A FB CE 9C 7F FC CB 5F F8 AE DB D6 D1 D9 F5 7A FE FE 3D D7 34 D9 83 E5 B5 BB B5 19 
+4A 3D C7 F1 82 7E 06 00 20 8E 43 2C 07 31 62 18 40 3D CF D6 35 E2 BA 58 10 39 45 D9 75 0A 17 62 
+71 3E 12 D9 AB 82 3C 58 0A 47 73 B9 81 4B 57 4F 7C FF 07 D1 5C 6E D7 D1 03 20 0C 53 D7 85 38 2E 
+36 30 78 F2 FB 3F E8 E2 2D 77 C2 2C 97 F5 42 3E 64 5F 58 BD 90 DF 6B FB 48 88 C5 86 AF BD AC 64 
+B3 8D 8D 0D CF 34 7C D7 85 08 F1 91 88 9C CA F8 AE 2B C6 62 D1 FE 9C 9C C9 86 D4 80 0F 32 6F AC 
+20 0E 5C BE 3A 70 F9 2A C3 6C 29 42 53 4A 1B 9B 1B 46 A9 08 20 8C 0D 0E BD A0 2A DF AD 67 F0 FD 
+F0 84 2E B6 A5 4A 82 09 34 DD 03 65 AC 70 A2 02 0C C3 08 D1 28 2B CB 42 24 9A 9A 9C 56 FB FA DC 
+10 2A DE 8E A1 57 16 E6 8D 72 49 88 46 76 EF B5 16 0E 5D DA 0C F1 FD FA EA 72 69 F6 89 5E 28 20 
+96 95 33 59 39 99 E2 23 2A 80 D0 AE D5 37 EE DE 36 2B E5 D8 E0 50 CF C9 D3 72 2A 85 B8 E6 3A 90 
+68 7F 2E DA D7 5F 7C FC 88 78 CF 4D 0F 41 3B 3E 2C 88 E9 A9 E9 89 B7 DF 99 F9 EE 1F EC 35 25 10 
+CF 33 4A A5 50 CC FC 16 B9 F1 EE E0 5A 56 F8 ED 26 B3 5C D6 F3 F9 5D D3 CD C1 0A 8D 57 55 D7 30 
+7D CF 63 28 C5 BC C0 4A 12 E6 79 06 00 E2 BA AE 6D D9 8D 3A AF A8 6D 1B A6 FA AE 6B 94 8A 76 BD 
+CE A9 0A CB 8B 0C 78 4E 27 5A 8C 46 95 4C F6 E0 69 A2 B6 E8 48 08 0E F3 42 6B 33 33 CA 30 0C 65 
+00 03 00 00 21 7F 2A 31 12 63 45 09 71 9C 9C CE F4 1C 3F A9 6D 6E B6 B5 19 E2 79 56 BD 5A 99 9F 
+55 32 19 F1 77 6F 33 D5 A5 C5 4F FF F5 BF 5A FD F2 BA E7 38 00 6C 49 22 05 3D 77 3C CB 72 0C 83 
+F8 3E 2B 0A 91 BE FE BE 33 E7 8F 7F EF 9F 45 FA FA 77 FA 8A CC CC F1 B3 A2 98 BB 70 A9 B6 BA 52 
+5F 5D 71 4D 93 01 80 15 45 21 1A 55 B2 3D 89 E1 91 F8 D0 88 D2 D3 B3 8F 0F 75 0D A3 F8 F8 61 98 
+04 80 67 59 56 B5 EA 7B 5E 78 26 FF AE 60 25 91 0D 4D BE 88 F4 F5 C7 47 46 77 1D AC C4 F3 E6 DF 
+7F EF E1 3F FE B8 B2 30 1F BC B8 14 4F 44 73 03 B1 C1 21 39 9D A9 CC CF 95 E7 66 B1 20 4C 7E FD 
+9B A3 AF BD B9 7F AF BC 95 CF 3F 7D F0 D3 1F AD DF BC C1 8A A2 94 48 6E A9 58 3D B5 99 E8 E0 D0 
+F0 B5 57 06 2F 5F 7D 11 DC D9 9D 60 85 5D CC 60 57 00 84 A4 64 52 6A E1 58 10 D7 6B AC AF 3A 46 
+07 65 67 7C 34 1A F8 2B 56 14 86 5E 7A 65 F5 C6 17 3B 89 BC 7B C1 77 DD FC 83 7B 99 99 13 E2 01 
+A8 F1 5D F7 6C 12 89 E7 59 F5 DA CE 40 36 08 A3 B7 F5 C7 AC 1A 34 AB 55 A3 54 12 A3 B1 F1 AF 7D 
+3D DA 9F DB 3E 92 57 94 F8 F0 28 2B 4A 42 2C 8E 05 41 DB DC B4 EB 35 D7 30 1C 5D D3 36 37 4A B3 
+8F 59 51 12 63 F1 F4 D4 B1 C1 2B 2F 09 91 48 93 E5 78 96 A9 15 F3 D5 E5 C5 30 45 CE 84 F8 8E 61 
+18 C5 42 C8 B5 FE 5E 10 A3 B1 40 17 37 8C D7 52 7B 7A 63 B9 C1 BD FE 6A 94 CB E5 B9 D9 F2 DC 2C 
+F1 7D 86 01 8D 8D 8D CA D2 22 7F EB 26 2B 0A 56 BD 61 37 6A 62 3C 11 1B 1C 1A 7A E9 95 FD C7 A2 
+AD 35 F4 FC 66 75 79 09 40 88 B9 25 CA 3C 27 DC 51 9A 9F 33 2B 15 E2 7A 13 EF 7C E3 85 6A 17 71 
+B2 C2 B7 2B D2 64 45 29 33 7D AC FF DC F9 81 4B 57 13 23 CD FD 93 01 84 BC 1A 41 1C 17 5E FA 4B 
+88 46 83 75 11 E2 F8 9E 99 13 72 2A 5D 99 9F 6B CB DF 21 9E 57 7A F2 D8 39 18 CD B9 4B 9B 11 A2 
+D1 CC CC 09 AB 56 6B 6C AC DB BA E6 EA BA EF 3A 81 96 02 43 19 80 10 25 84 B8 0E C3 00 4A A9 EF 
+7B 4D A2 92 46 A9 54 7C F2 B8 F0 F0 7E 75 79 49 2F 14 AC 6A C5 D6 1A 9E 69 7A B6 ED BB 2E 25 3E 
+A5 94 15 A5 D4 F8 5D 4E 96 7B 4F 9D 16 A2 CF A9 FB 98 B5 5A 65 61 DE 28 85 93 24 A6 D4 77 1C 6D 
+73 43 08 DD 28 6A 57 F0 6A 44 4A 24 31 2F 84 D1 A6 72 2D B3 95 FA 15 20 58 60 F4 9D 39 C7 00 60 
+6B 9A 6B E8 AE 69 9A 95 F2 76 83 10 56 14 C5 58 5C ED 69 5F 3F 13 CB 0D F4 9D 39 E7 5A 66 6D 75 
+D5 35 0C EA 7A BE E7 6E 7F 27 AE 65 55 16 E7 AB 4B 8B D4 F7 03 41 9F 4E 5E B7 03 48 C9 A4 94 4A 
+41 84 F6 F2 12 88 E3 22 7D FD 33 BF F7 07 7D 67 CF 45 7A FB 5B D7 33 10 63 29 99 E6 15 15 61 36 
+A4 40 8A 18 8B 07 D4 6C 08 A1 94 4A 65 A6 8F 57 97 16 6B 2B CB FB 9F 45 3C BF B6 B6 6A 37 1A 5B 
+99 92 AE D0 B5 F6 AC 38 74 E5 25 39 95 AA AF AE E8 C5 82 51 2A 39 A6 C1 0A 22 AF 28 94 52 C4 71 
+BE E3 38 9A C6 00 26 3E 3C D2 7F EE 82 F0 BC 16 70 E1 D1 83 87 3F FD F1 D2 A7 1F 99 95 0A 00 30 
+A8 9D 08 18 98 C1 96 1F F1 3D 47 D7 ED 46 63 E0 D2 E5 C4 F0 48 93 CD 18 A5 62 E9 C9 E3 B0 12 30 
+0C 43 7C CF AA 55 0F 58 6E 8E 05 41 8C C5 A5 64 B2 BE B6 DA D6 D5 54 16 16 F2 0F EE F5 9F BF D8 
+6A A5 00 C2 9E 13 A7 38 59 89 0D 0D EB C5 A2 59 2E 99 95 8A DD 68 78 B6 E9 39 0E 60 80 92 C9 F6 
+9F BF 30 74 ED 95 B6 F5 6D A9 C9 69 56 94 A2 FD B9 8D 3B B7 CD 6A D9 35 2D D7 34 03 2E 49 F0 2B 
+44 FB 73 91 BE BE 83 BC 75 18 C8 E9 4C 7A 72 2A 39 36 51 5B 5D A6 84 40 8C 59 51 62 25 09 B1 6C 
+D0 C2 5C 88 46 B3 C7 4F 4C BC FD 75 5E 55 77 5D F9 40 84 C4 58 4C 88 C5 11 CF 87 B1 19 00 A1 14 
+4F 6C 85 CA 00 40 8C 87 AE BE A4 17 36 3D CB 34 AB D5 7D 68 F5 94 10 B3 52 B1 1B 75 DF 75 20 EA 
+32 F9 DE BD F6 6C 66 E6 78 66 E6 38 25 84 FA 9E EF F9 0C A5 00 00 80 20 03 00 43 A8 AD 35 EC 86 
+06 20 50 32 99 E6 16 C4 94 96 E7 66 AB CB 4B 10 B3 B1 81 41 C4 72 58 E0 21 66 83 F8 81 78 9E 63 
+18 56 B5 EA 1A 3A AF 46 D4 9E BE 56 5E 9D 59 A9 54 97 97 3A 7A E0 83 27 01 00 00 42 2C 16 1B 1C 
+6A 6C AC B7 4D 13 D5 57 97 F3 0F EE 19 E5 92 92 CE B4 C6 45 9C 2C F7 9C 38 D9 73 E2 24 43 29 25 
+7E F0 CA 7A A1 50 5F 5F A5 BE 1F E9 1F 88 0F 0E ED 5A 81 D3 04 88 71 7C 64 34 3E 3C 32 FD 9D EF 
+11 DF A3 84 32 4F 03 63 42 29 44 28 D0 25 3D F4 BA 94 26 48 89 E4 D8 1B 6F 0B 91 E8 8D 7F F7 D7 
+AE 65 8A F1 44 72 6C 3C 3D 75 4C 4A 24 19 4A 59 51 92 53 69 25 9B 85 41 36 62 8F BC 08 2B 49 72 
+2A C5 49 D2 AE 15 69 CF 1D 0C 21 2B 8A 52 3A B3 B3 12 76 E0 E2 A5 A0 A4 62 EE FD F7 EC 5A 8D 3C 
+ED 2B BE A5 01 46 B7 9B 02 53 DF B1 1D 5D F7 6D A7 A3 A6 63 3B 71 A0 FD 19 DF 75 AD 6A A5 BA BC 
+5C 9E 9F E5 55 35 98 5D C4 58 6C F3 CE ED E5 CF 3E AD 2E 2F 09 11 75 F8 95 D7 A6 BF F5 5D 5E D9 
+A1 47 01 C0 D4 37 BE 3D 70 F1 B2 6B 59 98 17 20 42 94 92 80 86 44 3C 97 B8 1E 64 59 DF 75 7D DB 
+E6 64 39 39 36 CE B5 EC 85 AB 3D 3D 3D 27 4E AE 7E 79 3D 64 C5 01 44 58 8C C5 F7 6A 49 17 16 00 
+F0 91 48 7C 68 78 F9 F3 CF 18 A6 DD AE B3 65 55 17 17 56 3E FF 6C F2 9D 6F EC B7 CD 02 00 80 08 
+72 88 47 98 61 40 71 F6 F1 C2 07 EF F9 AE DB 7F E6 FC F4 77 BE C7 2B 4A A8 75 08 00 0C 21 4E A3 
+11 CC A0 C4 F7 79 35 12 1D 18 C4 3C FF 42 43 B2 9D 10 62 F1 C1 2B D7 E2 A3 63 00 40 CC F3 94 12 
+B3 52 A9 2C CE 3B 8D 06 2B C9 46 B9 98 7F 78 8F B8 6E 7C 68 38 3A 30 D8 14 35 04 AF 00 11 9A FC 
+FA B7 B4 CD 4D BD 58 DC 3F 1D 8A 38 2E 3D 35 BD 25 E2 B3 7D 01 84 7A 4E 9E 8A F4 F5 4F 7D E3 DB 
+8D F5 35 AB 5E 77 2D D3 35 4D 47 D7 CC 4A 45 CF 6F 6A 85 BC 51 2A F9 9E 9B 1C 9F 08 6A 16 BB 7E 
+D9 03 D8 0C A5 6B 5F 7D F9 E4 DD 5F 94 66 1F 5B B5 1A E6 B8 60 56 C3 BC 60 94 8A 8D CD 0D 47 D3 
+10 CF 99 B5 5A 34 37 D0 73 F2 B9 7D 49 31 16 2F 3C 7A 38 FB AB 5F 5A 8D 3A 00 5B DD 5A 9E FE 43 
+85 68 24 33 3D D3 7F EE 42 7C 78 14 0B 7C 6B 07 63 B5 A7 77 E2 6B DF 90 53 E9 C6 C6 46 63 7D AD 
+B2 30 5F 59 5A D8 6B 5B 0D 00 80 05 3E D2 DB BF 57 BB E0 F0 10 D4 48 7C 78 04 B1 98 F8 6D 8A D7 
+29 21 F5 B5 D5 B9 F7 7E 3D FC F2 2B 02 C6 3B 87 BE EF 38 B5 95 E5 C2 A3 07 95 85 79 E2 79 8E AE 
+63 41 40 2C 6B 94 4A A5 D9 C7 B5 95 65 DF F3 1A EB 6B 8E 61 9C FC C3 1F EC 2A 5A ED BB 8E 51 2A 
+AD 7C F1 B9 AB EB BE EB 3A 5A 43 2B 14 AC 6A C5 B5 CC 80 1B 8A 79 41 4E A5 58 71 8B F5 08 00 10 
+A2 D1 D8 E0 90 9C 4C 05 1A BF C1 5C 8E 58 96 A1 8C DD A8 7B B6 4D 29 61 28 0D F4 A8 30 C7 27 46 
+47 23 BD 7D AD 1B F6 7B 41 2F E4 D7 6E 7C B9 72 FD 53 88 59 56 14 5D D3 A8 AF AD 9A D5 8A EF 38 
+41 F7 07 42 08 F5 7D 29 91 38 F6 DD 3F 18 79 E5 D5 5D 84 9D 00 48 4F 4C 8D BC F2 9A 59 29 AF DD 
+BC B1 6B 26 00 F3 82 18 8F 27 46 46 C7 DF FC 9A 92 C9 3E FF CD 00 56 94 20 AE 55 57 96 97 3E FE 
+80 78 BE 10 8B 49 89 A4 92 C9 46 7A FA C8 D4 B4 EF B8 9E 6D 31 94 A6 A7 A6 63 03 43 07 A9 3B 38 
+90 9F B1 2A 95 DA D2 62 90 E3 F3 1D 07 22 08 31 76 4D 03 71 5C 62 64 14 B2 2C C4 98 93 64 86 32 
+4D AD 54 00 84 8E AE 97 E6 66 4B B3 8F 5D 43 27 DE D3 82 13 4A 29 A5 9C 24 6B F9 BC 10 8D 65 8E 
+ED AE 1D CA C9 4A 6A 62 2A DA D7 AF 97 4A 7A 21 5F 9E 9F 2B 3E 7E 58 5F 5D B1 1A 75 CF B2 89 E7 
+12 D7 75 0C C3 D6 1A 10 21 5E 51 63 83 C3 4D D3 52 77 E0 14 25 96 1B 64 25 C9 77 9C B6 AB 23 AB 
+56 DF BC 7B 6B F9 B3 4F 72 E7 2F EE 2C 2E A8 2E 2F CE BD F7 9B C5 8F 3E A8 AD 2C 05 51 19 E6 79 
+C4 B2 76 A3 E1 E8 5B 62 9F AE A1 13 9F 8C BC FA DA B3 1E F1 4F 11 88 32 CF BD F7 AB E5 CF 3F 75 
+74 9D B8 AE 63 E8 46 B9 E4 ED E8 8B 06 20 C4 1C 07 59 6E EB 95 01 E0 55 35 9A CB 89 B1 04 2B 08 
+AC 28 59 5A 03 30 4C 40 00 75 34 CD 73 6C 4A 28 C3 50 FA D4 66 52 93 93 03 97 AE F6 3D DF F9 67 
+1F D4 D7 56 9F BC FB B3 F9 0F 7E 0B 11 46 3C E7 3B CE CE B6 C1 DB 80 18 67 4F 9C 1A B8 78 69 57 
+31 34 3E 12 C9 5D B8 64 96 CB 5A 21 6F 56 2B 88 65 83 16 57 00 21 C4 B2 62 3C 11 CD 0D 24 86 47 
+E2 23 A3 3D 27 4E 8A AD CE 8A 61 8C 72 69 E5 F3 4F 16 3F FE 90 61 80 98 48 C8 C9 14 1F 89 B2 A2 
+88 38 2E 20 28 01 08 EB EB 6B AE 61 44 07 06 E2 C3 63 6A 4F 4F 98 B7 6B C2 81 6C 26 D2 DF 3F 78 
+F5 25 BD 50 F0 1C 9B 21 14 20 18 28 42 20 96 45 3C 8F 79 01 F1 1C 62 39 C4 71 5A 7E D3 AC 55 01 
+84 30 A0 57 21 24 C6 62 B9 8B 97 A4 44 C2 AC 56 7D C7 26 9E 47 3C 8F F8 9E A3 69 C4 F7 5D C3 D0 
+F2 9B FB DC 1A 22 C4 47 A2 BC 1A 89 E5 06 D2 53 D3 B9 0B 17 AB 4B 8B 8D 8D 75 BB D1 F0 2C CB B5 
+4C A3 58 D4 0B 85 80 96 D6 7B EA CC A1 90 47 B0 20 2A 99 AC 94 48 39 5A FB 9D 04 E2 7B 7A A1 70 
+E7 EF FE 06 F3 7C DF E9 73 42 34 4A 19 C6 77 EC D5 2F 3E 7F F2 CB 9F AD DF BE B9 7D A4 DD 5C 1E 
+CF 78 96 A5 6D 6E 58 95 0A E9 CF 35 91 A3 AC 6A 75 F5 CB EB 5F FD BB BF 36 6B 55 4A 48 40 57 43 
+98 15 A2 51 00 51 E0 B1 21 82 0C 80 D4 F7 7D D7 F5 5D 87 FA BE 5D AF D5 9E CA C4 6D A5 CB 9F AE 
+72 76 0D 6E 37 EE DC F2 2C 3B 3E 3C 12 D2 66 3C CB 32 6B 35 12 B4 34 AC 13 86 09 16 FF 10 62 16 
+40 C0 50 86 32 34 50 EC 67 05 61 9F 0E F2 B1 81 C1 A1 97 5E B6 EA B5 DA DA 0A 27 4A 90 E3 20 44 
+90 C5 AC 28 C5 07 87 D3 53 D3 B1 C1 A1 3D 1F 89 52 86 50 4A 08 40 D8 AE D7 AD 7A AD B5 4C 00 40 
+18 48 02 F5 9E 3A 3D F9 CE 37 E5 D4 3B 5D 54 E0 1D C0 66 00 C8 1E 3F 19 E9 ED DF B8 73 B3 B6 B2 
+EC E8 BA 6B 1A B6 A6 D9 F5 82 67 5B CF 5C 07 C3 30 81 16 2B C7 B1 82 C0 C9 8A 10 8F 8B F1 B8 14 
+4F 0E 5E BA 32 F1 F6 D7 39 51 24 84 F8 B6 ED 59 A6 AD 69 F9 FB F7 EC 46 23 36 38 D4 7F FE C2 FE 
+F7 A7 94 12 C7 31 CA 65 A3 5C 74 74 5D 88 C4 A4 78 F2 79 32 0D 40 1C 2B 44 A2 AD 85 CA DD 01 B1 
+AC 10 8F C7 06 06 B5 CD 8D D6 C2 A9 56 B8 96 B9 F8 D1 07 AC 24 41 84 72 17 2F 33 0C A8 AD 2C 2F 
+7E F4 61 79 A1 8D C2 35 80 08 73 7C 2B 7F 82 61 18 47 D7 8C 52 D1 35 8D A0 8D 3B 16 44 31 16 57 
+32 19 35 9B E5 24 D9 73 5D DF B6 59 49 C2 82 60 D7 EB DA E6 A6 96 DF B0 1A 75 00 61 D0 68 20 F0 
+E4 3B B3 02 7B 67 08 3A 90 57 4F 8C 8E 4D 7D E3 DB 46 B9 54 5F DD D2 0A 86 10 B1 92 24 A7 D2 98 
+E3 08 21 C4 F7 10 CB 46 FA 72 C9 89 49 3E B2 E7 1E 2B 40 28 7B E2 64 E6 F8 09 26 A0 45 75 B4 18 
+03 20 3E 3C 72 FA 8F FE D4 B3 EC F5 5B 5F 99 D5 0A 7D BA FA DF 3E 82 52 6A 6B 9A A3 69 2B 5F B8 
+42 34 36 74 F5 1A DF 42 65 6C 8B 03 F9 19 CF B6 F3 0F EF 7F F2 AF FF 0F 2D BF 49 5C 8F 52 42 7D 
+42 89 4F 09 A5 4F 89 4F 4F 5F 07 30 00 00 08 00 44 10 21 80 10 C2 18 71 1C E6 05 56 14 10 C7 27 
+C7 C6 87 AE 5E CB 5D BC 92 9E 3E 46 7D 82 38 76 FF 96 F3 9E 65 56 16 17 6E FF ED FF 53 9A 7D 6C 
+D6 AA BE 6D 03 84 9A 9B D3 02 06 40 24 C6 E3 7D 67 CE 5F FD EF FE F2 50 16 C4 98 E3 33 D3 33 9B 
+F7 EF 86 6C CD 49 29 5D FA F4 63 BD 90 4F FF FA 5D 29 95 5E BB F1 45 E1 E1 83 B6 8C 46 2C F0 4A 
+4F AF 9C 4E B7 E6 0F A2 03 03 D3 DF FE AE 92 C9 DA 5A 23 68 D4 13 EC 54 EC 34 B0 20 63 16 74 77 
+73 74 DD B3 4C 06 30 76 BD AE 97 8A DA E6 66 63 63 3D 70 E6 AD D9 44 88 31 A7 A8 0C 03 7A 4F 9E 
+EC 3B 7B 41 CE 64 99 70 90 53 A9 F1 37 DF CE 1C 9B A9 CC CF 31 94 42 8E 0B A2 62 5E 8D 40 8C 29 
+A5 94 F8 10 22 2C 8A 62 22 B1 1F E7 9F 52 AB 51 D7 36 36 3C DB 8E F6 F7 F3 91 28 C4 38 D8 61 63 
+00 08 88 98 81 9E FA AE 67 B3 92 94 39 76 FC 95 FF FE AF 36 EF DF DD B8 7D B3 F0 F0 41 7D 7D CD 
+D1 35 EA 13 1A F4 47 E1 79 88 90 18 4F E4 2E 5E 1E 7B E3 AD F0 8D 59 77 E2 40 36 03 11 E2 64 59 
+49 67 EB AB AB 56 B5 1A 46 F8 14 40 88 79 21 A8 FE 0D 66 CA 40 9F D2 31 F4 48 7F 6E F4 F5 B7 42 
+8A 83 B8 A6 59 78 70 7F E5 FA 67 B5 D5 65 3F E8 F5 03 40 F3 BC 04 18 86 01 BC AA F2 6A C4 B7 6D 
+14 E4 91 0E 06 2C F0 D9 13 27 1F FD FC A7 2D F1 D4 9E B0 1B 8D C2 C3 87 F5 F5 75 56 14 F5 42 C1 
+0D 21 B2 2A 44 63 7D 67 CE F0 6A 64 7B 78 51 4A 1D 5D 03 00 30 0C E0 24 25 DA 9F CB 3F 7C A0 17 
+0B 56 AD CA 40 E8 99 A6 EF BA 0C 43 01 44 10 63 CC 71 01 C7 22 DA 9F 8B F4 F7 07 04 4D DF 71 5C 
+CB 74 75 DD D6 35 DF 75 9B 5B 17 32 0C B3 55 88 CA 31 80 91 92 29 31 9E 08 BF 05 0C 31 2B 44 63 
+AC 24 53 DF D7 36 37 3C DB 06 00 22 9E 87 2C 86 08 33 80 C1 AC 2C 67 32 10 63 00 F6 D3 31 AB 2E 
+2F 2E 7E FC D1 E2 47 EF FB 8E 13 E9 CF 45 73 03 BC 1A F1 4C 53 CB 6F 42 8C 1D C3 20 AE 2B A7 52 
+E9 E9 63 D9 E3 27 A5 44 B2 29 B2 DA 2A AC 1A 1C E2 A3 D1 D4 F8 84 5E 2C 18 E5 B2 A3 EB 88 65 B7 
+5B 76 12 CF 13 62 F1 F4 E4 54 72 62 B2 BB 4C C0 81 6C 06 20 14 E9 EB 3F F6 9D DF 4B 8C 8C EA C5 
+82 A3 EB 9E 6D 53 DF A7 4F F7 6A 20 C6 88 E5 88 E7 7A 96 CD 40 80 30 A6 84 72 AA EA 9A 46 20 DD 
+6B 94 4B C4 F3 84 68 2C 35 3E 11 E9 ED A0 39 3D 44 58 88 C5 F8 68 14 17 F3 88 E5 38 45 E1 24 29 
+C8 2D 7A 8E C3 50 86 12 C2 49 92 9C CE C4 06 87 FA CE 9E 3B 2C C9 39 C4 F1 A9 F1 09 25 9B AD AD 
+2C ED D2 7F 78 57 50 EA 9A 46 78 7E 27 C4 58 ED ED 1D BA 72 6D BB 8F 80 EF BA 46 B1 30 FF FE 7B 
+9E 63 33 0C F0 2D 4B 2B 6C 96 E7 E6 1C 5D 23 BE E7 BB 9E 6B E8 BE E3 50 86 02 00 83 F5 24 16 04 
+21 1A 8B 0F 0F 27 C7 C6 E5 74 86 15 04 2C 8A 0C 65 5C C3 B0 1B 0D 4A 69 20 5B 21 C6 E3 52 32 45 
+09 09 F2 5D 58 E0 01 44 DD F5 09 73 4D 33 7F FF EE CA E7 9F 56 97 16 1D C3 40 2C 2B 44 A3 41 C1 
+05 00 90 93 E5 D4 C4 64 EF 99 73 62 2C BE CF CC 65 94 CB F9 7B 77 16 3E F8 AD E7 38 42 24 22 A5 
+D2 9C 24 7B B6 65 96 4B 00 61 CF B2 88 EF 8B D1 58 72 6C 5C DB DC 1C BC 7A 2D 3E 34 DC 7A 11 80 
+90 94 48 F2 8A 0A 10 AE AD AC 78 96 C9 50 42 09 75 0D D3 6E D4 7D C7 71 2D 4B 88 44 E4 74 A6 3B 
+BA F7 C1 6C 06 00 39 95 1E 7B F3 6B 43 2F BD E2 68 0D AB 5E 77 74 CD B3 6C D7 34 3C CB 04 08 F1 
+6A 44 8A 27 3C DB D2 8B 45 DF B1 89 EF 5B B5 2A E2 79 DF B6 19 CA 10 DF 6B 6C AC 53 4A 53 13 53 
+3D C7 4F C4 06 77 79 FF BD C0 29 4A EE FC A5 EA D2 D2 7A 26 4B 3C 4F CD 66 C5 58 5C 2F 15 1B EB 
+EB B6 D6 08 A4 83 A2 FD FD 3D C7 4F F5 9E 3E 9B 9A 98 38 AC 3E 24 10 21 39 9D 4E 4F 1F AB 2E 2D 
+56 57 96 0F 5D 00 91 61 18 31 16 4B 4D 4C F5 EC C8 5B F8 8E 53 5B 5D B9 F1 EF FF 5A CB 6F 06 19 
+79 DF 71 C2 F0 86 D6 6F DD E0 55 55 88 44 85 68 4C 88 C5 18 4A 8D 72 B9 B1 B1 4E 09 81 18 49 89 
+64 7C 68 24 39 3E 41 3C 2F 20 F8 09 B1 18 16 F8 D8 C0 90 9C 4A 85 4F 34 07 70 74 7D F9 D3 8F EF 
+FE F0 EF 1A 9B 1B 81 23 0D 58 EA 41 5C 8E 45 31 39 3A 76 ED 2F FF 87 9E 93 A7 F6 11 7F E1 24 59 
+ED E9 8B 0D 8D 68 F9 0D D7 30 2A F3 73 5B 79 0B 08 21 C6 0C 03 28 F1 6B 6B 2B F5 8D 35 06 80 E8 
+C0 E0 AE 36 13 C0 B3 AC CD 3B B7 3E FE 57 FF D2 35 0D 88 71 D0 0A C5 73 1D 4A 08 C2 78 E0 D2 15 
+88 50 34 D7 8D 4E C2 21 D4 9C 01 00 58 51 64 45 51 4E 67 18 86 F1 5D A7 F0 F0 C1 FA CD AF 7C D7 
+89 E5 06 E4 64 92 95 64 C4 D5 4B B3 8F D7 6E 7C B9 71 F7 56 90 85 94 53 E9 F4 E4 54 F6 E4 E9 48 
+4F 6F CF C9 D3 9D B6 74 04 10 72 8A 72 F6 4F FF FC 84 61 10 DF 07 10 38 9A 66 6B 9A 5D AF 05 6A 
+D9 AE 6D A7 C6 27 94 4C 86 15 C2 AA EB 87 7C 5B 88 D9 91 97 5F AD CC CF D7 D7 D7 BA 53 23 D8 1F 
+E9 A9 63 43 57 AF ED 24 65 21 8E 95 92 49 56 14 89 E3 6E B1 DD B6 D7 66 81 D1 6E 97 9D 3C 3F 87 
+FB 8E A3 97 4A 7A A9 B4 AB 6D 37 36 36 36 EF DD DD F9 6A 88 65 C5 68 6C EA 9B DF 9D F9 EE F7 52 
+93 53 1D 79 1B 56 12 7B 4E 9D 7E FC CB 9F 03 00 29 D8 DA 83 DF 26 4C F8 9A B7 7E EB AB CD FB 77 
+22 B9 5C 74 6F 9B 49 4D 4E 89 89 64 62 7C FC E1 4F FE 21 7F EF 9E 51 29 F9 AE 0B 18 06 71 9C 98 
+48 42 8C 1D 5D B7 AA 15 C4 F3 3D 27 4F EF 64 FD EE 02 00 82 76 D0 AE F9 34 18 7E FA E5 00 84 3C 
+D7 B1 F7 20 04 B6 C5 21 D7 69 36 36 D6 1F FF E2 67 0F FF F1 C7 5A 21 4F 09 61 79 3E 58 CA 7B B6 
+E5 18 86 6B 18 AE 65 06 59 5A A3 54 5C FD B2 B1 79 FF 2E 62 39 35 DB 33 F5 CD EF 1C FF BD 3F 08 
+4F B6 67 18 86 61 A8 55 AB AE 5C FF 7C F9 D3 8F 8B 4F 1E 79 A6 E9 7B 1E F1 BC 20 5F 47 29 E5 64 
+65 EC B5 37 C6 DE 7C 3B 3D 75 EC 70 5F 33 73 EC F8 C8 AB AF 1B E5 D2 FA CD 1B 87 25 16 15 40 4A 
+A6 7A 4E 9D EE 3D F9 9C A4 10 C4 AC 9C CA CC 7C E7 F7 EF FC FD DF 54 97 97 38 59 91 92 49 31 16 
+B7 EB 35 B3 56 23 9E 1B 2C 24 00 03 C4 44 42 ED ED E3 15 35 E0 38 3B BA 6E 94 8A 46 B1 68 6B 0D 
+CF 71 7C DB F6 5D 17 B1 2C 03 01 44 08 00 18 B8 2C CF B1 83 22 02 E2 BA 46 A5 FC E0 C7 3F C4 1C 
+0B 11 4A 76 D2 D1 89 13 A5 FE 33 E7 27 BE F6 F5 F2 DC AC 55 AF 59 F5 9A DD 68 10 D7 25 3E 61 28 
+61 00 E0 23 6A 7C 70 B8 6D 38 24 C6 62 43 97 5F CA 4C CF D8 F5 9A 67 5B BE E3 52 DF C7 A2 C8 8A 
+22 80 D0 B3 1D D7 D0 21 C6 D1 DC A0 94 D8 8F CF CF C9 52 DF 99 73 17 FF EB FF E6 D1 CF 7E EA E8 
+1A 25 94 57 94 D8 E0 50 74 60 30 33 7D 2C 3E 32 1A E9 44 E0 77 27 0E D9 66 CC 72 79 F1 A3 0F 8A 
+8F 1F B9 96 B9 C5 40 03 90 D9 EA C9 FA DC D8 F2 5D D7 77 5D 5B D3 18 86 71 74 5D CB 6F 86 6C CF 
+1D 80 52 EA 3B CE 9D BF FF DB E5 4F 3F 2E CD CD 9A E5 32 F1 BD 80 50 B4 7D 0C 80 50 8C C6 12 A3 
+E3 E9 C9 E9 C3 A5 90 70 92 3C 70 F1 B2 6F 5B C4 73 F3 0F EE 1F A2 B7 E9 3D 79 BA E7 F8 A9 9D D5 
+1D BE EB 12 D7 01 10 0C BF FC 2A 2B 49 56 B5 CA AB AA 94 4C 61 41 F0 1D DB D6 34 E2 BA AC 2C 07 
+9E 84 15 25 5E 55 B7 D2 4A 94 F1 5D C7 35 0D C7 30 1C 4D 73 4D 33 58 F6 20 8E 03 10 21 8E 05 10 
+05 CD 6E CD 4A 45 CB 6F 6A 9B 1B 46 B9 E4 D9 36 2B 49 52 32 C5 75 D8 B0 04 20 C4 A9 EA E4 D7 BF 
+69 D7 1B 9E 63 6F 2D B8 5D D7 77 5D 47 D7 5C C3 90 52 A9 F4 F4 B1 FD 55 F9 3C CB 32 AB 15 BD 90 
+77 2D 0B 42 18 68 E2 79 8E 83 75 9E 95 65 5E 51 38 49 96 93 49 31 9E 68 5B 9A 0E 20 52 7B 7A 27 
+DF F9 66 72 74 3C 48 B2 23 8E 13 E2 71 21 12 95 12 C9 BD 2A 88 C3 E0 90 6D 06 0B 42 6C 60 D0 73 
+6C E2 B9 0C 65 08 21 C4 73 7D DB 21 C4 87 10 22 8E 43 3C 8F 39 01 71 1C C4 88 78 9E 55 AF 53 42 
+94 4C 26 31 3A D6 E9 3B 50 4A 6A 2B 2B B5 95 65 BB D1 C0 82 C0 47 22 58 10 E0 53 A2 A7 D5 A8 F3 
+6A 24 3E 3C D2 DA F1 F4 10 00 40 B4 3F 37 FC F2 6B 00 22 31 F6 AB C2 A3 87 66 A5 1C 52 7C 75 8F 
+EB 01 C4 72 6A 5F DF F0 B5 57 52 93 53 DB E9 20 E2 79 C5 47 0F 37 EF DD 09 D8 77 BE E7 89 89 84 
+18 4F C8 C9 54 20 08 16 14 BA B2 A2 B4 15 78 04 1A B6 2C 26 BE 8F 9E 6A 95 50 DF F7 6C DB 33 4D 
+C7 D0 82 5D 1A D7 34 A8 4F 18 08 01 84 94 F8 46 A9 CC 29 0A AF AA 11 A3 8F 10 92 18 1E ED 3D 73 
+AE B5 32 6C 7F 50 BA B5 CA 72 2D 73 CB E7 FB 3E A5 D4 77 5D D7 34 1D C3 60 75 3D 18 BB 7B 5F 81 
+16 1E 3E 58 B9 FE 59 75 69 C1 B5 2D C4 B2 BE E3 B8 A6 49 5C 17 20 C4 0A 22 27 2B BC AA 08 D1 58 
+34 37 D0 77 E6 BC 9C 4E EF BF 23 89 05 21 D2 9F C3 3C 5F 9A 7B 62 94 CB 8C 07 10 C6 62 2C C6 C9 
+72 6B 7F C2 F0 38 64 9B 51 FB FA 4E FF F1 7F 5E 9E 9B 0D 18 59 9E 65 99 95 B2 96 CF 3B BA CE 00 
+C0 49 12 1F 89 F0 6A 44 88 44 C4 78 22 E0 07 10 CF 8F E6 72 F1 E1 91 90 B5 7E 01 00 00 08 B3 B9 
+0B 17 01 C3 D4 37 D6 20 C2 91 DE 3E 31 91 44 2C 0B 00 F0 6C AB B6 B6 1A CB 0D 8C BC FA 46 7A 72 
+EA 45 F0 14 01 42 41 65 65 7C 78 F8 C1 4F 7E B4 7E EB AB C6 C6 86 6B E8 5D 84 6A 10 63 5E 51 A2 
+FD 03 C3 AF BC 36 78 E5 9A 9A 7D 46 E8 F0 5D 77 F5 CB EB 5F FE DB 7F D3 D8 99 4C F0 6D 00 00 05 
+D3 49 44 41 54 DC E0 44 51 8C 27 A5 64 52 4A A6 E4 54 4A 4A 24 03 7F 12 A4 EF B7 62 75 C0 20 CC 
+B2 92 E4 59 16 A7 A8 52 22 C1 CA 32 71 1C E2 FB BE 6D 3B 86 61 35 6A 01 39 C5 D1 34 E6 69 0F 43 
+D7 34 8D 4A 19 42 24 C6 E3 AC 28 F6 9C 3C A5 64 76 A1 63 EF 0F DF 71 6B 2B CB F7 FF E1 87 F9 07 
+F7 CD 4A D9 B3 2C DF 73 18 06 B8 86 EE E8 06 A5 84 57 54 2C 4A 23 AF BC A6 EC B1 ED 43 09 59 BD 
+F1 C5 AD BF FD 0F FB 94 C1 00 00 20 C6 91 DE BE 57 FF EA 7F 1C 88 5C E1 DA 0D 7D E2 B9 A5 B9 D9 
+AF FE FD BF DD BC 77 97 93 A4 DE D3 67 73 17 2E A5 26 26 A3 FD CD BD 52 C2 E3 90 6D 86 15 C4 C4 
+C8 E8 76 21 9E 55 AD AC DF BA 69 D5 EB 7A A9 68 D5 AA DB CD 28 B1 20 E4 2E 5C 1A 7F EB 9D 81 4B 
+57 BA BE 17 C4 78 FA 5B DF 1D 7B E3 6D 47 D7 5C 5D F7 1C 07 05 0D 84 59 36 C8 BB B3 82 88 38 EE 
+85 A8 00 3F 05 2B 8A 83 57 AE A5 26 8F CD BD F7 EE 83 1F FF 68 F5 8B CF 43 76 E7 DB 06 00 40 88 
+44 73 17 2E 9D FA CF FE A8 EF F4 B9 A6 12 00 B0 B5 11 0C A8 EF DB 9A 66 6B 5A 75 79 71 FB 6F 7B 
+5D 10 40 48 7D 1F 0B 02 1F 89 72 92 14 B4 E3 0B 72 AC 9E 6D 91 7D DB 41 03 08 9F BC FB F3 0B FF 
+E5 5F 8C BF F9 35 71 DF 05 43 13 EC 7A ED F1 2F 7E F6 E0 A7 3F DA 8B F4 64 56 2B CB 9F 7D 92 18 
+1D DB CB 66 18 86 C1 02 CF 8A E2 3E C5 B0 81 E3 AA 2E 2F 99 E5 B2 EF 38 4C BB 05 30 F1 7D 2D BF 
+51 5B 5E D2 F3 9B 1A A5 95 85 F9 47 3F FB 49 FF D9 F3 A7 FF E8 4F C6 DE 78 BB BB C9 F4 05 6A 35 
+39 5A 63 E5 CB EB 1F FD CB 7F 61 D5 6B 9E ED D0 1D CA DF 10 21 5E 55 7B 4F 9D 69 2D 73 ED 14 C4 
+F3 16 3E 7C FF F6 DF FE 47 5B D3 02 0D 7C 00 01 C3 00 06 80 A9 77 BE 31 FE D6 3B F1 03 DF A2 2D 
+84 48 64 EC F5 B7 93 63 13 EB 37 BF 5A B9 FE 69 65 69 51 DB DC 74 B4 C6 FE 3E 07 61 AC 64 B2 B9 
+8B 97 06 2F BF 94 3D 71 4A 49 67 5A 35 9A 11 C7 8D BE F6 A6 10 89 2E 7C F0 DB E2 93 47 56 A3 EE 
+DB 76 90 CD DF 67 54 05 84 11 CF B6 FD 72 C9 AA 56 B6 6B 48 B6 CB CE F7 01 25 A4 BE BE 3E FB EB 
+77 C5 78 62 FC AD AF 85 FF 12 58 49 CE 5D B8 34 FB EB 77 5B C3 D4 C0 13 8A 89 78 EF A9 33 FB 18 
+0C 84 70 E2 AD 77 D4 4C CF D2 27 1F 95 66 1F 73 8A 22 A7 D2 BC 1A A1 94 BA A6 61 D5 EB 46 B1 60 
+55 AB 94 61 92 63 63 E9 E9 63 61 5A 44 B2 82 30 F2 F2 AB 5A 3E 3F FB EB 77 4B B3 8F 3D CB F2 6C 
+DB A8 54 6C 5D A7 61 54 8B 76 C3 0B B4 19 C8 72 42 24 2A 67 B2 8D CD 4D CF 32 83 3C 3D 03 18 88 
+71 6A 62 AA EF F4 D9 68 6E DF 5C 61 38 50 42 AC 5A B5 B2 30 6F EE D0 A5 0F F6 83 19 06 BC 50 27 
+B3 0D 88 B1 18 8F 07 F4 AA CC F4 31 BD 58 A8 AF AF D5 56 96 6B 2B CB 7A A1 C0 00 E0 3B B6 67 59 
+84 10 CC 73 62 2C 2E 25 53 52 22 29 25 12 B1 C1 E1 C4 E8 58 6C 60 70 2F 55 75 00 A1 9A ED 19 BC 
+7A 2D 9A 1B D4 F2 1B 8E A1 FB B6 E3 5A A6 5D AF 07 1B B8 76 A3 61 D5 6B 8E AE 05 25 F5 80 01 66 
+B5 52 5F 5B F5 6C 0B 22 C4 30 80 10 1F 50 06 62 04 00 84 08 61 51 E0 95 08 80 80 93 15 3E 12 65 
+25 89 FA BE 55 AD E8 C5 A2 51 29 39 BA 4E 09 E1 D5 48 6C 70 48 C9 86 25 CE 04 C0 FF 5F 7B 77 CF 
+DB 34 10 C6 01 DC E7 B3 7D 4E 1C BF 11 9B A8 50 B0 2A 41 A8 52 09 21 C1 88 C4 80 C4 88 10 7C 52 
+24 66 C4 DA 76 40 0C A8 1B A5 D4 08 D2 B4 4D 6B 3B 67 3B E7 F8 18 8E 0E 30 D0 9C D3 54 A2 7D 7E 
+1F C0 96 65 FF E5 B7 E7 79 CE 34 BB F7 FA 1B AF DE FC F8 F4 B1 CC 52 D2 B1 45 4B 15 E7 5C D5 B4 
+96 EB 9A 9E BF F2 F0 D1 BF 5E 93 10 6A 77 83 DB 8F 9F D8 2B B7 F2 E3 23 B1 7E BA E8 96 9F 31 56 
+95 05 A3 94 51 CA 79 6D 05 A1 77 27 9A A7 BC 12 A9 B8 E5 77 EF 3F 7F E1 47 6B C9 F7 B8 4C 93 32 
+4D BD 28 0A FB 0F 1A 3F AF CF 3B 82 AD 09 CE 27 47 87 F1 F6 E6 FE D6 E6 94 4E 54 8C 55 4D 47 08 
+61 A2 8B 5F 8D DE DD 68 F1 D9 0E 2C A7 F1 F6 D6 CE BB B7 C3 9D CF 75 55 A9 18 63 42 88 ED 78 AB 
+AB 83 97 AF 6F AE 0F 88 73 CE F8 D6 0B 37 63 AC 4C 4E B3 E1 F0 24 FE 36 39 38 10 99 11 25 33 9A 
+41 5A FE 0D 2B 08 DA DD C0 F4 7C 2B 08 E7 FF E9 7E 56 FA 3D AB 2B C6 72 CA 68 3E 9D 64 45 92 94 
+C9 69 99 A5 48 C5 A6 E3 28 0A CA C7 C7 27 F1 3E A3 19 D6 0D 84 54 D1 E8 8B 0D 5D 41 AA AA 61 DD 
+6C 11 C7 41 08 19 96 2D 46 84 F1 59 95 8F C7 93 D1 48 54 E2 B0 A2 B0 C2 70 ED E9 B3 DE 60 A3 C1 
+C0 9A 6C F8 73 BC F7 75 4A 29 B1 6D D3 B6 F5 B6 25 BA 9D 0D AB 23 EA C4 16 3C E3 BC AE 39 E7 0D 
+DA 3A 66 65 C9 F2 9C E5 B4 4C D3 96 EF 13 C7 6D DC 76 B6 CC CC 28 8A 22 06 D7 1F 8E AA 29 C3 86 
+AE 11 82 90 2A D6 8E BC C0 65 83 18 A5 E3 BD DD 2F 1F DE B3 A2 C0 86 61 3A 6E A7 D7 0B FB EB 7F 
+0D 88 BA 3E 78 5D B3 22 D7 0C 43 74 07 28 E2 22 3B EF D9 BD AE 2A 51 5A 6E 3A AE 46 C8 E5 DC A2 
+FF 47 4B CF CC 6F F3 2D 3F B4 C8 F6 FF 38 90 B3 0F AF 4B DC 23 B8 AE 2E 2B 33 00 5C 15 4B 1C 15 
+07 C0 95 04 99 01 40 0E 64 06 00 39 90 19 00 E4 40 66 00 90 03 99 01 40 0E 64 06 00 39 90 19 00 
+E4 40 66 00 90 03 99 01 40 0E 64 06 00 39 90 19 00 E4 FC 02 1D B0 A3 30 D2 F3 60 F7 00 00 00 00 
+49 45 4E 44 AE 42 60 82 
+EndData
+$EndBitmap
+Wire Wire Line
+	9900 4750 9900 4800
+Wire Wire Line
+	10500 5400 11000 5400
+Text Label 11000 5400 2    50   ~ 0
+MA18
+Wire Wire Line
+	10500 5300 11000 5300
+Text Label 11000 5300 2    50   ~ 0
+MA17
+Wire Wire Line
+	3050 12950 3050 13350
+Text Label 20750 13300 2    50   ~ 0
+WSQ
+Wire Wire Line
+	20450 13300 20750 13300
+NoConn ~ 3850 2500
+NoConn ~ 7450 8950
+Wire Wire Line
+	6450 8950 6350 8950
+Wire Wire Line
+	6350 8950 6350 8550
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F333440
+P 6350 8100
+AR Path="/5F90CB22/5F333440" Ref="#PWR?"  Part="1" 
+AR Path="/5F333440" Ref="#PWR0125"  Part="1" 
+F 0 "#PWR0125" H 6350 7950 50  0001 C CNN
+F 1 "+3.3V" H 6365 8273 50  0000 C CNN
+F 2 "" H 6350 8100 50  0001 C CNN
+F 3 "" H 6350 8100 50  0001 C CNN
+	1    6350 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 8100 6350 8450
+Connection ~ 6350 8450
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F4DAFB9
+P 1800 1800
+AR Path="/5EC51AA8/5F4DAFB9" Ref="TP?"  Part="1" 
+AR Path="/5F4DAFB9" Ref="TP13"  Part="1" 
+F 0 "TP13" H 1650 1950 50  0000 C TNN
+F 1 "Q" H 1650 1850 50  0000 L TNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 2000 1800 50  0001 C CNN
+F 3 "~" H 2000 1800 50  0001 C CNN
+	1    1800 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1800 1800 2200
+Wire Wire Line
+	1800 2200 2850 2200
+Wire Wire Line
+	3950 9250 4450 9250
+Wire Wire Line
+	3950 9550 4450 9550
+Wire Wire Line
+	3950 9650 4450 9650
+$Comp
+L hd6309sbc_v2c-rescue:CY62158EV30LL-45ZSXI-hd6309sbc_Library U2
+U 1 1 6069484E
+P 9900 6200
+F 0 "U2" H 10500 7600 50  0000 C CNN
+F 1 "CY62158EV30LL-45ZSXI" H 10500 7500 50  0000 C CNN
+F 2 "Package_SO:TSOP-II-44_10.16x18.41mm_P0.8mm" H 9400 7350 50  0001 C CNN
+F 3 "https://www.cypress.com/file/43811/download" H 9900 6200 50  0001 C CNN
+	1    9900 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 5500 11000 5500
+Text Label 11000 5500 2    50   ~ 0
+MA19
+Wire Wire Line
+	9900 7750 9800 7750
+Wire Wire Line
+	9800 7750 9800 7700
+Connection ~ 9900 7750
+Wire Wire Line
+	9900 7750 9900 7800
+Wire Wire Line
+	9900 4800 10000 4800
+Wire Wire Line
+	10000 4800 10000 4900
+Connection ~ 9900 4800
+Wire Wire Line
+	9900 4800 9900 4900
+Wire Wire Line
+	17550 13650 17550 13800
+Wire Wire Line
+	7450 2550 7950 2550
+Wire Wire Line
+	7450 2450 7950 2450
+Wire Wire Line
+	7450 2350 7950 2350
+Wire Wire Line
+	7450 2250 7950 2250
+Wire Wire Line
+	7450 2150 7950 2150
+Wire Wire Line
+	7450 2050 7950 2050
+Wire Wire Line
+	7450 1950 7950 1950
+Wire Wire Line
+	7450 1850 7950 1850
+Text Label 7950 2550 2    50   ~ 0
+D0
+Text Label 7950 2450 2    50   ~ 0
+D1
+Text Label 7950 2350 2    50   ~ 0
+D2
+Text Label 7950 2250 2    50   ~ 0
+D3
+Text Label 7950 2150 2    50   ~ 0
+D4
+Text Label 7950 2050 2    50   ~ 0
+D5
+Text Label 7950 1950 2    50   ~ 0
+D6
+Text Label 7950 1850 2    50   ~ 0
+D7
+Wire Wire Line
+	6450 2550 5950 2550
+Wire Wire Line
+	6450 2450 5950 2450
+Wire Wire Line
+	6450 2350 5950 2350
+Wire Wire Line
+	6450 2250 5950 2250
+Wire Wire Line
+	6450 2150 5950 2150
+Wire Wire Line
+	6450 2050 5950 2050
+Wire Wire Line
+	6450 1950 5950 1950
+Wire Wire Line
+	6450 1850 5950 1850
+Text Label 5950 2550 0    50   ~ 0
+D0_HV
+Text Label 5950 2450 0    50   ~ 0
+D1_HV
+Text Label 5950 2350 0    50   ~ 0
+D2_HV
+Text Label 5950 2250 0    50   ~ 0
+D3_HV
+Text Label 5950 2150 0    50   ~ 0
+D4_HV
+Text Label 5950 2050 0    50   ~ 0
+D5_HV
+Text Label 5950 1950 0    50   ~ 0
+D6_HV
+Text Label 5950 1850 0    50   ~ 0
+D7_HV
+Wire Wire Line
+	7450 4950 7550 4950
+Wire Wire Line
+	7450 7150 7550 7150
+Wire Wire Line
+	5950 4250 6450 4250
+Wire Wire Line
+	5950 4350 6450 4350
+Wire Wire Line
+	5950 4450 6450 4450
+Wire Wire Line
+	5950 4550 6450 4550
+Wire Wire Line
+	5950 4650 6450 4650
+Wire Wire Line
+	5950 4750 6450 4750
+Wire Wire Line
+	5950 6250 6450 6250
+Wire Wire Line
+	5950 6350 6450 6350
+Text Label 5950 6350 0    50   ~ 0
+A7_HV
+Text Label 5950 6250 0    50   ~ 0
+A6_HV
+Text Label 5950 4750 0    50   ~ 0
+A5_HV
+Text Label 5950 4650 0    50   ~ 0
+A4_HV
+Text Label 5950 4550 0    50   ~ 0
+A3_HV
+Text Label 5950 4450 0    50   ~ 0
+A2_HV
+Text Label 5950 4350 0    50   ~ 0
+A1_HV
+Text Label 5950 4250 0    50   ~ 0
+A0_HV
+Wire Wire Line
+	5950 6450 6450 6450
+Wire Wire Line
+	5950 6550 6450 6550
+Wire Wire Line
+	5950 6650 6450 6650
+Wire Wire Line
+	5950 6750 6450 6750
+Wire Wire Line
+	5950 6850 6450 6850
+Wire Wire Line
+	5950 6950 6450 6950
+Wire Wire Line
+	5950 8650 6450 8650
+Wire Wire Line
+	5950 8750 6450 8750
+Text Label 5950 8750 0    50   ~ 0
+A15_HV
+Text Label 5950 8650 0    50   ~ 0
+A14_HV
+Text Label 5950 6950 0    50   ~ 0
+A13_HV
+Text Label 5950 6850 0    50   ~ 0
+A12_HV
+Text Label 5950 6750 0    50   ~ 0
+A11_HV
+Text Label 5950 6650 0    50   ~ 0
+A10_HV
+Text Label 5950 6550 0    50   ~ 0
+A9_HV
+Text Label 5950 6450 0    50   ~ 0
+A8_HV
+Wire Wire Line
+	5950 9150 6450 9150
+Wire Wire Line
+	5950 9050 6450 9050
+Text Label 5950 9150 0    50   ~ 0
+RW_HV
+Text Label 5950 9050 0    50   ~ 0
+AVMA_HV
+Wire Wire Line
+	19450 5650 19950 5650
+Wire Wire Line
+	19450 5550 19950 5550
+Text Label 18450 5750 0    50   ~ 0
+D4
+Text Label 19950 5650 2    50   ~ 0
+D5
+Text Label 18450 5650 0    50   ~ 0
+D6
+Text Label 19950 5550 2    50   ~ 0
+D7
+Wire Wire Line
+	14000 5150 13500 5150
+Wire Wire Line
+	14500 5150 15000 5150
+Wire Wire Line
+	14000 5250 13500 5250
+Wire Wire Line
+	14000 5350 13500 5350
+Wire Wire Line
+	14500 5350 15000 5350
+Wire Wire Line
+	14000 5450 13500 5450
+Wire Wire Line
+	14500 5450 15000 5450
+Text Label 13500 5150 0    50   ~ 0
+A7
+Text Label 15000 5150 2    50   ~ 0
+A6
+Text Label 13500 5250 0    50   ~ 0
+A5
+Text Label 13500 5350 0    50   ~ 0
+A3
+Text Label 15000 5350 2    50   ~ 0
+A2
+Text Label 13500 5450 0    50   ~ 0
+A1
+Text Label 15000 5450 2    50   ~ 0
+A0
+Wire Wire Line
+	14000 4750 13500 4750
+Wire Wire Line
+	14000 5550 13500 5550
+Wire Wire Line
+	14000 4850 13500 4850
+Wire Wire Line
+	14500 4850 15000 4850
+Wire Wire Line
+	14000 4950 13500 4950
+Wire Wire Line
+	14500 5050 15000 5050
+Text Label 13500 4750 0    50   ~ 0
+A15
+Text Label 13500 5550 0    50   ~ 0
+A14
+Text Label 13500 4850 0    50   ~ 0
+A13
+Text Label 15000 4850 2    50   ~ 0
+A12
+Text Label 13500 4950 0    50   ~ 0
+A11
+Text Label 15000 5050 2    50   ~ 0
+A8
+Wire Wire Line
+	18450 5050 18950 5050
+Text Label 18450 5050 0    50   ~ 0
+MA13
+NoConn ~ 3950 8950
+Wire Wire Line
+	5950 4050 6450 4050
+Text Label 5950 4050 0    50   ~ 0
+BS_HV
+Wire Wire Line
+	6450 4150 5950 4150
+Text Label 5950 4150 0    50   ~ 0
+BA_HV
+Text Label 13500 5650 0    50   ~ 0
+BS
+Wire Wire Line
+	13500 5650 14000 5650
+Text Label 15000 5550 2    50   ~ 0
+BA
+Wire Wire Line
+	15000 5550 14500 5550
+Wire Wire Line
+	15000 4050 14500 4050
+Text Label 13500 4050 0    50   ~ 0
+TXD1
+$Comp
+L Connector_Generic:Conn_02x25_Odd_Even QM2
+U 1 1 62C074F8
+P 14200 5050
+F 0 "QM2" H 14250 6467 50  0000 C CNN
+F 1 "MAX10_CORE_JP2" H 14250 6376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x25_P2.54mm_Vertical" H 14200 5050 50  0001 C CNN
+F 3 "~" H 14200 5050 50  0001 C CNN
+	1    14200 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18850 6250 18850 6350
+$Comp
+L power:GND #PWR0102
+U 1 1 60C959B8
+P 18850 6350
+F 0 "#PWR0102" H 18850 6100 50  0001 C CNN
+F 1 "GND" H 18855 6177 50  0000 C CNN
+F 2 "" H 18850 6350 50  0001 C CNN
+F 3 "" H 18850 6350 50  0001 C CNN
+	1    18850 6350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	19550 6250 19550 6350
+$Comp
+L power:GND #PWR0106
+U 1 1 60CDD246
+P 19550 6350
+F 0 "#PWR0106" H 19550 6100 50  0001 C CNN
+F 1 "GND" H 19555 6177 50  0000 C CNN
+F 2 "" H 19550 6350 50  0001 C CNN
+F 3 "" H 19550 6350 50  0001 C CNN
+	1    19550 6350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 6250 13900 6350
+$Comp
+L power:GND #PWR0107
+U 1 1 60D25122
+P 13900 6350
+F 0 "#PWR0107" H 13900 6100 50  0001 C CNN
+F 1 "GND" H 13905 6177 50  0000 C CNN
+F 2 "" H 13900 6350 50  0001 C CNN
+F 3 "" H 13900 6350 50  0001 C CNN
+	1    13900 6350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	14600 6250 14600 6350
+$Comp
+L power:GND #PWR0109
+U 1 1 60D25129
+P 14600 6350
+F 0 "#PWR0109" H 14600 6100 50  0001 C CNN
+F 1 "GND" H 14605 6177 50  0000 C CNN
+F 2 "" H 14600 6350 50  0001 C CNN
+F 3 "" H 14600 6350 50  0001 C CNN
+	1    14600 6350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	14600 6250 14500 6250
+Wire Wire Line
+	14000 6250 13900 6250
+Wire Wire Line
+	19550 6250 19450 6250
+Wire Wire Line
+	18950 6250 18850 6250
+Wire Wire Line
+	19950 5150 19450 5150
+Text Label 19950 5150 2    50   ~ 0
+MA11
+Text Label 19950 4250 2    50   ~ 0
+MA19
+Wire Wire Line
+	19950 4250 19450 4250
+Text Label 15000 5850 2    50   ~ 0
+T5
+Text Label 15000 5950 2    50   ~ 0
+T6
+Text Label 15000 6050 2    50   ~ 0
+T7
+Text Label 15000 6150 2    50   ~ 0
+T8
+Wire Wire Line
+	15000 6050 14500 6050
+Wire Wire Line
+	14500 6150 15000 6150
+Wire Wire Line
+	15000 5850 14500 5850
+Wire Wire Line
+	14500 5950 15000 5950
+Text Label 10350 15450 0    50   ~ 0
+T1
+Text Label 10350 15550 0    50   ~ 0
+T2
+Text Label 10350 15650 0    50   ~ 0
+T3
+Text Label 10350 15750 0    50   ~ 0
+T4
+Wire Wire Line
+	10350 15650 10850 15650
+Wire Wire Line
+	10850 15750 10350 15750
+Wire Wire Line
+	10850 15550 10350 15550
+Text Label 12050 15350 0    50   ~ 0
+T5
+Text Label 12050 15450 0    50   ~ 0
+T6
+Text Label 12050 15550 0    50   ~ 0
+T7
+Text Label 12050 15650 0    50   ~ 0
+T8
+Text Label 13500 5050 0    50   ~ 0
+A9
+Wire Wire Line
+	14000 5050 13500 5050
+Text Label 19950 4450 2    50   ~ 0
+MA16
+Wire Wire Line
+	19950 4450 19450 4450
+Wire Wire Line
+	19950 4550 19450 4550
+Text Label 19950 4550 2    50   ~ 0
+MA15
+Wire Wire Line
+	19950 4950 19450 4950
+Text Label 19950 4950 2    50   ~ 0
+MA14
+Wire Wire Line
+	19950 5050 19450 5050
+Text Label 19950 5050 2    50   ~ 0
+MA12
+Wire Wire Line
+	15000 4950 14500 4950
+Text Label 15000 4950 2    50   ~ 0
+A10
+Text Label 15000 5250 2    50   ~ 0
+A4
+Wire Wire Line
+	14500 5250 15000 5250
+Text Label 10350 14950 0    50   ~ 0
+MISO
+Text Label 10350 15050 0    50   ~ 0
+SCLK
+Text Label 10350 15150 0    50   ~ 0
+MOSI
+Text Label 10350 15250 0    50   ~ 0
+SDCS
+Wire Wire Line
+	10350 15150 10850 15150
+Wire Wire Line
+	10850 15250 10350 15250
+Wire Wire Line
+	10350 14950 10850 14950
+Wire Wire Line
+	10850 15050 10350 15050
+$Comp
+L Connector_Generic:Conn_01x02 J8
+U 1 1 665E1050
+P 14250 2900
+F 0 "J8" H 14330 2892 50  0000 L CNN
+F 1 "CORE" H 14330 2801 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 14250 2900 50  0001 C CNN
+F 3 "~" H 14250 2900 50  0001 C CNN
+	1    14250 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13450 2900 14050 2900
+Text Label 13450 2900 0    50   ~ 0
+VCC
+Wire Wire Line
+	14050 3000 13750 3000
+Wire Wire Line
+	13750 3000 13750 3450
+Wire Wire Line
+	13200 3450 13750 3450
+Wire Wire Line
+	13750 3450 13750 3850
+Wire Wire Line
+	13750 3850 14000 3850
+Text Label 13200 3450 0    50   ~ 0
+MAX_VCC
+NoConn ~ 14500 3850
+Wire Wire Line
+	14000 3950 13550 3950
+Wire Wire Line
+	13550 3950 13550 3750
+$Comp
+L power:GND #PWR049
+U 1 1 60743559
+P 13550 3750
+F 0 "#PWR049" H 13550 3500 50  0001 C CNN
+F 1 "GND" H 13555 3577 50  0000 C CNN
+F 2 "" H 13550 3750 50  0001 C CNN
+F 3 "" H 13550 3750 50  0001 C CNN
+	1    13550 3750
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR050
+U 1 1 60743C31
+P 14950 3750
+F 0 "#PWR050" H 14950 3500 50  0001 C CNN
+F 1 "GND" H 14955 3577 50  0000 C CNN
+F 2 "" H 14950 3750 50  0001 C CNN
+F 3 "" H 14950 3750 50  0001 C CNN
+	1    14950 3750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	14950 3750 14950 3950
+Wire Wire Line
+	14950 3950 14500 3950
+Wire Wire Line
+	18950 3950 18500 3950
+Wire Wire Line
+	18500 3950 18500 3750
+$Comp
+L power:GND #PWR035
+U 1 1 60796D3A
+P 18500 3750
+F 0 "#PWR035" H 18500 3500 50  0001 C CNN
+F 1 "GND" H 18505 3577 50  0000 C CNN
+F 2 "" H 18500 3750 50  0001 C CNN
+F 3 "" H 18500 3750 50  0001 C CNN
+	1    18500 3750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	19450 3950 19900 3950
+Wire Wire Line
+	19900 3950 19900 3750
+$Comp
+L power:GND #PWR048
+U 1 1 607E91A6
+P 19900 3750
+F 0 "#PWR048" H 19900 3500 50  0001 C CNN
+F 1 "GND" H 19905 3577 50  0000 C CNN
+F 2 "" H 19900 3750 50  0001 C CNN
+F 3 "" H 19900 3750 50  0001 C CNN
+	1    19900 3750
+	-1   0    0    1   
+$EndComp
+Text Notes 9500 1150 0    79   ~ 0
+64KB SPI FLASH
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60892B2B
+P 9900 4750
+AR Path="/5F90CB22/60892B2B" Ref="#PWR?"  Part="1" 
+AR Path="/60892B2B" Ref="#PWR034"  Part="1" 
+F 0 "#PWR034" H 9900 4600 50  0001 C CNN
+F 1 "+3.3V" H 9915 4923 50  0000 C CNN
+F 2 "" H 9900 4750 50  0001 C CNN
+F 3 "" H 9900 4750 50  0001 C CNN
+	1    9900 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2400 8850 2500
+$Comp
+L power:GND #PWR015
+U 1 1 60895274
+P 8850 2500
+F 0 "#PWR015" H 8850 2250 50  0001 C CNN
+F 1 "GND" H 8855 2327 50  0000 C CNN
+F 2 "" H 8850 2500 50  0001 C CNN
+F 3 "" H 8850 2500 50  0001 C CNN
+	1    8850 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 6089527A
+P 8850 2300
+F 0 "C1" H 8942 2346 50  0000 L CNN
+F 1 "0.1uF" H 8942 2255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8850 2300 50  0001 C CNN
+F 3 "~" H 8850 2300 50  0001 C CNN
+	1    8850 2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 608E8215
+P 10250 3200
+F 0 "#PWR025" H 10250 2950 50  0001 C CNN
+F 1 "GND" H 10255 3027 50  0000 C CNN
+F 2 "" H 10250 3200 50  0001 C CNN
+F 3 "" H 10250 3200 50  0001 C CNN
+	1    10250 3200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 3100 10250 3200
+Wire Wire Line
+	10650 2900 11150 2900
+Text Label 11150 2900 2    50   ~ 0
+MMISO
+Text Label 11150 2800 2    50   ~ 0
+MMOSI
+Wire Wire Line
+	9850 2900 9350 2900
+Text Label 9350 2900 0    50   ~ 0
+MCS
+$Comp
+L Device:R R?
+U 1 1 60AE40E8
+P 9550 2400
+AR Path="/5EC52D50/60AE40E8" Ref="R?"  Part="1" 
+AR Path="/60AE40E8" Ref="R5"  Part="1" 
+AR Path="/5EC51AA8/60AE40E8" Ref="R?"  Part="1" 
+F 0 "R5" H 9620 2446 50  0000 L CNN
+F 1 "4.7K" H 9620 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9480 2400 50  0001 C CNN
+F 3 "~" H 9550 2400 50  0001 C CNN
+	1    9550 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 2550 9550 2700
+Wire Wire Line
+	9850 2700 9550 2700
+Text Label 9600 2700 0    50   ~ 0
+MWP
+Wire Wire Line
+	14500 4550 15000 4550
+Wire Wire Line
+	14000 4650 13500 4650
+Wire Wire Line
+	14000 4550 13500 4550
+Wire Wire Line
+	14500 4650 15000 4650
+Text Label 19950 5750 2    50   ~ 0
+D3
+Text Label 18450 5950 0    50   ~ 0
+D1
+Wire Wire Line
+	19450 5750 19950 5750
+Wire Wire Line
+	19450 5850 19950 5850
+Text Label 19950 5850 2    50   ~ 0
+D0
+Text Label 18450 5850 0    50   ~ 0
+D2
+Wire Wire Line
+	7550 7150 7550 7600
+Wire Wire Line
+	7450 7250 7950 7250
+Text Label 7950 7250 2    50   ~ 0
+ABEN
+Wire Wire Line
+	7550 4950 7550 5400
+Wire Wire Line
+	7450 5050 7950 5050
+Text Label 7950 5050 2    50   ~ 0
+ABEN
+Text Label 13500 5850 0    50   ~ 0
+ABEN
+Wire Wire Line
+	13500 5850 14000 5850
+Wire Wire Line
+	8650 7700 8650 7800
+$Comp
+L power:GND #PWR051
+U 1 1 608CFC00
+P 8650 7800
+F 0 "#PWR051" H 8650 7550 50  0001 C CNN
+F 1 "GND" H 8655 7627 50  0000 C CNN
+F 2 "" H 8650 7800 50  0001 C CNN
+F 3 "" H 8650 7800 50  0001 C CNN
+	1    8650 7800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 608CFC06
+P 8650 7600
+F 0 "C16" H 8742 7646 50  0000 L CNN
+F 1 "0.1uF" H 8742 7555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8650 7600 50  0001 C CNN
+F 3 "~" H 8650 7600 50  0001 C CNN
+	1    8650 7600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 7500 8650 7400
+$Comp
+L power:+3.3V #PWR?
+U 1 1 608CFC0D
+P 8650 7400
+AR Path="/5EC52D50/608CFC0D" Ref="#PWR?"  Part="1" 
+AR Path="/608CFC0D" Ref="#PWR012"  Part="1" 
+AR Path="/5EC51AA8/608CFC0D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR012" H 8650 7250 50  0001 C CNN
+F 1 "+3.3V" H 8665 7573 50  0000 C CNN
+F 2 "" H 8650 7400 50  0001 C CNN
+F 3 "" H 8650 7400 50  0001 C CNN
+	1    8650 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60918F0C
+P 9100 7400
+AR Path="/5EC52D50/60918F0C" Ref="#PWR?"  Part="1" 
+AR Path="/60918F0C" Ref="#PWR0111"  Part="1" 
+AR Path="/5EC51AA8/60918F0C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0111" H 9100 7250 50  0001 C CNN
+F 1 "+3.3V" H 9115 7573 50  0000 C CNN
+F 2 "" H 9100 7400 50  0001 C CNN
+F 3 "" H 9100 7400 50  0001 C CNN
+	1    9100 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60C0D998
+P 2350 1800
+AR Path="/5EC51AA8/60C0D998" Ref="TP?"  Part="1" 
+AR Path="/60C0D998" Ref="TP7"  Part="1" 
+F 0 "TP7" H 2450 1950 50  0000 C TNN
+F 1 "HALT" H 2400 1850 50  0000 L TNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 2550 1800 50  0001 C CNN
+F 3 "~" H 2550 1800 50  0001 C CNN
+	1    2350 1800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1800 2350 2000
+Wire Wire Line
+	2950 13350 3050 13350
+Connection ~ 3050 13350
+Wire Wire Line
+	3050 13350 3050 13500
+$Comp
+L Device:R R?
+U 1 1 60E87D97
+P 3850 12550
+AR Path="/5EC52D50/60E87D97" Ref="R?"  Part="1" 
+AR Path="/60E87D97" Ref="R9"  Part="1" 
+F 0 "R9" H 3920 12596 50  0000 L CNN
+F 1 "4.7K" H 3920 12505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3780 12550 50  0001 C CNN
+F 3 "~" H 3850 12550 50  0001 C CNN
+	1    3850 12550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 12400 3850 12350
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60E87D9E
+P 3850 12350
+AR Path="/5EC52D50/60E87D9E" Ref="#PWR?"  Part="1" 
+AR Path="/60E87D9E" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 3850 12200 50  0001 C CNN
+F 1 "+3.3V" H 3865 12523 50  0000 C CNN
+F 2 "" H 3850 12350 50  0001 C CNN
+F 3 "" H 3850 12350 50  0001 C CNN
+	1    3850 12350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 13250 3300 13250
+Wire Wire Line
+	3300 13250 3300 13150
+Wire Wire Line
+	3300 13150 3850 13150
+Wire Wire Line
+	3850 13150 3850 12700
+Text Label 3300 13150 0    50   ~ 0
+CARD
+Wire Wire Line
+	19950 4050 19450 4050
+Text Label 19950 4050 2    50   ~ 0
+CARD
+$Comp
+L Connector_Generic:Conn_02x25_Odd_Even QM1
+U 1 1 61FC4D3B
+P 19150 5050
+F 0 "QM1" H 19200 6467 50  0000 C CNN
+F 1 "MAX10_CORE_JP1" H 19200 6376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x25_P2.54mm_Vertical" H 19150 5050 50  0001 C CNN
+F 3 "~" H 19150 5050 50  0001 C CNN
+	1    19150 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_EEPROM:M95256-WMN6P U3
+U 1 1 605FF920
+P 10250 2800
+F 0 "U3" H 10600 3150 50  0000 C CNN
+F 1 "M95512" H 10650 3050 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 10250 2800 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/9d/75/f0/3e/76/00/4c/0b/CD00103810.pdf/files/CD00103810.pdf/jcr:content/translations/en.CD00103810.pdf" H 10250 2800 50  0001 C CNN
+	1    10250 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 2700 11150 2700
+Text Label 11150 2700 2    50   ~ 0
+MCLK
+Text Label 15000 4550 2    50   ~ 0
+MMISO
+Text Label 15000 4650 2    50   ~ 0
+MMOSI
+Text Label 13500 4650 0    50   ~ 0
+MCLK
+Text Label 13500 4550 0    50   ~ 0
+MCS
+NoConn ~ 18950 4950
+NoConn ~ 18950 5150
+NoConn ~ 19450 4750
+$Comp
+L Device:R R?
+U 1 1 60FB1333
+P 9200 2400
+AR Path="/5EC52D50/60FB1333" Ref="R?"  Part="1" 
+AR Path="/60FB1333" Ref="R11"  Part="1" 
+AR Path="/5EC51AA8/60FB1333" Ref="R?"  Part="1" 
+F 0 "R11" H 9270 2446 50  0000 L CNN
+F 1 "4.7K" H 9270 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9130 2400 50  0001 C CNN
+F 3 "~" H 9200 2400 50  0001 C CNN
+	1    9200 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 2800 9850 2800
+Wire Wire Line
+	9200 2550 9200 2800
+Text Label 9350 2800 0    50   ~ 0
+MHLD
+Wire Wire Line
+	14500 5650 15000 5650
+Text Label 15000 5650 2    50   ~ 0
+CLK32
+$Comp
+L hd6309sbc_v2c-rescue:AP62150WU-7-hd6309sbc_Library U5
+U 1 1 605A088D
+P 2600 15250
+F 0 "U5" H 2600 15617 50  0000 C CNN
+F 1 "AP62150WU-7" H 2600 15526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2650 15000 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP62150.pdf" H 2600 15250 50  0001 C CNN
+	1    2600 15250
+	1    0    0    -1  
+$EndComp
+Connection ~ 3150 15350
+Wire Wire Line
+	3150 15350 3450 15350
+Wire Wire Line
+	4050 15150 4050 15350
+Wire Wire Line
+	4050 15350 4050 15500
+Connection ~ 4050 15350
+Wire Wire Line
+	3750 15350 4050 15350
+Wire Wire Line
+	3750 15450 3750 15350
+Wire Wire Line
+	3450 15350 3450 15450
+Wire Wire Line
+	3450 15750 3450 15850
+Wire Wire Line
+	3750 15850 3750 15750
+Wire Wire Line
+	3450 15850 3750 15850
+$Comp
+L Device:R R8
+U 1 1 5F2D3899
+P 3750 15600
+AR Path="/5F2D3899" Ref="R8"  Part="1" 
+AR Path="/5EC51AA8/5F2D3899" Ref="R?"  Part="1" 
+F 0 "R8" H 3820 15646 50  0000 L CNN
+F 1 "4.7K" H 3820 15555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3680 15600 50  0001 C CNN
+F 3 "~" H 3750 15600 50  0001 C CNN
+	1    3750 15600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5F2D38A0
+P 3450 15600
+AR Path="/5F2D38A0" Ref="R7"  Part="1" 
+AR Path="/5EC51AA8/5F2D38A0" Ref="R?"  Part="1" 
+F 0 "R7" H 3520 15646 50  0000 L CNN
+F 1 "47K" H 3520 15555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3380 15600 50  0001 C CNN
+F 3 "~" H 3450 15600 50  0001 C CNN
+	1    3450 15600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Dual_CACA D?
+U 1 1 6077374E
+P 13000 13300
+AR Path="/5EC52D50/6077374E" Ref="D?"  Part="1" 
+AR Path="/6077374E" Ref="D2"  Part="1" 
+AR Path="/5EC51AA8/6077374E" Ref="D?"  Part="1" 
+F 0 "D2" H 13000 13725 50  0000 C CNN
+F 1 "WP934" H 13000 13634 50  0000 C CNN
+F 2 "LED_WP934MD:2GD" H 13030 13300 50  0001 C CNN
+F 3 "~" H 13030 13300 50  0001 C CNN
+	1    13000 13300
+	1    0    0    -1  
+$EndComp
+Text Label 12000 13200 0    50   ~ 0
+LED4
+Text Label 12000 13400 0    50   ~ 0
+LED3
+Wire Wire Line
+	13400 13400 13300 13400
+Wire Wire Line
+	13400 13200 13300 13200
+Wire Wire Line
+	12300 13200 12000 13200
+Wire Wire Line
+	12000 13400 12300 13400
+Wire Wire Line
+	12600 13400 12700 13400
+Wire Wire Line
+	12600 13200 12700 13200
+$Comp
+L Device:R R?
+U 1 1 6077375C
+P 12450 13400
+AR Path="/5EC52D50/6077375C" Ref="R?"  Part="1" 
+AR Path="/6077375C" Ref="R15"  Part="1" 
+F 0 "R15" V 12550 13350 50  0000 L CNN
+F 1 "330" V 12650 13400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 12380 13400 50  0001 C CNN
+F 3 "~" H 12450 13400 50  0001 C CNN
+	1    12450 13400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60773762
+P 12450 13200
+AR Path="/5EC52D50/60773762" Ref="R?"  Part="1" 
+AR Path="/60773762" Ref="R14"  Part="1" 
+F 0 "R14" V 12250 13200 50  0000 C CNN
+F 1 "330" V 12350 13200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 12380 13200 50  0001 C CNN
+F 3 "~" H 12450 13200 50  0001 C CNN
+	1    12450 13200
+	0    1    1    0   
+$EndComp
+Connection ~ 13400 12650
+Connection ~ 13400 13200
+Wire Wire Line
+	13400 13200 13400 13400
+$Comp
+L LED:WS2812B D5
+U 1 1 60D3EB7D
+P 20150 13300
+F 0 "D5" H 20300 13650 50  0000 L CNN
+F 1 "WS2812B" H 20300 13550 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 20200 13000 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 20250 12925 50  0001 L TNN
+	1    20150 13300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60D3F5A6
+P 20150 13750
+AR Path="/5EC52D50/60D3F5A6" Ref="#PWR?"  Part="1" 
+AR Path="/5F90CB22/60D3F5A6" Ref="#PWR?"  Part="1" 
+AR Path="/60D3F5A6" Ref="#PWR061"  Part="1" 
+F 0 "#PWR061" H 20150 13500 50  0001 C CNN
+F 1 "GND" H 20155 13577 50  0000 C CNN
+F 2 "" H 20150 13750 50  0001 C CNN
+F 3 "" H 20150 13750 50  0001 C CNN
+	1    20150 13750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20150 13600 20150 13750
+$Comp
+L power:VCC #PWR060
+U 1 1 60D8C326
+P 20150 12850
+AR Path="/60D8C326" Ref="#PWR060"  Part="1" 
+AR Path="/5EC51AA8/60D8C326" Ref="#PWR?"  Part="1" 
+F 0 "#PWR060" H 20150 12700 50  0001 C CNN
+F 1 "VCC" H 20167 13023 50  0000 C CNN
+F 2 "" H 20150 12850 50  0001 C CNN
+F 3 "" H 20150 12850 50  0001 C CNN
+	1    20150 12850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	20150 12850 20150 13000
+Wire Wire Line
+	19850 13300 19350 13300
+$Comp
+L Device:C_Small C?
+U 1 1 60F0FC00
+P 18150 13600
+AR Path="/5EC52D50/60F0FC00" Ref="C?"  Part="1" 
+AR Path="/60F0FC00" Ref="C17"  Part="1" 
+F 0 "C17" H 18242 13646 50  0000 L CNN
+F 1 "0.1uF" H 18242 13555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 18150 13600 50  0001 C CNN
+F 3 "~" H 18150 13600 50  0001 C CNN
+	1    18150 13600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F0FC06
+P 18150 13750
+AR Path="/5EC52D50/60F0FC06" Ref="#PWR?"  Part="1" 
+AR Path="/60F0FC06" Ref="#PWR063"  Part="1" 
+F 0 "#PWR063" H 18150 13500 50  0001 C CNN
+F 1 "GND" H 18155 13577 50  0000 C CNN
+F 2 "" H 18150 13750 50  0001 C CNN
+F 3 "" H 18150 13750 50  0001 C CNN
+	1    18150 13750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18150 12900 18150 13500
+Wire Wire Line
+	18150 13700 18150 13750
+Wire Wire Line
+	18150 12900 19050 12900
+Connection ~ 19050 12900
+Wire Wire Line
+	19050 12900 19050 13000
+Text Label 15000 4150 2    50   ~ 0
+RXD1
+Wire Wire Line
+	15000 4150 14500 4150
+Text Label 13500 4350 0    50   ~ 0
+RTS2
+Wire Wire Line
+	14000 4350 13500 4350
+Text Label 13500 4250 0    50   ~ 0
+RXD2
+Text Label 13500 4150 0    50   ~ 0
+TXD2
+Wire Wire Line
+	13500 4250 14000 4250
+Wire Wire Line
+	14000 4150 13500 4150
+Wire Wire Line
+	14000 4450 13500 4450
+Text Label 13500 4450 0    50   ~ 0
+LED4
+Wire Wire Line
+	4350 2400 3850 2400
+Text Label 4350 2400 2    50   ~ 0
+LIC_HV
+Wire Wire Line
+	5950 8850 6450 8850
+Text Label 5950 8850 0    50   ~ 0
+LIC_HV
+Wire Wire Line
+	7450 8850 7950 8850
+Text Label 7950 8850 2    50   ~ 0
+LIC
+Text Label 13500 5750 0    50   ~ 0
+LIC
+Wire Wire Line
+	13500 5750 14000 5750
+Connection ~ 13750 3450
+Text Notes 18150 4050 0    50   ~ 0
+1A F1
+Text Notes 18150 4150 0    50   ~ 0
+1A E3
+Text Notes 18150 4250 0    50   ~ 0
+1A D1
+Text Notes 18150 4350 0    50   ~ 0
+1A C2
+Text Notes 18150 4450 0    50   ~ 0
+8 B2
+Text Notes 18150 4550 0    50   ~ 0
+8 B3
+Text Notes 18150 4650 0    50   ~ 0
+8 B4
+Text Notes 18150 4750 0    50   ~ 0
+8 B5
+Text Notes 18150 4850 0    50   ~ 0
+8 B6\n
+Text Notes 18150 5050 0    50   ~ 0
+8 E8\n
+Text Notes 18150 5250 0    50   ~ 0
+8 C9\n
+Text Notes 18150 5350 0    50   ~ 0
+8 A10
+Text Notes 18150 5450 0    50   ~ 0
+8 A11
+Text Notes 18150 5550 0    50   ~ 0
+8 B11\n
+Text Notes 18150 5650 0    50   ~ 0
+6 C12\n
+Text Notes 18150 5150 0    50   ~ 0
+8 A8\n
+Text Notes 18150 5750 0    50   ~ 0
+6 B12\n
+Text Notes 18150 5850 0    50   ~ 0
+6 C13\n
+Text Notes 17850 6150 0    50   ~ 0
+6 F13 GCLK3P\n
+Text Notes 17850 6050 0    50   ~ 0
+6 E13 GCLK3N\n
+Text Notes 20050 6050 0    50   ~ 0
+6 E12\n
+Text Notes 20050 6150 0    50   ~ 0
+6 F12\n
+Text Notes 20050 5950 0    50   ~ 0
+6 D12\n
+Text Notes 20050 5750 0    50   ~ 0
+6 A12\n
+Text Notes 20050 5650 0    50   ~ 0
+6 C11\n
+Text Notes 20050 5550 0    50   ~ 0
+6 D11\n
+Text Notes 20050 5450 0    50   ~ 0
+8 C10
+Text Notes 20050 5350 0    50   ~ 0
+8 B10
+Text Notes 20050 5250 0    50   ~ 0
+8 D9
+Text Notes 20050 5050 0    50   ~ 0
+6 E9\n
+Text Notes 20050 5150 0    50   ~ 0
+8 A9
+Text Notes 20050 4950 0    50   ~ 0
+8 A7
+Text Notes 20050 4850 0    50   ~ 0
+8 A6
+Text Notes 20050 4750 0    50   ~ 0
+8 A5
+Text Notes 20050 4650 0    50   ~ 0
+8 A4
+Text Notes 20050 4550 0    50   ~ 0
+8 A3
+Text Notes 20050 4450 0    50   ~ 0
+8 A2
+Text Notes 20050 4050 0    50   ~ 0
+1A E1
+Text Notes 20050 4150 0    50   ~ 0
+1A E4
+Text Notes 20050 4250 0    50   ~ 0
+1A C1
+Text Notes 20050 4350 0    50   ~ 0
+1A B1
+Text Notes 18150 4950 0    50   ~ 0
+8 B7\n
+Text Notes 18150 5950 0    50   ~ 0
+6 D13\n
+Text Notes 20050 5850 0    50   ~ 0
+6 B13\n
+Wire Wire Line
+	18950 5850 18450 5850
+Wire Wire Line
+	18950 5950 18450 5950
+Wire Wire Line
+	18950 5650 18450 5650
+Wire Wire Line
+	18950 5750 18450 5750
+Text Notes 17100 5750 0    50   ~ 0
+DATA all on IO6
+Text Notes 17100 6100 0    50   ~ 0
+E on GCLK3
+Text Notes 17100 4700 0    50   ~ 0
+TEST1 all on IO8
+Text Notes 17100 4200 0    50   ~ 0
+SDCARD all on IO1A
+Text Notes 13200 4150 0    50   ~ 0
+2 J1
+Text Notes 13200 4250 0    50   ~ 0
+2 K1
+Text Notes 13200 4350 0    50   ~ 0
+2 L1
+Text Notes 13200 4450 0    50   ~ 0
+2 M1
+Text Notes 13200 4550 0    50   ~ 0
+2 L3
+Text Notes 12900 4650 0    50   ~ 0
+2 N2 DPCLK0
+Text Notes 13200 4750 0    50   ~ 0
+3 L4
+Text Notes 13200 4850 0    50   ~ 0
+3 M4\n
+Text Notes 13200 5050 0    50   ~ 0
+3 K5\n
+Text Notes 13200 5250 0    50   ~ 0
+3 M7\n
+Text Notes 13200 5350 0    50   ~ 0
+3 K7
+Text Notes 13200 5450 0    50   ~ 0
+3 K6
+Text Notes 13200 5550 0    50   ~ 0
+3 J8\n
+Text Notes 13200 5650 0    50   ~ 0
+3 N9\n
+Text Notes 13200 5150 0    50   ~ 0
+3 N6\n
+Text Notes 13200 5750 0    50   ~ 0
+3 N10\n
+Text Notes 13200 5850 0    50   ~ 0
+3 L10\n
+Text Notes 13200 6150 0    50   ~ 0
+3 M13\n
+Text Notes 12900 4050 0    50   ~ 0
+2 H5 GCLK1N\n
+Text Notes 13200 4950 0    50   ~ 0
+3 M5\n
+Text Notes 13200 5950 0    50   ~ 0
+3 N11\n
+Text Notes 13200 6050 0    50   ~ 0
+3 N12\n
+Text Notes 15100 6050 0    50   ~ 0
+3 M12\n
+Text Notes 15100 6150 0    50   ~ 0
+3 K11\n
+Text Notes 15100 5950 0    50   ~ 0
+3 M11\n
+Text Notes 15100 5750 0    50   ~ 0
+3 M10\n
+Text Notes 15100 5650 0    50   ~ 0
+3 M9\n
+Text Notes 15100 5550 0    50   ~ 0
+3 K8\n
+Text Notes 15100 5450 0    50   ~ 0
+3 M8
+Text Notes 15100 5350 0    50   ~ 0
+3 N8
+Text Notes 15100 5250 0    50   ~ 0
+3 N7
+Text Notes 15100 5050 0    50   ~ 0
+3 N5\n
+Text Notes 15100 5150 0    50   ~ 0
+3 J5
+Text Notes 15100 4950 0    50   ~ 0
+3 N4
+Text Notes 15100 4850 0    50   ~ 0
+3 L5
+Text Notes 15100 4750 0    50   ~ 0
+2 N3 DPCLK1
+Text Notes 15100 4650 0    50   ~ 0
+2 M3
+Text Notes 15100 4550 0    50   ~ 0
+2 M2
+Text Notes 15100 4450 0    50   ~ 0
+2 L2
+Text Notes 15100 4050 0    50   ~ 0
+2 H4 CLK1P
+Text Notes 15100 4150 0    50   ~ 0
+3 J6
+Text Notes 15100 4250 0    50   ~ 0
+2 J2
+Text Notes 15100 4350 0    50   ~ 0
+2 K2
+Text Notes 15100 5850 0    50   ~ 0
+3 L11\n
+Text Notes 15600 4250 0    50   ~ 0
+I2C all on IO2\nUART split IO2/3
+Text Notes 15600 4600 0    50   ~ 0
+SPI FLASH all on IO2
+$Comp
+L power:VCC #PWR0113
+U 1 1 61A3E663
+P 19600 12500
+AR Path="/61A3E663" Ref="#PWR0113"  Part="1" 
+AR Path="/5EC51AA8/61A3E663" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0113" H 19600 12350 50  0001 C CNN
+F 1 "VCC" H 19617 12673 50  0000 C CNN
+F 2 "" H 19600 12500 50  0001 C CNN
+F 3 "" H 19600 12500 50  0001 C CNN
+	1    19600 12500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	19600 12500 19600 12650
+Wire Wire Line
+	19350 12650 19600 12650
+$Comp
+L Device:R R?
+U 1 1 61DE502D
+P 18350 13300
+AR Path="/5EC52D50/61DE502D" Ref="R?"  Part="1" 
+AR Path="/61DE502D" Ref="R16"  Part="1" 
+F 0 "R16" V 18150 13300 50  0000 C CNN
+F 1 "330" V 18250 13300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 18280 13300 50  0001 C CNN
+F 3 "~" H 18350 13300 50  0001 C CNN
+	1    18350 13300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18500 13300 18750 13300
+Wire Wire Line
+	8850 2050 9200 2050
+Wire Wire Line
+	9200 2050 9200 2250
+Wire Wire Line
+	8850 2050 8850 2200
+Wire Wire Line
+	9200 2050 9550 2050
+Wire Wire Line
+	9550 2050 9550 2250
+Connection ~ 9200 2050
+Wire Wire Line
+	9550 2050 10250 2050
+Wire Wire Line
+	10250 2050 10250 2500
+Connection ~ 9550 2050
+Text Label 9800 2050 0    50   ~ 0
+FL3V3
+Wire Wire Line
+	10650 2800 11150 2800
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6137FC78
+P 7700 15400
+AR Path="/5EC51AA8/6137FC78" Ref="TP?"  Part="1" 
+AR Path="/6137FC78" Ref="TP8"  Part="1" 
+F 0 "TP8" H 7758 15518 50  0000 L CNN
+F 1 "RESRQ" H 7758 15427 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 7900 15400 50  0001 C CNN
+F 3 "~" H 7900 15400 50  0001 C CNN
+	1    7700 15400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 15400 7700 15600
+Wire Wire Line
+	7700 15600 8150 15600
+Wire Wire Line
+	3950 9750 4450 9750
+Text Label 18450 5550 0    50   ~ 0
+CFG2
+Wire Wire Line
+	18950 5550 18450 5550
+Text Label 18450 5450 0    50   ~ 0
+CFG1
+Wire Wire Line
+	18950 5450 18450 5450
+Wire Wire Line
+	13400 12450 13400 12650
+Wire Wire Line
+	13400 12650 13400 13200
+$Comp
+L Connector_Generic:Conn_01x02 J12
+U 1 1 6193089A
+P 17300 12300
+F 0 "J12" H 17380 12292 50  0000 L CNN
+F 1 "CFG1" H 17380 12201 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 17300 12300 50  0001 C CNN
+F 3 "~" H 17300 12300 50  0001 C CNN
+	1    17300 12300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61932067
+P 16850 12600
+AR Path="/5EC52D50/61932067" Ref="#PWR?"  Part="1" 
+AR Path="/61932067" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 16850 12350 50  0001 C CNN
+F 1 "GND" H 16855 12427 50  0000 C CNN
+F 2 "" H 16850 12600 50  0001 C CNN
+F 3 "" H 16850 12600 50  0001 C CNN
+	1    16850 12600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17100 12400 16850 12400
+Wire Wire Line
+	16850 12400 16850 12600
+Wire Wire Line
+	16350 12300 17100 12300
+Text Label 16350 12300 0    50   ~ 0
+CFG1
+$Comp
+L Connector_Generic:Conn_01x02 J13
+U 1 1 619DF799
+P 17300 13000
+F 0 "J13" H 17380 12992 50  0000 L CNN
+F 1 "CFG2" H 17380 12901 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 17300 13000 50  0001 C CNN
+F 3 "~" H 17300 13000 50  0001 C CNN
+	1    17300 13000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619DF79F
+P 16850 13300
+AR Path="/5EC52D50/619DF79F" Ref="#PWR?"  Part="1" 
+AR Path="/619DF79F" Ref="#PWR053"  Part="1" 
+F 0 "#PWR053" H 16850 13050 50  0001 C CNN
+F 1 "GND" H 16855 13127 50  0000 C CNN
+F 2 "" H 16850 13300 50  0001 C CNN
+F 3 "" H 16850 13300 50  0001 C CNN
+	1    16850 13300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17100 13100 16850 13100
+Wire Wire Line
+	16850 13100 16850 13300
+Wire Wire Line
+	16350 13000 17100 13000
+Text Label 16350 13000 0    50   ~ 0
+CFG2
+NoConn ~ 19450 5350
+NoConn ~ 19450 5450
+NoConn ~ 14500 4450
+$Comp
+L Device:C_Small C?
+U 1 1 61D5F8AC
+P 19600 13600
+AR Path="/5EC52D50/61D5F8AC" Ref="C?"  Part="1" 
+AR Path="/61D5F8AC" Ref="C18"  Part="1" 
+F 0 "C18" H 19692 13646 50  0000 L CNN
+F 1 "0.1uF" H 19692 13555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 19600 13600 50  0001 C CNN
+F 3 "~" H 19600 13600 50  0001 C CNN
+	1    19600 13600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D5F8B2
+P 19600 13750
+AR Path="/5EC52D50/61D5F8B2" Ref="#PWR?"  Part="1" 
+AR Path="/61D5F8B2" Ref="#PWR064"  Part="1" 
+F 0 "#PWR064" H 19600 13500 50  0001 C CNN
+F 1 "GND" H 19605 13577 50  0000 C CNN
+F 2 "" H 19600 13750 50  0001 C CNN
+F 3 "" H 19600 13750 50  0001 C CNN
+	1    19600 13750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19600 13700 19600 13750
+Wire Wire Line
+	19600 12650 19600 13500
+Connection ~ 19600 12650
+Text Label 18450 5350 0    50   ~ 0
+BUSY
+Wire Wire Line
+	18950 5350 18450 5350
+$Comp
+L Device:LED D6
+U 1 1 62017679
+P 14900 12500
+F 0 "D6" H 14900 12600 50  0000 C CNN
+F 1 "LED" H 14900 12700 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14900 12500 50  0001 C CNN
+F 3 "~" H 14900 12500 50  0001 C CNN
+	1    14900 12500
+	-1   0    0    1   
+$EndComp
+Text Label 13900 12500 0    50   ~ 0
+BUSY
+Wire Wire Line
+	13900 12500 14200 12500
+Wire Wire Line
+	14500 12500 14750 12500
+$Comp
+L Device:R R?
+U 1 1 620CC913
+P 14350 12500
+AR Path="/5EC52D50/620CC913" Ref="R?"  Part="1" 
+AR Path="/620CC913" Ref="R21"  Part="1" 
+F 0 "R21" V 14450 12450 50  0000 L CNN
+F 1 "1K" V 14550 12500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 14280 12500 50  0001 C CNN
+F 3 "~" H 14350 12500 50  0001 C CNN
+	1    14350 12500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x10 J1
+U 1 1 6254E6E8
+P 11050 15250
+F 0 "J1" H 11130 15287 50  0000 L CNN
+F 1 "Conn_01x10" H 11130 15196 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 11050 15250 50  0001 C CNN
+F 3 "~" H 11050 15250 50  0001 C CNN
+F 4 "TEST1 & SDCARD" H 11130 15105 50  0000 L CNN "Function"
+	1    11050 15250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 15450 10850 15450
+Wire Wire Line
+	10650 15350 10850 15350
+Wire Wire Line
+	10650 15350 10650 14850
+Wire Wire Line
+	10650 14850 10850 14850
+$Comp
+L power:GND #PWR?
+U 1 1 6298E4BB
+P 10650 15850
+AR Path="/5F90CB22/6298E4BB" Ref="#PWR?"  Part="1" 
+AR Path="/6298E4BB" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 10650 15600 50  0001 C CNN
+F 1 "GND" H 10655 15677 50  0000 C CNN
+F 2 "" H 10650 15850 50  0001 C CNN
+F 3 "" H 10650 15850 50  0001 C CNN
+	1    10650 15850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 15350 10650 15850
+Connection ~ 10650 15350
+$Comp
+L Connector_Generic:Conn_01x10 J2
+U 1 1 62B305C9
+P 12750 15250
+F 0 "J2" H 12830 15287 50  0000 L CNN
+F 1 "Conn_01x10" H 12830 15196 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 12750 15250 50  0001 C CNN
+F 3 "~" H 12750 15250 50  0001 C CNN
+F 4 "TEST2 & MISC" H 12830 15105 50  0000 L CNN "Function"
+	1    12750 15250
+	1    0    0    -1  
+$EndComp
+Text Label 18550 13300 0    50   ~ 0
+WSR
+Text Label 12050 14850 0    50   ~ 0
+WSQ
+Text Label 12050 14950 0    50   ~ 0
+WSR
+Wire Wire Line
+	12050 14850 12550 14850
+Wire Wire Line
+	12550 14950 12050 14950
+Text Label 12050 15050 0    50   ~ 0
+CLK32
+Text Label 12050 15150 0    50   ~ 0
+RESET_LV
+Wire Wire Line
+	12050 15050 12550 15050
+Wire Wire Line
+	12550 15150 12050 15150
+$Comp
+L power:GND #PWR?
+U 1 1 62DB70A2
+P 12400 15850
+AR Path="/5F90CB22/62DB70A2" Ref="#PWR?"  Part="1" 
+AR Path="/62DB70A2" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 12400 15600 50  0001 C CNN
+F 1 "GND" H 12405 15677 50  0000 C CNN
+F 2 "" H 12400 15850 50  0001 C CNN
+F 3 "" H 12400 15850 50  0001 C CNN
+	1    12400 15850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12400 15250 12550 15250
+Wire Wire Line
+	12400 15250 12400 15750
+Connection ~ 12400 15750
+Text Notes 16250 11700 0    79   ~ 0
+CONFIG JUMPERS & BUTTON
+Wire Wire Line
+	12550 15750 12400 15750
+Wire Wire Line
+	12400 15750 12400 15850
+Wire Wire Line
+	12550 15650 12050 15650
+Wire Wire Line
+	12050 15550 12550 15550
+Wire Wire Line
+	12550 15450 12050 15450
+Wire Wire Line
+	12050 15350 12550 15350
+$Comp
+L Connector_Generic:Conn_01x05 J10
+U 1 1 60FA0ECD
+P 15600 15550
+F 0 "J10" H 15680 15637 50  0000 L CNN
+F 1 "Conn_01x05" H 15680 15546 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 15600 15550 50  0001 C CNN
+F 3 "~" H 15600 15550 50  0001 C CNN
+F 4 "SPI FLASH" H 15680 15455 50  0000 L CNN "Function"
+	1    15600 15550
+	1    0    0    -1  
+$EndComp
+Text Label 14900 15550 0    50   ~ 0
+MCLK
+Text Label 14900 15650 0    50   ~ 0
+MMOSI
+Wire Wire Line
+	14900 15450 15400 15450
+Wire Wire Line
+	15200 15750 15400 15750
+Wire Wire Line
+	15200 15750 15200 15850
+$Comp
+L power:GND #PWR?
+U 1 1 607A83F8
+P 15200 15850
+AR Path="/5F90CB22/607A83F8" Ref="#PWR?"  Part="1" 
+AR Path="/607A83F8" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 15200 15600 50  0001 C CNN
+F 1 "GND" H 15205 15677 50  0000 C CNN
+F 2 "" H 15200 15850 50  0001 C CNN
+F 3 "" H 15200 15850 50  0001 C CNN
+	1    15200 15850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15400 15650 14900 15650
+Wire Wire Line
+	14900 15550 15400 15550
+Wire Wire Line
+	15400 15350 14900 15350
+Text Label 14900 15350 0    50   ~ 0
+MCS
+Text Label 14900 15450 0    50   ~ 0
+MMISO
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6377DF1D
+P 15300 14700
+AR Path="/5EC52D50/6377DF1D" Ref="#PWR?"  Part="1" 
+AR Path="/6377DF1D" Ref="#PWR0110"  Part="1" 
+AR Path="/5EC51AA8/6377DF1D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0110" H 15300 14550 50  0001 C CNN
+F 1 "+3.3V" H 15315 14873 50  0000 C CNN
+F 2 "" H 15300 14700 50  0001 C CNN
+F 3 "" H 15300 14700 50  0001 C CNN
+	1    15300 14700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J11
+U 1 1 6377DF23
+P 15600 14900
+F 0 "J11" H 15680 14892 50  0000 L CNN
+F 1 "VFLASH" H 15680 14801 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 15600 14900 50  0001 C CNN
+F 3 "~" H 15600 14900 50  0001 C CNN
+F 4 "Flash Voltage" H 15950 14700 50  0000 C CNN "Function"
+	1    15600 14900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15300 14900 15400 14900
+Wire Wire Line
+	15300 14700 15300 14900
+Wire Wire Line
+	14900 15000 15400 15000
+Text Label 14900 15000 0    50   ~ 0
+FL3V3
+$Comp
+L Device:LED D7
+U 1 1 63BAD352
+P 14900 12850
+F 0 "D7" H 14900 12950 50  0000 C CNN
+F 1 "LED" H 14900 13050 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14900 12850 50  0001 C CNN
+F 3 "~" H 14900 12850 50  0001 C CNN
+	1    14900 12850
+	-1   0    0    1   
+$EndComp
+Text Label 13900 12850 0    50   ~ 0
+QM5V
+Wire Wire Line
+	13900 12850 14200 12850
+Wire Wire Line
+	14500 12850 14750 12850
+$Comp
+L Device:R R?
+U 1 1 63BAD35C
+P 14350 12850
+AR Path="/5EC52D50/63BAD35C" Ref="R?"  Part="1" 
+AR Path="/63BAD35C" Ref="R22"  Part="1" 
+F 0 "R22" V 14450 12800 50  0000 L CNN
+F 1 "1K" V 14550 12850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 14280 12850 50  0001 C CNN
+F 3 "~" H 14350 12850 50  0001 C CNN
+	1    14350 12850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18750 3450 18150 3450
+Text Label 18150 3450 0    50   ~ 0
+QM5V
+Wire Wire Line
+	18750 3450 18750 3850
+Wire Wire Line
+	18750 3850 18950 3850
+$Comp
+L power:GND #PWR?
+U 1 1 62298EF5
+P 15300 13550
+AR Path="/5EC52D50/62298EF5" Ref="#PWR?"  Part="1" 
+AR Path="/62298EF5" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 15300 13300 50  0001 C CNN
+F 1 "GND" H 15305 13377 50  0000 C CNN
+F 2 "" H 15300 13550 50  0001 C CNN
+F 3 "" H 15300 13550 50  0001 C CNN
+	1    15300 13550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15300 12500 15050 12500
+Wire Wire Line
+	15300 12500 15300 12850
+Wire Wire Line
+	15050 12850 15300 12850
+Connection ~ 15300 12850
+$Comp
+L Device:LED D8
+U 1 1 63F7C5CE
+P 14900 13200
+F 0 "D8" H 14900 13300 50  0000 C CNN
+F 1 "LED" H 14900 13400 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14900 13200 50  0001 C CNN
+F 3 "~" H 14900 13200 50  0001 C CNN
+	1    14900 13200
+	-1   0    0    1   
+$EndComp
+Text Label 13900 13200 0    50   ~ 0
+QM3V
+Wire Wire Line
+	13900 13200 14200 13200
+Wire Wire Line
+	14500 13200 14750 13200
+$Comp
+L Device:R R?
+U 1 1 63F7C5D7
+P 14350 13200
+AR Path="/5EC52D50/63F7C5D7" Ref="R?"  Part="1" 
+AR Path="/63F7C5D7" Ref="R23"  Part="1" 
+F 0 "R23" V 14450 13150 50  0000 L CNN
+F 1 "330" V 14550 13200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 14280 13200 50  0001 C CNN
+F 3 "~" H 14350 13200 50  0001 C CNN
+	1    14350 13200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	15050 13200 15300 13200
+Wire Wire Line
+	15300 12850 15300 13200
+Wire Wire Line
+	15300 13200 15300 13550
+Connection ~ 15300 13200
+Wire Wire Line
+	19450 3850 19650 3850
+Wire Wire Line
+	19650 3850 19650 3450
+Wire Wire Line
+	19650 3450 20250 3450
+Text Label 20250 3450 2    50   ~ 0
+QM3V
+Wire Wire Line
+	13600 15350 14100 15350
+Wire Wire Line
+	13600 15450 14100 15450
+Text Label 13600 15350 0    50   ~ 0
+TXD1
+Text Label 13600 15450 0    50   ~ 0
+RXD1
+Text Label 13600 15550 0    50   ~ 0
+TXD2
+Text Label 13600 15650 0    50   ~ 0
+RXD2
+Text Label 13600 15750 0    50   ~ 0
+RTS2
+Wire Wire Line
+	14100 15550 13600 15550
+Wire Wire Line
+	14100 15650 13600 15650
+Wire Wire Line
+	14100 15750 13600 15750
+$Comp
+L Connector_Generic:Conn_01x05 J15
+U 1 1 645872ED
+P 14300 15550
+F 0 "J15" H 14380 15637 50  0000 L CNN
+F 1 "Conn_01x05" H 14380 15546 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 14300 15550 50  0001 C CNN
+F 3 "~" H 14300 15550 50  0001 C CNN
+F 4 "USB UART" H 14380 15455 50  0000 L CNN "Function"
+	1    14300 15550
+	1    0    0    -1  
+$EndComp
+$Comp
+L RapidStencil:GUIDE_10X10 RG1
+U 1 1 60831903
+P 19250 14800
+F 0 "RG1" H 19250 14800 50  0001 L BNN
+F 1 "GUIDE_10X10" H 19250 14800 50  0001 L BNN
+F 2 "RapidStencil:BOARD_10X10" H 19250 14800 50  0001 L BNN
+F 3 "" H 19250 14800 50  0001 L BNN
+	1    19250 14800
+	1    0    0    -1  
+$EndComp
+$Comp
+L RapidStencil:PIN_SMALL_SINGLE_DEVICE RS1
+U 1 1 608F6D4C
+P 18300 14600
+F 0 "RS1" H 18300 14600 50  0001 L BNN
+F 1 "PIN_SMALL_SINGLE_DEVICE" H 18300 14600 50  0001 L BNN
+F 2 "RapidStencil:PIN_SMALL_SINGLE" H 18300 14600 50  0001 L BNN
+F 3 "" H 18300 14600 50  0001 L BNN
+	1    18300 14600
+	1    0    0    -1  
+$EndComp
+$Comp
+L RapidStencil:PIN_SMALL_SINGLE_DEVICE RS2
+U 1 1 609B80D1
+P 18300 14950
+F 0 "RS2" H 18300 14950 50  0001 L BNN
+F 1 "PIN_SMALL_SINGLE_DEVICE" H 18300 14950 50  0001 L BNN
+F 2 "RapidStencil:PIN_SMALL_SINGLE" H 18300 14950 50  0001 L BNN
+F 3 "" H 18300 14950 50  0001 L BNN
+	1    18300 14950
+	1    0    0    -1  
+$EndComp
+$Comp
+L RapidStencil:PIN_SMALL_SINGLE_DEVICE RS3
+U 1 1 60A177E5
+P 18700 14600
+F 0 "RS3" H 18700 14600 50  0001 L BNN
+F 1 "PIN_SMALL_SINGLE_DEVICE" H 18700 14600 50  0001 L BNN
+F 2 "RapidStencil:PIN_SMALL_SINGLE" H 18700 14600 50  0001 L BNN
+F 3 "" H 18700 14600 50  0001 L BNN
+	1    18700 14600
+	1    0    0    -1  
+$EndComp
+$Comp
+L RapidStencil:PIN_SMALL_SINGLE_DEVICE RS4
+U 1 1 60A76DE9
+P 18700 14950
+F 0 "RS4" H 18700 14950 50  0001 L BNN
+F 1 "PIN_SMALL_SINGLE_DEVICE" H 18700 14950 50  0001 L BNN
+F 2 "RapidStencil:PIN_SMALL_SINGLE" H 18700 14950 50  0001 L BNN
+F 3 "" H 18700 14950 50  0001 L BNN
+	1    18700 14950
+	1    0    0    -1  
+$EndComp
+$Comp
+L RapidStencil:PIN_LARGE_SINGLE_DEVICE RL2
+U 1 1 609B80CB
+P 17500 14950
+F 0 "RL2" H 17500 14950 50  0001 L BNN
+F 1 "PIN_LARGE_SINGLE_DEVICE" H 17500 14950 50  0001 L BNN
+F 2 "RapidStencil:PIN_LARGE_SINGLE" H 17500 14950 50  0001 L BNN
+F 3 "" H 17500 14950 50  0001 L BNN
+	1    17500 14950
+	1    0    0    -1  
+$EndComp
+$Comp
+L RapidStencil:PIN_LARGE_SINGLE_DEVICE RL4
+U 1 1 60A76DE3
+P 17900 14950
+F 0 "RL4" H 17900 14950 50  0001 L BNN
+F 1 "PIN_LARGE_SINGLE_DEVICE" H 17900 14950 50  0001 L BNN
+F 2 "RapidStencil:PIN_LARGE_SINGLE" H 17900 14950 50  0001 L BNN
+F 3 "" H 17900 14950 50  0001 L BNN
+	1    17900 14950
+	1    0    0    -1  
+$EndComp
+$Comp
+L RapidStencil:PIN_LARGE_SINGLE_DEVICE RL3
+U 1 1 60A177DF
+P 17900 14600
+F 0 "RL3" H 17900 14600 50  0001 L BNN
+F 1 "PIN_LARGE_SINGLE_DEVICE" H 17900 14600 50  0001 L BNN
+F 2 "RapidStencil:PIN_LARGE_SINGLE" H 17900 14600 50  0001 L BNN
+F 3 "" H 17900 14600 50  0001 L BNN
+	1    17900 14600
+	1    0    0    -1  
+$EndComp
+$Comp
+L RapidStencil:PIN_LARGE_SINGLE_DEVICE RL1
+U 1 1 608F6D46
+P 17500 14600
+F 0 "RL1" H 17500 14600 50  0001 L BNN
+F 1 "PIN_LARGE_SINGLE_DEVICE" H 17500 14600 50  0001 L BNN
+F 2 "RapidStencil:PIN_LARGE_SINGLE" H 17500 14600 50  0001 L BNN
+F 3 "" H 17500 14600 50  0001 L BNN
+	1    17500 14600
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	10500 7200 11500 7200
+Text Notes 11300 7200 0    50   ~ 0
++3.3V
+Text Notes 11600 7250 0    50   ~ 0
+MUST MAKE THIS CONNECTION\nTO USE THE SRAM MEMORY!
+$EndSCHEMATC

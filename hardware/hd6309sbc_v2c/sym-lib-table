@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name hd6309sbc_v2c-rescue)(type Legacy)(uri ${KIPRJMOD}/hd6309sbc_v2c-rescue.lib)(options "")(descr ""))
+)

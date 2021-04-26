@@ -1,0 +1,130 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 10M02SCE144C8G
+F 10M02SAE144C8G
+$ENDCMP
+#
+$CMP 74LVC245A
+D Octal BUS Transceivers, Low-Voltage CMOS, 5V Tolerant, 3-State outputs
+K TTL BUS 3State
+F https://www.ti.com/lit/ds/symlink/sn74lvc245a.pdf
+$ENDCMP
+#
+$CMP AP62150WU-7
+D 1.5A Synchronous Step-Down Voltage Regulator, Adjustable Output Voltage, 4-18V Input Voltage, SOT-23-6
+K step-down dcdc voltage regulator
+F https://www.diodes.com/assets/Datasheets/AP62150.pdf
+$ENDCMP
+#
+$CMP CP2105
+D USB to dual UART master bridge, QFN-24
+K USB UART bridge
+F https://www.silabs.com/documents/public/data-sheets/CP2105.pdf
+$ENDCMP
+#
+$CMP CY62158EV30LL-45ZSXI
+D 1024K x 8 HIGH-SPEED LOW-POWER CMOS STATIC RAM, 45ns, TSOP-44
+K SRAM MEMORY
+F https://www.cypress.com/file/43811/download
+$ENDCMP
+#
+$CMP DS3231MZ
+D ±5ppm, I2C Real-Time Clock SOIC-8
+K RTC TCXO Realtime Time Clock MEMS I2C
+F http://datasheets.maximintegrated.com/en/ds/DS3231M.pdf
+$ENDCMP
+#
+$CMP EPM570T100
+D Altera MAX2 CPLD, 570 LE, LQFP-100
+K MAX2 TQFP
+F https://www.altera.com/content/dam/altera-www/global/en_US/pdfs/literature/hb/max2/max2_mii5v1.pdf
+$ENDCMP
+#
+$CMP HD6309ECP
+D 8-Bit Microprocessing unit 1.0MHz, PLCC-44
+K MCU
+$ENDCMP
+#
+$CMP HD63B09ECP
+D 8-Bit Microprocessing unit 2MHz, PLCC44
+K MCU
+F http://pdf.datasheetcatalog.com/datasheet/motorola/MC68B09S.pdf
+$ENDCMP
+#
+$CMP HD63C09ECP
+D 8-Bit Microprocessing unit 3MHz, PLCC44
+K MCU
+F http://pdf.datasheetcatalog.com/datasheet/motorola/MC68B09S.pdf
+$ENDCMP
+#
+$CMP K6T1008C2C
+D 128K x 8 High-Speed CMOS Static RAM, 55/70ns, SSOP-32
+K RAM SRAM CMOS MEMORY
+$ENDCMP
+#
+$CMP K6T1008C2C-GL55
+D 128K x 8 High-Speed CMOS Static RAM, 55ns, SOP-32
+K RAM SRAM CMOS MEMORY
+F https://pdf1.alldatasheet.com/datasheet-pdf/view/119428/SAMSUNG/K6T1008C2C-GB70.html
+$ENDCMP
+#
+$CMP K6T1008C2C-GL70
+D 128K x 8 High-Speed CMOS Static RAM, 70ns, DIP-32/SOP-32
+K RAM SRAM CMOS MEMORY
+$ENDCMP
+#
+$CMP LocationHole
+D Location Hole, copper and paste layers
+K location hole stencil 
+F ~
+$ENDCMP
+#
+$CMP SG-8002CA
+D CMOS Clock Oscillator
+K Crystal Clock Oscillator
+F https://support.epson.biz/td/api/doc_check.php?mode=dl&lang=en&Parts=SG-8002DC
+$ENDCMP
+#
+$CMP SW_Push_Tabs
+D Push button switch with Mounting Tabs, generic
+K switch normally-open pushbutton push-button Tabs
+F ~
+$ENDCMP
+#
+$CMP TPS560430
+D 0.6A Synchronous Step-Down Voltage Regulator, Adjustable Output Voltage, 4-36V Input Voltage, SOT-23-6
+K step-down dcdc voltage regulator
+F https://www.ti.com/lit/ds/symlink/tps560430.pdf
+$ENDCMP
+#
+$CMP W27C512
+D FLASH 512 KiBit, DIP-28
+K FLASH 512KiBit
+F http://www.kosmodrom.com.ua/pdf/W27C512-45Z.pdf
+$ENDCMP
+#
+$CMP Z8536
+D CIO Counter/Timer and Parallel I/O , PLCC-44
+K CIO Counter/Timer and Parallel I/O
+F http://www.zilog.com/docs/serial/z08536_ps.pdf
+$ENDCMP
+#
+$CMP Z85C3010VSC
+D SCC Serial Communication Controller, 10MHz, PLCC-44
+K SCC Serial Communication
+F https://www.farnell.com/datasheets/2044674.pdf
+$ENDCMP
+#
+$CMP Z85C3016VSC
+D SCC Serial Communication Controller, 16MHz, PLCC-44
+K SCC Serial Communication
+F https://www.farnell.com/datasheets/2044674.pdf
+$ENDCMP
+#
+$CMP Z85C308VSC
+D SCC Serial Communication Controller, 8MHz, PLCC-44
+K SCC Serial Communication
+F https://www.farnell.com/datasheets/2044674.pdf
+$ENDCMP
+#
+#End Doc Library

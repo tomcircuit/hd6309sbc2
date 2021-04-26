@@ -1,0 +1,18 @@
+SOP32 supports up to 512KB SRAM
+pins 1,30 are A18 and A17, respectively, on AS6C4008 SRAM
+--> this hw could have supported 1MB of SRAM
+--> still could if two Tx pins are stolen and connected to pins 1,30 of the two SRAM chips
+
+NitrOS needs 2MB of RAM for current version
+--> expansion card with 2MB of SRAM and decoding
+--> need provision in the FPGA to disable main RAM decoding (put into a soft SFR - RAMEN)
+
+In retrospect, it would be cleaner to generate MA13..MA20 with a 74HC574, fed by LV DBUS
+--> during non SFR access, put MA13...MA20 onto LV_D0..LV_D7 and clock into HC574
+--> do this quickly (in 50 MHz FPGA clock domain) and well BEFORE WR# signal is asserted!
+
+It would be cool to have the FLASH contained inside the FPGA user flash!
+--> then the large DIP package can be eliminated
+--> how to program/reprogram the FPGA flash in a nice way? (not using QUARTUS!)
+--> consider adding the internal FLASH into the memory mapper (pages 41-...?)
+

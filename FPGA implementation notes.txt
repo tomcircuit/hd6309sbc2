@@ -1,0 +1,291 @@
+PH1 minimal testboard setup
+clock generation and CPU execution
+
+1x M9K "RAM" at $0000...$03FF
+1x M9K "ROM" at $FC00...$FFFF
+DONE *address decoder
+DONE *clock generator
+*LED4 control at $E000
+*PB1 status at $E001
+
+1) das blinkenlights in ROM   
+   --> exercises clock gen, address decoder, ROM, LED4
+2) das blinkenlights that relocates to RAM
+   --> exercises clock gen, address decoder, ROM, RAM, LED4
+   
+   
+   
+PH1.5 minimal testboard setup
+clock generation and CPU execution
+
+ACIA clock
+ACIA 6850
+PLL for ACIA
+1x M9K "RAM" at $0000...$03FF
+1x M9K "ROM" at $FC00...$FFFF
+*address decoder
+*clock generator
+*LED4 control
+*PB1 status
+ 
+3) WOZMON in ROM
+   --> exercises clock gen, address decoder, ROM, RAM, PLL, baudrate gen, ACIA
+   
+   
+PH2 testboard setup       
+bring in SRAM and SPI EEPROM
+
+**ACIA_clock
+**acia6850
+**simple SPI to EEPROM
+*PLL & baudrate_gen
+4x M9K "ROM" at $F000...$FFFF
+*address decoder
+*clock generator
+*SRAM interface
+*LED4 & BUSY control
+*PB1 status
+
+1) RAM testing
+   --> walking bit pattern through 64K of RAM
+2) SPI EEPROM loader to RAM
+   --> image of WOZMON in SPI EEPROM, "write protected" ROM
+3) MSBASIC test run
+   --> image of MSBASIC in SPI EEPROM 
+
+
+PH3 testboard setup
+more functionality and SBC1 compatibility.
+
+**2xACIA_clock
+**2xAcia6850
+*simple SPI to EEPROM
+*simple SPI to SDCARD
+*2xTrap component
+*Timer component
+*PLL & baudrate_gen
+4x M9K "ROM" at $F000...$FFFF
+*address decoder
+*clock generator
+*DAT logic
+*SRAM interface
+*LED4 & BUSY control
+*RTS status
+*PB1 status
+*IRQ control
+*NMI control
+*RESET control
+*WS2812 control
+*soft I2C control
+
+1) DAT testing
+   --> page testing
+2) SPI SD CARD testing
+   --> read/write SD card stuff
+3) RTC testing
+4) RGB LED testing
+5) TRAP testing
+6) TIMER testing
+7) RESET and NMI testing
+8) RTS testing
+9) NoICE testing?
+
+
+
+
+0xE000          [new]system timer preload/count  (use a 12b counter, only deal with upper 8 bits)
+W = load preset count register
+R = read down counter value
+0xE001          [new]system timer control/status
+bit 7 r/w IRQ
+    write a 1 to enable terminal count interrupt, will INT when counter reaches 0
+bit 0 r/w RUN
+    write a 1 to start the counter, will read 1 as long as counter is running
+    
+0xE010          6850 A data register
+0xE011          6850 A control/status register
+0xE012          6850 B data register
+0xE013          6850 B control/status register
+0xE014          baudrate prescalar control (both A & B)
+bit 7..4 n.u.
+bit 3:2 r/w BPS
+    00 = /1, 01 = /8, 02 = /24 for ACIA B
+bit 1:0 r/w APS
+    00 = /1, 01 = /8, 02 = /24 for ACIA A
+    
+0xE02x          Soft I2C register
+
+0xE030          SD Card SPI Read/Write Data (triggers send)
+0xE031          SD Card SPI Read Data (no send)
+0xE032          SD Card SPI Control 
+bit 7 r SDSW 
+    sense the SD card present switch (1 = present)
+bit 6 r SDBUSY 
+    SPI interface is busy when 1
+bit 5 r/w SDCLK 
+    select CLK for SD CARD SPI (1 = XOSC/2 (25M), 0 = OSC/8 (6M))
+bit 4 r/w SDCS 
+    control CS line to SD CARD
+bit 3..0 n.u.
+    
+0xE038          EEPROM SPI Read/Write Data (triggers send)
+0xE039          EEPROM SPI Read Data (no send)
+0xE03A          EEPROM SPI Control
+vit 7 n.u.
+bit 6 r SDBUSY 
+    SPI interface is busy when 1
+bit 5 r/w SDCLK 
+    select CLK for EEPROM SPI (1 = XOSC/3 (16M), 0 = OSC/8 (6M))
+bit 4 r/w SDCS 
+    control CS line to EEPROM
+bit 3..0 n.u.
+    
+0xE040          SYSTEM CONFIG register
+bit 7 r/w WODAT
+    enable WRITES to DAT 0-F registers at $FFF0-$FFFF when ROMSEH=1 (SWTPC compatibility)
+bit 6 r/w BOOTROM
+    4K of MAX10 UFM ROM is mapped into $F000-$FFFF when 1     
+bit 3 r/w ROMBANK
+    sets bank mapping of $C000-$FFFF when ROMSEL and/or ROMSEH are set. This takes the value of CONF1 at RESET
+bit 2 r/w ROMSEH 
+    disables DAT and prevent writes to $E200-$FFFF when 1, SRAM mapping depends on ROMBANK
+bit 1 r/w ROMSEL 
+    disables DAT and prevent writes to $C000-$DFFF when 1, SRAM mapping depends on ROMBANK
+bit 0 n.u.
+    
+0xE048          NMI & RESET CONTROL register
+bit 7 0/w COLD
+    reset the CPU and MAX10 
+bit 6 0/w WARM
+    reset the CPU (but not the MAX10)
+bit 5 r/w RTSEN
+    enables CPU RESET from RTS when set
+bit 4 r/w RTSPOL
+    sets polarity of RTS that causes RESET
+bit 3 r/w NMIPB
+    enable NMI from pushbutton
+bit 2..0 n.u.
+
+0xE050          IO CONFIG register
+bit 7 r CONF2
+    CONF2 jumper status (1 = open, 0 = shorted)
+bit 6 r CONF1 
+    CONF1 jumper status (1 = open, 0 = shorted)
+bit 5..4 n.u.    
+bit 3 r PB pushbutton input (1 = pressed)
+bit 2 r RTS 
+    RTS state from CP2105
+bit 1 r/w BUSY
+    control BUSY LED #2 (1 = illuminate)
+bit 0 r/w LED4
+    control LED #4 (1 = illuminate)
+
+0xE058          D4 RED register
+0xE059          D4 GREEN register
+0xE05A          D4 BLUE register
+0xE05B          D5 RED register
+0xE05C          D5 GREEN register
+0xE05D          D5 BLUE register
+0xE05E          D4/D5 update
+bit 0 r/w UPDATE
+    write 1 to update D4/D5 colors
+    read 1 == busy, read 0 == ready
+
+0xE06x          VERSION register
+Read returns 0x20 (2.0)
+
+0xE070-0xE07F   DAT A-F registers (read and write access)*
+0xE080-0xE087   DAT C0,D0,E0,F0,C1,D1,E1,F1 registers (read and write access)*
+*DAT A-F registers can also be WRITTEN via writes to 0xFFF0...0xFFFF when ROMSEH=1 and WODAT=1
+
+0xE090-0xE097   TRAP1 registers
+0xE098-0xE09F   TRAP2 registers
+
+
+
+
+RAM and ROM Mapping
+reads and writes within CPU 0x0000:DFFF are mapped to SRAM using DAT
+(each 4K page has a DAT register, 
+                               
+    BOOTROM | ROMBANK | ROMSEH | ROMSEL | ADDRESS |    SRAM ADDR SOURCE
+   ---------+---------+--------+--------+---------+---------- ----------              
+       X    |    X    |    X   |   0    | $Cxxx   | use 'C' DAT                       
+            |         |        |        | $Dxxx   | use 'D' DAT                       
+       0    |    X    |    0   |   X    | $Exxx   | use 'E' DAT                       
+            |         |        |        | $Fxxx   | use 'F' DAT                       
+       X    |    0    |    X   |   1    | $Cxxx   | use 'C0' DAT                       
+            |         |        |        | $Dxxx   | use 'D0' DAT                       
+       0    |    0    |    1   |   X    | $Exxx   | use 'E0' DAT                       
+            |         |        |        | $Fxxx   | use 'F0' DAT                       
+       X    |    1    |    X   |   1    | $Cxxx   | use 'C1' DAT                       
+            |         |        |        | $Dxxx   | use 'D1' DAT                       
+       0    |    1    |    1   |   X    | $Exxx   | use 'E1' DAT                       
+            |         |        |        | $Fxxx   | use 'F1' DAT                       
+       1    |    X    |    X   |   X    | $Fxxx   | MAX10 UFM  
+            |         |        |        |                                                               
+    
+
+ROMSEL == 0
+reads and writes within CPU 0xC000:DFFF are mapped to SRAM using DAT
+
+ROMSEL == 1
+reads within CPU 0xC000:DFFF are mapped via DAT C0 and D0 when ROMBANK == 0 and DAT C1 and D1 when ROMBANK == 1
+writes within CPU 0xC000:DFFF are blocked
+
+ROMSEH == 0
+reads and writes within CPU 0xE200:FFFF are mapped to SRAM using DAT
+
+ROMSEH == 1
+reads within CPU 0xE200:FFFF are mapped via DAT E0 and F0 when ROMBANK == 0 and DAT E1 and F1 when ROMBANK == 1
+writes within CPU 0xFFF0:FFFF are mapped corresponding DAT register (0-F) when WODAT == 1, otherwise blocked
+writes within CPU 0xE200:FFEF are blocked
+
+BOOTROM
+reads within CPU 0xF000:FFFF are mapped to MAX10 internal boot rom image
+writes within CPU 0xF000:FFFF are blocked
+
+
+UARTs
+
+Use two acia6850 from John Kent System09 project.
+These are MC6850 and need 16x/64x baud clocks (easy to modify to include 32x baud clock, also)
+
+Need a prescalar (separate from acia6850 core) to provide /8 and /24 clocks, too.
+
+Use a PLL to create the 14.7456MHz clock from the 50MHz xtal
+This is nice because the acia6850 component can be used as-is
+with the 16x and 64x (and add 32x) internal clock divider settings
+
+	   PLL 		
+	   14745600 32	460800
+		        16	921600
+		        64	230400
+                
+In addition, create a small PRESCALAR outside of the 6850 component to 
+provide PLL/8 and a PLL/24 outputs to each of the two UARTs (independently)
+                
+    8	1843200	32	57600
+        		16	115200
+        		64	28800
+  24	614400	32	19200
+        		16	38400
+        		64	9600
+                
+                
+                
+TIMER
+
+another John Kent component - make it a longer counter so that we're counting CPU cycles and not 50 MHz cycles!
+i.e. make it a 12b counter, only the uppermost 8b are visible to the CPU.
+
+TRAP
+
+another John Kent component - put two of these here for hardware breakpoints to IRQ (NMI?)                
+                
+
+
+
+
+
+

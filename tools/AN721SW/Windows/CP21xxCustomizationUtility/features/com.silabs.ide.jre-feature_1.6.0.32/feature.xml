@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.silabs.ide.jre-feature"
+      label="Simplicity Studio Bundled Java Runtime"
+      version="1.6.0.32"
+      provider-name="Silicon Labs">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license>
+      %license
+   </license>
+
+</feature>

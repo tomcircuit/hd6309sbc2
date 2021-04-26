@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<document:XMLDocument xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:document="http://www.silabs.com/config/document/document.ecore">
+  <documentObject id="cp2105" version="1.0">
+    <propertyValue propertyId="cp2105.portConfig.EnhancedFxn_ECI" value="19"/>
+    <propertyValue propertyId="cp2105.portConfig.EnhancedFxn_SCI" value="19"/>
+    <propertyValue propertyId="cp2105.portConfig.GPIO0_ECI.latchControl" value="1"/>
+    <propertyValue propertyId="cp2105.portConfig.GPIO0_SCI.latchControl" value="1"/>
+    <propertyValue propertyId="cp2105.portConfig.GPIO1_ECI.latchControl" value="1"/>
+    <propertyValue propertyId="cp2105.portConfig.GPIO1_SCI.latchControl" value="1"/>
+    <propertyValue propertyId="cp210x_base.customer.address" value="&#xA;&#xA;,  &#xA;"/>
+    <propertyValue propertyId="cp210x_base.customer.contactname" value=" "/>
+    <propertyValue propertyId="cp210x_base.serialization.serialKey" value="6B9753EC-B459-4139-921B-1A1C95FC02F6"/>
+    <propertyValue propertyId="cp210x_base.set_ids.maxPower_real" value="250"/>
+    <propertyValue propertyId="cp210x_base.set_ids.maxPower_user" value="500"/>
+    <propertyValue propertyId="cp210x_base.set_ids.serialString" value="HD6309_SBC_V2"/>
+  </documentObject>
+</document:XMLDocument>

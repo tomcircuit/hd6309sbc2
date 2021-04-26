@@ -1,0 +1,43 @@
+9700630879218
+RapidStencil
+BOARD_10X10
+RapidStencil 10x10 Guide on Front Fab. Layer
+
+0
+0
+0
+RapidStencil
+BOARD_10X10_USERCMTS
+RapidStencil 10x10 Guide on User Comments layer
+
+0
+0
+0
+RapidStencil
+PIN_LARGE_SINGLE
+RapidStencil Large Locator Pin
+
+0
+1
+1
+RapidStencil
+PIN_LARGE_SINGLE_NOSILK
+RapidStencil Large Locator Pin REF on UserComments
+
+0
+1
+1
+RapidStencil
+PIN_SMALL_SINGLE
+RapidStencil Small Locator Pin
+
+0
+1
+1
+RapidStencil
+PIN_SMALL_SINGLE_NOSILK
+RapidStencil Small Locator Pin REF on User Comments
+
+0
+1
+1

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config transient="false" date="1450479266394">
+	<site enabled="true" updateable="true" policy="USER-EXCLUDE" url="platform:/base/">
+		<feature id="com.silabs.customizer-feature" url="features/com.silabs.customizer-feature_1.0.0.201512181646-427/" version="1.0.0.201512181646-427">
+		</feature>
+		<feature id="com.silabs.ide.jre-feature" url="features/com.silabs.ide.jre-feature_1.6.0.32/" version="1.6.0.32">
+		</feature>
+	</site>
+</config>
